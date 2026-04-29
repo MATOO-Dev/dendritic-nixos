@@ -4,4 +4,7 @@
 
 	flake.homeModules.template = {
 	};
+
+	perSystem.packages.template = {
+	};
 }

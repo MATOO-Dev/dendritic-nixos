@@ -1,5 +1,5 @@
 {
-	flake.homeModules.template = {pkgs, ...}: {
+	flake.homeModules.defaultApps = {pkgs, ...}: {
 		home.packages = [
 			# requires file input to work
 			# test if syntax is correct like this

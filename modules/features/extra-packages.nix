@@ -1,5 +1,5 @@
 {
-	flake.nixosModules.template = {pkgs, ...}: {
+	flake.nixosModules.extraPackages = {pkgs, ...}: {
 		# these are only here so i have them on a fresh install
 		# even before setting up my home-manager environment
 		environment.systemPackages = with pkgs; [
@@ -9,7 +9,7 @@
 		];
 	};
 
-	flake.homeModules.template = {pkgs, ...}: {
+	flake.homeModules.extraPackages = {pkgs, ...}: {
 		home.packages = with pkgs; [
 			# amberol # music player
 			anki # flashcards
