@@ -35,33 +35,15 @@
 		# run arbitrary binaries
 		nix-alien.url = "github:thiagokokada/nix-alien";
 		nix-alien.inputs.nixpkgs.follows = "nixpkgs";
+
+		# module wrappers
+		wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 	};
 
-	outputs = {
-		inputs,
-		lib,
-		...
-	}:
+	outputs = inputs:
 		inputs.flake-parts.lib.mkFlake {inherit inputs;} {
 			imports = [
 				(inputs.import-tree ./modules)
-				inputs.flake-parts.flakeModules.modules
-				inputs.home-manager.flakeModules.home-manager
 			];
-
-			options.flake.diskoConfigurations =
-				lib.mkOption {
-					type = lib.types.attrsOf lib.types.deferredModule;
-					default = {};
-					description = "Custom disk configuration";
-				};
-
-			config = {
-				# debug = true;
-
-				systems = [
-					"x86_64-linux"
-				];
-			};
 		};
 }
