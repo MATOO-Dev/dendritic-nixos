@@ -1,10 +1,10 @@
 {
-	flake.nixosModules.template = {
-	};
+    flake.nixosModules.template = {
+    };
 
-	flake.homeModules.template = {
-	};
+    flake.homeModules.template = {
+    };
 
-	# perSystem.packages.template = {
-	# };
+    # perSystem.packages.template = {
+    # };
 }

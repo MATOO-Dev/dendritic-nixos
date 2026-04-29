@@ -1,5 +1,4 @@
-{
-}
+{ }
 # {
 # 	flake.nixosModules.virtualization = {
 # 		programs.virt-manager.enable = true;
@@ -13,4 +12,3 @@
 # 		};
 # 	};
 # }
-

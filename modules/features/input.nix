@@ -12,16 +12,16 @@
         console.keyMap = "eu";
 
         # TODO: find a way to automatically apply to all users
-        users.users.matoo.extraGroups = [
-            "dialout" # bazecor
-        ];
+        # users.users.matoo.extraGroups = [
+        #     "dialout" # bazecor
+        # ];
     };
 
-    flake.homeModules.input =
-        { pkgs, ... }:
-        {
-            home.packages = with pkgs; [
-                bazecor
-            ];
-        };
+    # flake.homeModules.input =
+    #     { pkgs, ... }:
+    #     {
+    #         home.packages = with pkgs; [
+    #             bazecor
+    #         ];
+    #     };
 }

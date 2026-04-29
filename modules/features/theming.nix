@@ -1,5 +1,4 @@
-{
-}
+{ }
 # {
 # 	flake.homeModules.theming = {
 # 		inputs,
@@ -31,4 +30,3 @@
 # 		# };
 # 	};
 # }
-
