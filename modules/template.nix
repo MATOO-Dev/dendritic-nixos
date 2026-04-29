@@ -5,6 +5,6 @@
 	flake.homeModules.template = {
 	};
 
-	perSystem.packages.template = {
-	};
+	# perSystem.packages.template = {
+	# };
 }

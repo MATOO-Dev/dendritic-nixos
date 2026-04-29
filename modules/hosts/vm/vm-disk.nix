@@ -8,7 +8,7 @@
 		"ssd" # ssd-specific optimizations
 	];
 in {
-	flake.nixosModules.vm-disk = {...}: {
+	flake.diskoConfigurations.vm-disk = {...}: {
 		imports = [
 			inputs.disko.nixosModules.default
 		];

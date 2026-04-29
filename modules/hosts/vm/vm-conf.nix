@@ -5,28 +5,35 @@
 		...
 	}:
 		inputs.nixpkgs.lib.nixosSystem {
-			imports = with self.nixosModules; [
-				audio
-				bluetooth
-				bootloader
-				email
-				extraPackages
-				firefox
-				fonts
-				gaming
-				input
-				kernel
-				locale
-				localsend
-				login
-				matoo
-				networking
-				niri
-				nix
-				printing
-				snapshots
-				vm-disk
-			];
+			imports = with self.nixosModules;
+				[
+					audio
+					bluetooth
+					bootloader
+					compatibility
+					email
+					extraPackages
+					firefox
+					fonts
+					gaming
+					graphics
+					input
+					kernel
+					locale
+					localsend
+					login
+					matoo
+					networking
+					niri
+					nix
+					plasma
+					printing
+					snapshots
+					virtualization
+				]
+				++ [
+					self.diskoConfigurations.matoo-vm
+				];
 
 			networking.hostname = "matoo-vm";
 			system.stateVersion = "25.11";
