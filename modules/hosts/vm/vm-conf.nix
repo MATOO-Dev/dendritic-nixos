@@ -26,7 +26,6 @@
             # snapshots
             # virtualization
             self.nixosModules.matoo-vm
-            inputs.disko.nixosModules.disko
             self.diskoConfigurations.matoo-vm
         ];
 
