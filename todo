@@ -1,0 +1,31 @@
+################
+#### chores ####
+################
+
+obsidian # set up vaults and plugins using nix
+syncthing # set up devices and folders using nix
+nvim # currently nixcats alias, consider nvf
+thunderbird # declare plugins and settings
+firefox # declare plugins and settings
+snapper # setup snapshot config
+
+######################
+#### cant install ####
+######################
+
+sticker-convert? # not packaged, but not important
+gpu-screen-recorder-ui # stuck in pr limbo
+
+###################
+#### long term ####
+###################
+
+secure boot # using lanzaboote
+impermanence # not sure whether i'll use this
+sops # secrets management
+
+#####################
+#### porting den ####
+#####################
+
+

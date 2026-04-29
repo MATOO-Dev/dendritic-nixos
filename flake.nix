@@ -1,15 +1,48 @@
 {
-  description = "A very basic flake";
+    description = "MATOO's dendritic NixOS config";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
+    inputs = {
+        # packages
+        nixpkgs.url = "github:nixos/nixpkgs/25.11";
+        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-  outputs = { self, nixpkgs }: {
+        # extra features
+        home-manager.url = "github:nix-community/home-manager/release-25.11";
+        home-manager.inputs.nixpkgs.follows = "nixpkgs";
+        # impermanence.url = "github:nix-community/impermanence"; # clean build every boot
 
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
+        # config architecture
+        flake-parts.url = "github:hercules-ci/flake-parts";
+        import-tree.url = "github:vic/import-tree/latest";
 
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+        # hardware
+        disko.url = "github:nix-community/disko";
+        disko.inputs.nixpkgs.follows = "nixpkgs";
+        # lanzaboote.url = "github:nix-community/lanzaboote"; # secure boot
 
-  };
+        # nvim
+        nvf.url = "github:notashelf/nvf";
+        nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
+
+        # theming
+        stylix.url = "github:nix-community/stylix/release-25.11";
+        stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+        # search nixpkgs files
+        nix-index-database.url = "github:nix-community/nix-index-database";
+        nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+
+        # run arbitrary binaries
+        nix-alien.url = "github:thiagokokada/nix-alien";
+        nix-alien.inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    outputs =
+        inputs:
+        inputs.flake-parts.lib.mkFlake { inherit inputs; } {
+            imports = [ (inputs.import-tree ./modules) ];
+            systems = [
+                "x86_64-linux"
+            ];
+        };
 }
