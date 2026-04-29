@@ -4,7 +4,7 @@
         modules = [
             # audio
             # bluetooth
-            self.nixosModules.bootloader
+            # self.nixosModules.bootloader
             # compatibility
             # email
             # extraPackages
@@ -12,13 +12,13 @@
             # fonts
             # gaming
             # graphics
-            self.nixosModules.input
+            # self.nixosModules.input
             # kernel
-            self.nixosModules.locale
+            # self.nixosModules.locale
             # localsend
             # login
-            self.nixosModules.matoo
-            self.nixosModules.networking
+            # self.nixosModules.matoo
+            # self.nixosModules.networking
             # niri
             # # nix
             # plasma
@@ -35,6 +35,22 @@
             inputs.disko.nixosModules.disko
             self.diskoConfigurations.matoo-vm
 		];
+
+		users.users."MATOO" = {
+			isNormalUser = true;
+			description = "MATOO";
+			extraGroups = [
+				"networkmanager"
+				"wheel"
+			];
+			initialPassword = "12345";
+		};
+
+		# debug
+		boot.loader.systemd-boot.enable = true;
+		boot.loader.efi.canTouchEfiVariables = true;
+		networking.networkmanager.enable = true;
+		# end debug
 
         networking.hostName = "matoo-vm";
         system.stateVersion = "25.11";

@@ -11,10 +11,6 @@ let
 in
 {
     flake.diskoConfigurations.matoo-vm = {
-		imports = [
-            inputs.disko.nixosModules.disko
-		];
-
         disko.devices = {
             disk = {
                 primary = {
