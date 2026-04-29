@@ -1,4 +1,4 @@
-{inputs, ...}: let
+let
 	primary_disk_path = "/dev/vda";
 	mount_options = [
 		"compress=zstd:3" # automatic file compression if possible
@@ -8,7 +8,7 @@
 		"ssd" # ssd-specific optimizations
 	];
 in {
-	flake.diskoConfigurations.vm-disk = {...}: {
+	flake.diskoConfigurations.vm-disk = {
 		disko.devices = {
 			disk = {
 				primary = {

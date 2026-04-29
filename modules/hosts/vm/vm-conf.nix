@@ -7,31 +7,32 @@
 		inputs.nixpkgs.lib.nixosSystem {
 			imports = with self.nixosModules;
 				[
-					audio
-					bluetooth
+					# audio
+					# bluetooth
 					bootloader
-					compatibility
-					email
-					extraPackages
-					firefox
-					fonts
-					gaming
-					graphics
+					# compatibility
+					# email
+					# extraPackages
+					# firefox
+					# fonts
+					# gaming
+					# graphics
 					input
-					kernel
+					# kernel
 					locale
-					localsend
-					login
+					# localsend
+					# login
 					matoo
 					networking
-					niri
+					# niri
 					nix
-					plasma
-					printing
-					snapshots
-					virtualization
+					# plasma
+					# printing
+					# snapshots
+					# virtualization
 				]
 				++ [
+					inputs.disko.nixosModules.disko
 					self.diskoConfigurations.matoo-vm
 				];
 
