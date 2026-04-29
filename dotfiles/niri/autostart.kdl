@@ -1,9 +1,0 @@
-/////////////////
-/// AUTOSTART ///
-/////////////////
-
-spawn-at-startup "discover-overlay"
-spawn-at-startup "hypridle"
-spawn-at-startup "kdeconnec-indicator"
-spawn-at-startup "sunsetr"
-spawn-at-startup "waybar"
