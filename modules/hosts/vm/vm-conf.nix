@@ -29,6 +29,7 @@
 			];
 
 			networking.hostname = "matoo-vm";
+			system.stateVersion = "25.11";
 
 			# hardware config
 			boot.initrd.availableKernelModules = [

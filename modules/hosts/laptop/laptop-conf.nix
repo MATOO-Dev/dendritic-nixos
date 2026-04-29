@@ -36,6 +36,7 @@
 			];
 
 			networking.hostname = "matoo-laptop";
+			system.stateVersion = "25.11";
 
 			# hardware config
 			boot.initrd.availableKernelModules = [

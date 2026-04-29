@@ -52,6 +52,7 @@
 					kitty
 					git
 				];
+				stateVersion = "25.11";
 
 				# mut home manager news
 				news.display = "silent";
