@@ -26,12 +26,16 @@
             # snapshots
             # virtualization
             self.nixosModules.matoo-vm
-            self.diskoConfigurations.matoo-vm
         ];
 
     };
 
     flake.nixosModules.matoo-vm = {
+		imports = [
+            inputs.disko.nixosModules.disko
+            self.diskoConfigurations.matoo-vm
+		];
+
         networking.hostName = "matoo-vm";
         system.stateVersion = "25.11";
 

@@ -17,27 +17,27 @@
 
         # hardware
         disko.url = "github:nix-community/disko";
-        disko.inputs.nixpkgs.follows = "nixpkgs";
+        disko.inputs.nixpkgs.follows = "nixpkgs-unstable";
         # lanzaboote.url = "github:nix-community/lanzaboote"; # secure boot
 
-        # nvim
-        nvf.url = "github:notashelf/nvf";
-        nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
+        # # nvim
+        # nvf.url = "github:notashelf/nvf";
+        # nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
-        # theming
-        stylix.url = "github:nix-community/stylix/release-25.11";
-        stylix.inputs.nixpkgs.follows = "nixpkgs";
+        # # theming
+        # stylix.url = "github:nix-community/stylix/release-25.11";
+        # stylix.inputs.nixpkgs.follows = "nixpkgs";
 
-        # search nixpkgs files
-        nix-index-database.url = "github:nix-community/nix-index-database";
-        nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+        # # search nixpkgs files
+        # nix-index-database.url = "github:nix-community/nix-index-database";
+        # nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
-        # run arbitrary binaries
-        nix-alien.url = "github:thiagokokada/nix-alien";
-        nix-alien.inputs.nixpkgs.follows = "nixpkgs";
+        # # run arbitrary binaries
+        # nix-alien.url = "github:thiagokokada/nix-alien";
+        # nix-alien.inputs.nixpkgs.follows = "nixpkgs";
 
-        # module wrappers
-        wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
+        # # module wrappers
+        # wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
     };
 
     outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
