@@ -1,11 +1,11 @@
 {
-	flake.nixosConfigurations.matoo-vm = {
-		inputs,
-		self,
-		...
-	}:
+	inputs,
+	self,
+	...
+}: {
+	flake.nixosConfigurations.matoo-vm =
 		inputs.nixpkgs.lib.nixosSystem {
-			imports = with self.nixosModules;
+			modules = with self.nixosModules;
 				[
 					# audio
 					# bluetooth

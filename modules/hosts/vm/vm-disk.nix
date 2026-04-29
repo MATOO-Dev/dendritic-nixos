@@ -10,7 +10,7 @@
 in {
 	flake.diskoConfigurations.vm-disk = {
 		imports = [
-			inputs.disko.nixosModules.disko
+			inputs.disko.flakeModules.default
 		];
 
 		disko.devices = {

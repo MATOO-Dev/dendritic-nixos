@@ -1,5 +1,5 @@
-{
-	flake.nixosModules.nix = {inputs, ...}: {
+{inputs, ...}: {
+	flake.nixosModules.nix = {
 		nix = {
 			settings.experimental-features = [
 				"nix-command"
@@ -34,7 +34,7 @@
 		};
 	};
 
-	flake.homeModules.nix = {inputs, ...}: {
+	flake.homeModules.nix = {
 		imports = [
 			inputs.nix-index-database.homeModules.default
 		];

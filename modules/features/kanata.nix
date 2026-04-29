@@ -1,35 +1,37 @@
-{
-	flake.nixosModules.kanata = {
-		services.kanata = {
-			enable = true;
-			# enables homerow mods for laptop
-			keyboards.laptop-homerow-mods.config = ''
-				(defcfg
-				  process-unmapped-keys yes
-				)
-				(defsrc
-				  caps tab a s d f j k l ;
-				)
-				(defvar
-				  tap-time 150
-				  hold-time 200
-				)
-				(defalias
-				  caps (tap-hold $tap-time $hold-time tab tab)
-				  tab (tap-hold $tap-time $hold-time esc esc)
-				  a (multi f24 (tap-hold $tap-time $hold-time a ralt))
-				  s (multi f24 (tap-hold $tap-time $hold-time s lalt))
-				  d (multi f24 (tap-hold $tap-time $hold-time d lctl))
-				  f (multi f24 (tap-hold $tap-time $hold-time f lsft))
-				  j (multi f24 (tap-hold $tap-time $hold-time j lsft))
-				  k (multi f24 (tap-hold $tap-time $hold-time k lctl))
-				  l (multi f24 (tap-hold $tap-time $hold-time l lalt))
-				  ; (multi f24 (tap-hold $tap-time $hold-time ; ralt))
-				)
-				(deflayer base
-				  @caps @tab @a @s @d @f @j @k @l @;
-				)
-			'';
-		};
-	};
-}
+{}
+# {
+# 	flake.nixosModules.kanata = {
+# 		services.kanata = {
+# 			enable = true;
+# 			# enables homerow mods for laptop
+# 			keyboards.laptop-homerow-mods.config = ''
+# 				(defcfg
+# 				  process-unmapped-keys yes
+# 				)
+# 				(defsrc
+# 				  caps tab a s d f j k l ;
+# 				)
+# 				(defvar
+# 				  tap-time 150
+# 				  hold-time 200
+# 				)
+# 				(defalias
+# 				  caps (tap-hold $tap-time $hold-time tab tab)
+# 				  tab (tap-hold $tap-time $hold-time esc esc)
+# 				  a (multi f24 (tap-hold $tap-time $hold-time a ralt))
+# 				  s (multi f24 (tap-hold $tap-time $hold-time s lalt))
+# 				  d (multi f24 (tap-hold $tap-time $hold-time d lctl))
+# 				  f (multi f24 (tap-hold $tap-time $hold-time f lsft))
+# 				  j (multi f24 (tap-hold $tap-time $hold-time j lsft))
+# 				  k (multi f24 (tap-hold $tap-time $hold-time k lctl))
+# 				  l (multi f24 (tap-hold $tap-time $hold-time l lalt))
+# 				  ; (multi f24 (tap-hold $tap-time $hold-time ; ralt))
+# 				)
+# 				(deflayer base
+# 				  @caps @tab @a @s @d @f @j @k @l @;
+# 				)
+# 			'';
+# 		};
+# 	};
+# }
+
