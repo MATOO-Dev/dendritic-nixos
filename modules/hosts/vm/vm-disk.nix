@@ -9,10 +9,6 @@
 	];
 in {
 	flake.diskoConfigurations.vm-disk = {...}: {
-		imports = [
-			inputs.disko.nixosModules.default
-		];
-
 		disko.devices = {
 			disk = {
 				primary = {

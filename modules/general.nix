@@ -6,6 +6,7 @@
 	imports = [
 		inputs.flake-parts.flakeModules.modules
 		inputs.home-manager.flakeModules.home-manager
+		inputs.disko.nixosModules.disko
 	];
 
 	options.flake.diskoConfigurations =
