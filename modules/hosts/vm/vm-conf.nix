@@ -32,7 +32,6 @@
 					# virtualization
 				]
 				++ [
-					inputs.disko.nixosModules.disko
 					self.diskoConfigurations.matoo-vm
 				];
 
@@ -41,12 +40,18 @@
 
 			# hardware config
 			boot.initrd.availableKernelModules = [
-				"nvme"
+				"ahci"
 				"xhci_pci"
 				"virtio_pci"
 				"sr_mod"
 				"virtio_blk"
 			];
+			boot.initrd.kernelModules = [];
+			boot.kernelModules = ["kvm-amd"];
+			boot.extraModulePackages = [];
+			nixpkgs.hostPlatform = "x86_64-linux";
+
+			# vm guest config
 			services = {
 				qemuGuest.enable = true;
 				spice-vdagentd.enable = true;

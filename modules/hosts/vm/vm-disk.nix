@@ -1,4 +1,4 @@
-let
+{inputs, ...}: let
 	primary_disk_path = "/dev/vda";
 	mount_options = [
 		"compress=zstd:3" # automatic file compression if possible
@@ -9,6 +9,10 @@ let
 	];
 in {
 	flake.diskoConfigurations.vm-disk = {
+		imports = [
+			inputs.disko.nixosModules.disko
+		];
+
 		disko.devices = {
 			disk = {
 				primary = {
@@ -31,7 +35,7 @@ in {
 								};
 							};
 							encrypedSwap = {
-								size = "8G";
+								size = "1G";
 								content = {
 									type = "swap";
 									# mutually exclusive with resumeDevice
