@@ -1,7 +1,8 @@
 {
     flake.nixosModules.input = {
         services.xserver.xkb = {
-            layout = "eu"; # eurkey layout
+            layout = "us";
+            # layout = "eu"; # eurkey layout
             # variant = "";
             # gallium/canary does not exist
             # nixos wiki details setting up custom
@@ -9,7 +10,8 @@
             # variant = "eu";
         };
 
-        console.keyMap = "eu";
+        console.keyMap = "us";
+        # console.keyMap = "eu"; # eurkey layout
 
         # TODO: find a way to automatically apply to all users
         # users.users.matoo.extraGroups = [
