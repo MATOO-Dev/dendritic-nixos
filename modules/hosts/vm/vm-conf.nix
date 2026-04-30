@@ -26,13 +26,13 @@
             # snapshots
             # virtualization
             self.nixosModules.matoo-vm
+            self.diskoConfigurations.matoo-vm
         ];
 
     };
 
     flake.nixosModules.matoo-vm = {
 		imports = [
-            self.diskoConfigurations.matoo-vm
 		];
 
 		users.users."MATOO" = {
