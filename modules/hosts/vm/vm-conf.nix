@@ -1,33 +1,37 @@
 { inputs, self, ... }:
 {
     flake.nixosConfigurations.matoo-vm = inputs.nixpkgs.lib.nixosSystem {
-        modules = [
-            # audio
-            # bluetooth
-            self.nixosModules.bootloader
-            # compatibility
-            # email
-            # extraPackages
-            # firefox
-            # fonts
-            # gaming
-            self.nixosModules.graphics
-            self.nixosModules.input
-            # kernel
-            self.nixosModules.locale
-            # localsend
-            # login
-            self.nixosModules.matoo
-            self.nixosModules.networking
-            # niri
-            self.nixosModules.nix
-            # plasma
-            # printing
-            # snapshots
-            # virtualization
-            self.nixosModules.matoo-vm
-            self.diskoConfigurations.matoo-vm
-        ];
+        modules =
+            with self.nixosModules;
+            [
+                # audio
+                # bluetooth
+                bootloader
+                # compatibility
+                # email
+                # extraPackages
+                # firefox
+                # fonts
+                # gaming
+                graphics
+                input
+                # kernel
+                locale
+                # localsend
+                # login
+                matoo
+                networking
+                # niri
+                nix
+                # plasma
+                # printing
+                # snapshots
+                # virtualization
+                matoo-vm
+            ]
+            + [
+                self.diskoConfigurations.matoo-vm
+            ];
 
     };
 
