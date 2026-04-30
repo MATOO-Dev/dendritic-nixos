@@ -1,3 +1,4 @@
+{ inputs, self, ... }:
 {
     flake.nixosModules.matoo = {
         users.users.matoo = {
@@ -13,37 +14,35 @@
         };
     };
 
-    flake.homeConfigurations.matoo =
-        {
-            inputs,
-            self,
-            pkgs,
-            ...
-        }:
-        inputs.home-manager.lib.homeManagerConfiguration {
-            modules = with self.homeModules; [
-                # bar
-                # coding
-                # defaultApps
-                # discord
-                # email
-                # extraPackages
-                # firefox
-                # git
-                # hyprland
-                # kitty
-                # neovim
-                # niri
-                # nix
-                # prompt
-                # recording
-                # search
-                # shells
-                # snapshots
-                # syncthing
-                # theming
-            ];
+    flake.homeConfigurations.matoo = inputs.home-manager.lib.homeManagerConfiguration {
+        modules = with self.homeModules; [
+            # bar
+            # coding
+            # defaultApps
+            # discord
+            # email
+            # extraPackages
+            # firefox
+            # git
+            # hyprland
+            # kitty
+            # neovim
+            # niri
+            # nix
+            # prompt
+            # recording
+            # search
+            # shells
+            # snapshots
+            # syncthing
+            # theming
+            matoo
+        ];
+    };
 
+    flake.homeModules.matoo =
+        { pkgs, ... }:
+        {
             programs.home-manager.enable = true;
 
             home = {
