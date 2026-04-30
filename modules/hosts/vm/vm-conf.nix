@@ -15,10 +15,10 @@
                 gaming
                 graphics
                 input
-                # kernel
+                kernel
                 locale
-                # localsend
-                # login
+                localsend
+                login
                 matoo
                 networking
                 # niri
