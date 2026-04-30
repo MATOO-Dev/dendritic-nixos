@@ -33,8 +33,8 @@
         # nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
         # # run arbitrary binaries
-        # nix-alien.url = "github:thiagokokada/nix-alien";
-        # nix-alien.inputs.nixpkgs.follows = "nixpkgs";
+        nix-alien.url = "github:thiagokokada/nix-alien";
+        nix-alien.inputs.nixpkgs.follows = "nixpkgs";
 
         # # module wrappers
         # wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
