@@ -11,7 +11,7 @@
             # firefox
             # fonts
             # gaming
-            # graphics
+            self.nixosModules.graphics
             self.nixosModules.input
             # kernel
             self.nixosModules.locale
@@ -20,7 +20,7 @@
             self.nixosModules.matoo
             self.nixosModules.networking
             # niri
-            # # nix
+            self.nixosModules.nix
             # plasma
             # printing
             # snapshots
@@ -32,7 +32,6 @@
     };
 
     flake.nixosModules.matoo-vm = {
-
         networking.hostName = "matoo-vm";
         system.stateVersion = "25.11";
 

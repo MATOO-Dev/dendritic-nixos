@@ -13,14 +13,14 @@
             system = "x86_64-linux";
         };
 
-        # # nix helper
-        # programs.nh = {
-        #     enable = true;
-        #     clean.enable = true;
-        #     clean.extraArgs = "--keep 5 --keep-since 7d";
-        #     flake = "/home/matoo/Repos/dendritic-config";
-        # };
-        #
+        # nix helper
+        programs.nh = {
+            enable = true;
+            clean.enable = true;
+            clean.extraArgs = "--keep 5 --keep-since 7d";
+            flake = "/home/matoo/dendritic-nixos";
+        };
+
         # # automatic updates
         # system.autoUpgrade = {
         #     enable = false;
