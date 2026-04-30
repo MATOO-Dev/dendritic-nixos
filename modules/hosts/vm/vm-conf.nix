@@ -8,10 +8,10 @@
                 bootloader
                 compatibility
                 # email
-                # extraPackages
+                extraPackages
                 # firefox
-                # fonts
-                # gaming
+                fonts
+                gaming
                 graphics
                 input
                 # kernel
