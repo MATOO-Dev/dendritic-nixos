@@ -23,9 +23,9 @@
                 networking
                 # niri
                 nix
-                # plasma
-                # printing
-                # snapshots
+                plasma
+                printing
+                snapshots
                 # virtualization
                 matoo-vm
             ]
