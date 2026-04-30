@@ -8,7 +8,7 @@
                 bluetooth
                 bootloader
                 compatibility
-                # email
+                email
                 extraPackages
                 # firefox
                 fonts
