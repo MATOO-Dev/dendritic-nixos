@@ -1,38 +1,38 @@
 {
-	flake.nixosModules.locale = {
-		time.timeZone = "Europe/Berlin";
+    flake.nixosModules.locale = {
+        time.timeZone = "Europe/Berlin";
 
-		# its i18n because 'internationalization' has 18 letters between i & n
-		i18n = {
-			# use us as default fallback since thats probably the most common
-			defaultLocale = "en_US.UTF-8";
+        # its i18n because 'internationalization' has 18 letters between i & n
+        i18n = {
+            # use us as default fallback since thats probably the most common
+            defaultLocale = "en_US.UTF-8";
 
-			extraLocaleSettings = {
-				# postal addresses
-				LC_ADDRESS = "de_DE.UTF-8";
-				# sorting and regular expressions
-				LC_COLLATE = "de_DE.UTF-8";
-				# single/multi byte characters, alphabetic/digit, etc.
-				LC_CTYPE = "en_US.UTF-8";
-				# documentation / country titles
-				LC_IDENTIFICATION = "en_US.UTF-8";
-				# unit system
-				LC_MEASUREMENT = "de_DE.UTF-8";
-				# language for displayed messages (in C?)
-				LC_MESSAGES = "en_US.UTF-8";
-				# currency
-				LC_MONETARY = "de_DE.UTF-8";
-				# names for people (mr/mrs, etc.)
-				LC_NAME = "en_US.UTF-8";
-				# number format, like dot/comma switch
-				LC_NUMERIC = "en_US.UTF-8";
-				# paper sizes
-				LC_PAPER = "de_DE.UTF-8";
-				# phone number prefixes etc.
-				LC_TELEPHONE = "de_DE.UTF-8";
-				# time formatting, like 12/24h
-				LC_TIME = "en.GB.UTF-8";
-			};
-		};
-	};
+            extraLocaleSettings = {
+                # postal addresses
+                LC_ADDRESS = "de_DE.UTF-8";
+                # sorting and regular expressions
+                LC_COLLATE = "de_DE.UTF-8";
+                # single/multi byte characters, alphabetic/digit, etc.
+                LC_CTYPE = "en_US.UTF-8";
+                # documentation / country titles
+                LC_IDENTIFICATION = "en_US.UTF-8";
+                # unit system
+                LC_MEASUREMENT = "de_DE.UTF-8";
+                # language for displayed messages (in C?)
+                LC_MESSAGES = "en_US.UTF-8";
+                # currency
+                LC_MONETARY = "de_DE.UTF-8";
+                # names for people (mr/mrs, etc.)
+                LC_NAME = "en_US.UTF-8";
+                # number format, like dot/comma switch
+                LC_NUMERIC = "en_US.UTF-8";
+                # paper sizes
+                LC_PAPER = "de_DE.UTF-8";
+                # phone number prefixes etc.
+                LC_TELEPHONE = "de_DE.UTF-8";
+                # time formatting, like 12/24h
+                LC_TIME = "en_GB.UTF-8";
+            };
+        };
+    };
 }
