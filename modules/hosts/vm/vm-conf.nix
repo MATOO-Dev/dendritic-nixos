@@ -32,7 +32,6 @@
 
     flake.nixosModules.matoo-vm = {
 		imports = [
-            inputs.disko.nixosModules.disko
             self.diskoConfigurations.matoo-vm
 		];
 
