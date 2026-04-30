@@ -9,9 +9,9 @@
 
             programs.nix-ld = {
                 enable = true;
-                libraries = [
-                    pkgs.stream-run.fhsenv.args.multipkgs
-                ];
+                # libraries = [
+                #     pkgs.stream-run.fhsenv.args.multipkgs
+                # ];
             };
         };
 }
