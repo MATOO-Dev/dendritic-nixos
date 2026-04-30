@@ -2,7 +2,8 @@
 {
     flake.nixosConfigurations.matoo-vm = inputs.nixpkgs.lib.nixosSystem {
         modules =
-            (with self.nixosModules; [
+            with self.nixosModules;
+            [
                 audio
                 bluetooth
                 bootloader
@@ -27,7 +28,7 @@
                 # snapshots
                 # virtualization
                 matoo-vm
-            ])
+            ]
             ++ [
                 self.diskoConfigurations.matoo-vm
             ];
