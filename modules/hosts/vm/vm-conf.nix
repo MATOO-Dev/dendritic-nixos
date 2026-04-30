@@ -17,7 +17,7 @@
             # self.nixosModules.locale
             # localsend
             # login
-            # self.nixosModules.matoo
+            self.nixosModules.matoo
             # self.nixosModules.networking
             # niri
             # # nix
@@ -32,19 +32,6 @@
     };
 
     flake.nixosModules.matoo-vm = {
-		imports = [
-		];
-
-		users.users."MATOO" = {
-			isNormalUser = true;
-			description = "MATOO";
-			extraGroups = [
-				"networkmanager"
-				"wheel"
-			];
-			initialPassword = "12345";
-		};
-
 		# debug
 		boot.loader.systemd-boot.enable = true;
 		boot.loader.efi.canTouchEfiVariables = true;
