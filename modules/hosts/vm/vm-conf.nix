@@ -22,7 +22,7 @@
                 matoo
 				messaging
                 networking
-                # niri
+                niri
                 nix
                 plasma
                 printing
