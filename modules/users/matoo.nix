@@ -15,6 +15,7 @@
     };
 
     flake.homeConfigurations.matoo = inputs.home-manager.lib.homeManagerConfiguration {
+		pkgs = import inputs.nixpkgs { system = "x86_64-linux"; };
         modules = with self.homeModules; [
             # bar
             # coding
@@ -53,9 +54,9 @@
                     git
                 ];
                 stateVersion = "25.11";
-
-                # mut home manager news
-                news.display = "silent";
             };
+
+			# mut home manager news
+			news.display = "silent";
         };
 }
