@@ -15,16 +15,18 @@
     };
 
     flake.homeConfigurations.matoo = inputs.home-manager.lib.homeManagerConfiguration {
+		# TODO: figure out how to set this automatically
+		# may also be useful for secondary pkgs-unstable
 		pkgs = import inputs.nixpkgs { system = "x86_64-linux"; };
         modules = with self.homeModules; [
             # bar
-            # coding
+            coding
             # defaultApps
             # discord
             # email
-            # extraPackages
+            extraPackages
             # firefox
-            # git
+            git
             # hyprland
             # kitty
             # neovim
