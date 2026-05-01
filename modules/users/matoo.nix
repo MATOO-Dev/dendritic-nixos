@@ -31,7 +31,7 @@
             # kitty
             # neovim
             # niri
-            # nix
+            nix
             # prompt
             # recording
             # search

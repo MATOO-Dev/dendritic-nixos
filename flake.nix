@@ -29,8 +29,8 @@
         # stylix.inputs.nixpkgs.follows = "nixpkgs";
 
         # # search nixpkgs files
-        # nix-index-database.url = "github:nix-community/nix-index-database";
-        # nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+        nix-index-database.url = "github:nix-community/nix-index-database";
+        nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
         # # run arbitrary binaries
         nix-alien.url = "github:thiagokokada/nix-alien";

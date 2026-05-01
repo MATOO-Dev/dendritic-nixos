@@ -35,12 +35,12 @@
         # };
     };
 
-    # flake.homeModules.nix = {
-    # 	imports = [
-    # 		inputs.nix-index-database.homeModules.default
-    # 	];
-    # 	nixpkgs.config = {
-    # 		allowUnfree = true;
-    # 	};
-    # };
+    flake.homeModules.nix = {
+    	imports = [
+    		inputs.nix-index-database.homeModules.default
+    	];
+    	nixpkgs.config = {
+    		allowUnfree = true;
+    	};
+    };
 }
