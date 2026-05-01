@@ -10,7 +10,7 @@
 # 		"ssd" # ssd-specific optimizations
 # 	];
 # in {
-# 	flake.nixosModules.laptop-disk = {inputs, ...}: {
+# 	flake.nixosModules.traveler = {inputs, ...}: {
 # 		imports = [
 # 			inputs.disko.nixosModules.default
 # 		];

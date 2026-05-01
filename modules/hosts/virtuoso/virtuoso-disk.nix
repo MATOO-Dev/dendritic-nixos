@@ -10,7 +10,7 @@ let
     ];
 in
 {
-    flake.diskoConfigurations.matoo-vm = {
+    flake.diskoConfigurations.virtuoso = {
 		imports = [
             inputs.disko.nixosModules.disko
 		];

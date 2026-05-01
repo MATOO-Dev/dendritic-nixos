@@ -1,6 +1,6 @@
 { inputs, self, ... }:
 {
-    flake.nixosConfigurations.matoo-vm = inputs.nixpkgs.lib.nixosSystem {
+    flake.nixosConfigurations.virtuoso = inputs.nixpkgs.lib.nixosSystem {
         modules =
             with self.nixosModules;
             [
@@ -28,16 +28,16 @@
                 printing
                 snapshots
                 # virtualization
-                matoo-vm
+                virtuoso
             ]
             ++ [
-                self.diskoConfigurations.matoo-vm
+                self.diskoConfigurations.virtuoso
             ];
 
     };
 
-    flake.nixosModules.matoo-vm = {
-        networking.hostName = "matoo-vm";
+    flake.nixosModules.virtuoso = {
+        networking.hostName = "virtuoso";
         system.stateVersion = "25.11";
 
         # hardware config

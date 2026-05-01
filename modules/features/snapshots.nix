@@ -1,6 +1,6 @@
 {
     flake.nixosModules.snapshots = {
-        # TODO
+        # TODO: set up snapper for btrfs snapshots
         services.snapper = {
         };
     };

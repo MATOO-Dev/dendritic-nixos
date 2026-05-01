@@ -4,7 +4,7 @@
 # 	self,
 # 	...
 # }: {
-# 	flake.nixosConfigurations.matoo-laptop =
+# 	flake.nixosConfigurations.traveler =
 # 		inputs.nixpkgs.lib.nixosSystem {
 # 			modules = with self.nixosModules; [
 # 				# audio
@@ -19,7 +19,7 @@
 # 				# graphics
 # 				# input
 # 				# kernel
-# 				# laptop-disk
+# 				# traveler
 # 				# locale
 # 				# localsend
 # 				# login
@@ -36,7 +36,7 @@
 # 				# kanata
 # 			];
 #
-# 			networking.hostname = "matoo-laptop";
+# 			networking.hostname = "traveler";
 # 			system.stateVersion = "25.11";
 #
 # 			# hardware config
