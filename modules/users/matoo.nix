@@ -28,16 +28,16 @@
             # firefox
             git
             # hyprland
-            # kitty
+            kitty
             # neovim
             # niri
             nix
-            # prompt
+            prompt
             # recording
             # search
             # shells
             # snapshots
-            # syncthing
+            syncthing
             # theming
             matoo
         ];
