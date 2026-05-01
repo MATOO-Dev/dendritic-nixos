@@ -1,5 +1,5 @@
 {
-    flake.modules.niri.binds =
+    flake.modules.niri-binds =
         {
             pkgs,
             lib,

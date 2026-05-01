@@ -26,7 +26,7 @@
                 inherit pkgs;
 
                 imports = [
-                    self.modules.niri.binds
+                    self.modules.niri-binds
                 ];
 
                 settings = {
