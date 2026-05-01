@@ -25,7 +25,9 @@
             packages.niri = inputs.wrapper-modules.wrappers.niri.wrap {
                 inherit pkgs;
 
-                imports = [ ];
+                imports = [
+                    self.modules.niri.binds
+                ];
 
                 settings = {
                     xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
