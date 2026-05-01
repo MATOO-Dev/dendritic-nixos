@@ -25,8 +25,8 @@
         # nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
         # # theming
-        # stylix.url = "github:nix-community/stylix/release-25.11";
-        # stylix.inputs.nixpkgs.follows = "nixpkgs";
+        stylix.url = "github:nix-community/stylix/release-25.11";
+        stylix.inputs.nixpkgs.follows = "nixpkgs";
 
         # # search nixpkgs files
         nix-index-database.url = "github:nix-community/nix-index-database";
