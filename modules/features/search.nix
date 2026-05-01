@@ -1,12 +1,10 @@
-{}
-# {
-# 	flake.homeModules.search = {
-# 		programs.rofi = {
-# 			enable = true;
-# 			modes = [
-# 				"drun"
-# 			];
-# 		};
-# 	};
-# }
-
+{
+	flake.homeModules.search = {
+		programs.rofi = {
+			enable = true;
+			modes = [
+				"drun"
+			];
+		};
+	};
+}

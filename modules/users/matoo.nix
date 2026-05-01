@@ -34,9 +34,9 @@
             # niri
             nix
             prompt
-            # recording
-            # search
-            # shells
+            recording
+            search
+            shells
             # snapshots
             syncthing
             # theming
