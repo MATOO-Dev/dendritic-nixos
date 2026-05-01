@@ -19,10 +19,10 @@
 		# may also be useful for secondary pkgs-unstable
 		pkgs = import inputs.nixpkgs { system = "x86_64-linux"; };
         modules = with self.homeModules; [
-            # bar
+            bar
             coding
             defaultApps
-            # email
+            email
             extraPackages
             # firefox
             git
@@ -37,9 +37,9 @@
             recording
             search
             shells
-            # snapshots
+            snapshots
             syncthing
-            # theming
+            theming
         ];
     };
 
