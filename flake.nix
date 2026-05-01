@@ -37,7 +37,7 @@
         nix-alien.inputs.nixpkgs.follows = "nixpkgs";
 
         # # module wrappers
-        # wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
+        wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
     };
 
     outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);

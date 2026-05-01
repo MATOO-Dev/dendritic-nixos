@@ -83,6 +83,14 @@ in
                                                 mountpoint = "/tmp";
                                                 mountOptions = mount_options;
                                             };
+                                            # "@Downloads" = {
+                                            #     mountpoint = "/home/matoo/Downloads";
+                                            #     mountOptions = mount_options;
+                                            # };
+                                            # "@Documents" = {
+                                            #     mountpoint = "/home/matoo/Documents";
+                                            #     mountOptions = mount_options;
+                                            # };
                                             # on vm @games is omitted
                                         };
                                     };
