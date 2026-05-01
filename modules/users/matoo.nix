@@ -21,14 +21,15 @@
         modules = with self.homeModules; [
             # bar
             coding
-            # defaultApps
-            # discord
+            defaultApps
             # email
             extraPackages
             # firefox
             git
-            # hyprland
+            hyprland
             kitty
+            matoo
+            messaging
             # neovim
             # niri
             nix
@@ -39,7 +40,6 @@
             # snapshots
             syncthing
             # theming
-            matoo
         ];
     };
 
