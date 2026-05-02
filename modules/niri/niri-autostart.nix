@@ -8,6 +8,7 @@
                 (lib.getExe pkgs.sunsetr)
                 (lib.getExe pkgs.waybar)
                 # (lib.getExe pkgs.kdeconnect-indicator)
+                # (lib.getExe pkgs.gpu-screen-recorder)
             ];
         };
 }
