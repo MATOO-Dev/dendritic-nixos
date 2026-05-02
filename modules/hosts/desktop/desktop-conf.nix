@@ -1,6 +1,7 @@
 { inputs, self, ... }:
 {
-    flake.nixosConfigurations.traveler = inputs.nixpkgs.lib.nixosSystem {
+    # TODO: name
+    flake.nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
         modules =
             with self.nixosModules;
             [
@@ -10,13 +11,11 @@
                 compatibility
                 email
                 extraPackages
-                # fingerprint
                 # firefox
                 fonts
                 gaming
                 graphics
                 input
-                # kanata
                 kernel
                 locale
                 localsend
@@ -27,36 +26,24 @@
                 niri
                 nix
                 plasma
-                # powersave
                 printing
                 snapshots
                 # virtualization
             ]
             ++ [
-                self.nixosModules.traveler
-                self.diskoConfigurations.traveler
+                # TODO: name
+                self.nixosModules.desktop
+                self.diskoConfigurations.desktop
             ];
     };
 
-    flake.nixosModules.traveler = {
+    # TODO: name
+    flake.nixosModules.desktop = {
+        # TODO: name
         networking.hostname = "traveler";
         system.stateVersion = "25.11";
 
+        # TODO: hardware config
         # hardware config
-        nixpkgs.hostPlatform = "x86_64-linux";
-        boot = {
-            initrd.availableKernelModules = [
-                "nvme"
-                "xhci_pci"
-                "thunderbolt"
-                "usb_storage"
-                "sd_mod"
-            ];
-            initrd.kernelModules = [ ];
-            kernelModules = [ "kvm-amd" ];
-            extraModulePackages = [ ];
-        };
-        hardware.enableRedistributableFirmware = true;
-        hardware.cpu.amd.updateMicrocode = true;
     };
 }

@@ -28,9 +28,9 @@
                 printing
                 snapshots
                 # virtualization
-                virtuoso
             ]
             ++ [
+                self.nixosModules.virtuoso
                 self.diskoConfigurations.virtuoso
             ];
 
