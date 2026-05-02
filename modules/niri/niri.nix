@@ -15,6 +15,13 @@
             ];
         };
 
+    # flake.wrappers.niri =
+    #     { pkgs, wlib, ... }:
+    #     {
+    #         imports = [ wlib.wrapperModules.niri ];
+    #         # configuration options here
+    #     };
+
     perSystem =
         {
             pkgs,
@@ -26,7 +33,8 @@
                 inherit pkgs;
 
                 imports = [
-                    self.modules.niri-binds
+					self.modules.niri.autostart
+					self.modules.niri.binds
                 ];
 
                 settings = {
