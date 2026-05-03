@@ -32,10 +32,11 @@
             packages.niri = inputs.wrapper-modules.wrappers.niri.wrap {
                 inherit pkgs;
 
-                imports = [
-					self.modules.niri.autostart
-					self.modules.niri.binds
-					self.modules.niri.environment
+                imports = with self.modules.niri; [
+					autostart
+					binds
+					environment
+					input
                 ];
             };
         };
