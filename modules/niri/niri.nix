@@ -35,11 +35,8 @@
                 imports = [
 					self.modules.niri.autostart
 					self.modules.niri.binds
+					self.modules.niri.environment
                 ];
-
-                settings = {
-                    xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
-                };
             };
         };
 }
