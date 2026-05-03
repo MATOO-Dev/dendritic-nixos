@@ -33,10 +33,12 @@
                 inherit pkgs;
 
                 imports = with self.modules.niri; [
+					animations
 					autostart
 					binds
 					environment
 					input
+					layout
                 ];
             };
         };
