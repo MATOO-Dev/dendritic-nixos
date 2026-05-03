@@ -22,12 +22,7 @@
     #         # configuration options here
     #     };
 
-    perSystem =
-        {
-            pkgs,
-            lib,
-            ...
-        }:
+    perSystem = { pkgs, ... }:
         {
             packages.niri = inputs.wrapper-modules.wrappers.niri.wrap {
                 inherit pkgs;
@@ -39,6 +34,8 @@
 					environment
 					input
 					layout
+					monitors
+					windowrules
                 ];
             };
         };

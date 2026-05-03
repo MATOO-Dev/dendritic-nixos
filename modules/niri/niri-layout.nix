@@ -1,6 +1,16 @@
 {
 	flake.modules.niri.layout = {
 		settings = {
+			# ask windows to disable client side decorations
+			# also tells them that they are tiled (if supported)
+			# TODO: Figure out syntax
+			# perfer-no-csd = _: {};
+
+			overview = {
+				zoom = 0.9;
+				# backdrop-color = "#777777";
+			};
+
 			layout = {
 				# in logical pixels
 				# drawn on each side
