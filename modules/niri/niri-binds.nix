@@ -29,7 +29,9 @@
 				};
                 "Mod+N" = _: {
 					props.hotkey-overlay-title = "Open file manager: dolphin";
-					content.spawn = lib.getExe pkgs.kdePackages.dolphin;
+					# dolphin doesnt have meta.mainProgram set
+					# use lib.getExe' over lib.getExe, and define the main program manually
+					content.spawn = lib.getExe' pkgs.kdePackages.dolphin "dolphin";
 				};
                 "Mod+Pause" = _:{
 					props.hotkey-overlay-title = "Save replay; gpu screen recorder";

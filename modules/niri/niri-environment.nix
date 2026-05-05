@@ -2,9 +2,10 @@
 	flake.modules.niri.environment = {pkgs, lib, ...}: {
 		settings = {
 			environment = {
-				# TODO: check how to fix this for nixos
 				# fix empty open-with in dolphin
-				"XDG_MENU_PREFIX" = "arch-";
+				# this is kinda bad, since it pulls in
+				# even though i dont use plasma
+				"XDG_MENU_PREFIX" = "plasma-";
 				# enable mangohud for all vulkan games
 				"MANGOHUD" = "0";
 				# automatically scale qt windows based on monitor dpi
