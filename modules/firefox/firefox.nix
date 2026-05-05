@@ -1,4 +1,3 @@
-{}
 # {
 # 	flake.nixosModules.firefox = {
 # 		environment.sessionVariables.MOZ_ENABLE_WAYLAND = 1;
@@ -25,4 +24,14 @@
 # 		};
 # 	};
 # }
-
+{self, ...}: {
+	# flake.modules.home.firefox = {
+	# 	home.packages = with self.packages; [firefox];
+	# };
+	#
+	# perSystem = {pkgs, ...}: {
+	# 	packages.firefox = {
+	# 		modules = with self.modules.firefox; [];
+	# 	};
+	# };
+}
