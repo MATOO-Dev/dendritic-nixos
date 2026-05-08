@@ -12,7 +12,6 @@ let
     ];
 in
 {
-    # TODO: fix double
     flake.diskoConfigurations.desktop = {
         imports = [
             inputs.disko.nixosModules.default

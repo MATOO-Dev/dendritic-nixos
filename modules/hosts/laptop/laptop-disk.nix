@@ -11,7 +11,6 @@ let
     ];
 in
 {
-    # TODO: fix dobule
     flake.diskoConfigurations.traveler = {
         imports = [
             inputs.disko.nixosModules.default
