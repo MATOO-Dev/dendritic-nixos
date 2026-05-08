@@ -7,11 +7,15 @@
     flake.homeModules.neovim =
         { pkgs, ... }:
         {
-            programs.neovim = {
-                enable = true;
-                package = self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full;
-                defaultEditor = true;
-            };
+            home.packages = [
+                self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full
+            ];
+            # TODO: fix this
+            # programs.neovim = {
+            #     enable = true;
+            #     package = self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full;
+            #     defaultEditor = true;
+            # };
         };
 
     perSystem =
