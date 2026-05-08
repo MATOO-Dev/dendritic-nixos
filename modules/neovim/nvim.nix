@@ -7,9 +7,10 @@
     flake.homeModules.neovim =
         { pkgs, ... }:
         {
-            home.packages = with self.packages.${pkgs.stdenv.hostPlatform.system}; [
-                nvim-full
-            ];
+            programs.neovim = {
+                enable = true;
+                package = self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full;
+            };
         };
 
     perSystem =
