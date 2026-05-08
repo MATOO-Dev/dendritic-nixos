@@ -4,9 +4,13 @@
     ...
 }:
 {
-    flake.homeModules.neovim = {
-        home.packages = with self.packages; [ nvim-full ];
-    };
+    flake.homeModules.neovim =
+        { pkgs, ... }:
+        {
+            home.packages = with self.packages.${pkgs.stdenv.hostPlatform.system}; [
+                nvim-full
+            ];
+        };
 
     perSystem =
         { pkgs, ... }:
