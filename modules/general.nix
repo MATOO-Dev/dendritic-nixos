@@ -4,15 +4,8 @@
         inputs.flake-parts.flakeModules.modules
         inputs.home-manager.flakeModules.home-manager
         inputs.wrapper-modules.flakeModules.wrappers
+        inputs.disko.flakeModules.default
     ];
-
-    # options = {
-    #     flake = inputs.flake-parts.lib.mkSubmoduleOptions {
-    #         wrapperModules = inputs.nixpkgs.lib.mkOption {
-    #             default = { };
-    #         };
-    #     };
-    # };
 
     config = {
         systems = [

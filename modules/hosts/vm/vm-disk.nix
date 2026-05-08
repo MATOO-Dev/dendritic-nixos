@@ -11,9 +11,9 @@ let
 in
 {
     flake.diskoConfigurations.virtuoso = {
-		imports = [
+        imports = [
             inputs.disko.nixosModules.disko
-		];
+        ];
 
         disko.devices = {
             disk = {
