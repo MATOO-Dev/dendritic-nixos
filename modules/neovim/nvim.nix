@@ -10,6 +10,7 @@
             programs.neovim = {
                 enable = true;
                 package = self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full;
+                defaultEditor = true;
             };
         };
 
