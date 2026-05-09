@@ -39,7 +39,7 @@
     };
 
     flake.nixosModules.traveler = {
-        networking.hostname = "traveler";
+        networking.hostName = "traveler";
         system.stateVersion = "25.11";
 
         # hardware config
