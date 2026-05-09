@@ -24,14 +24,13 @@
             defaultApps
             email
             extraPackages
-            # firefox
+            firefox
             git
             hyprland
             kitty
             matoo
             messaging
             neovim
-            # niri
             nix
             prompt
             recording

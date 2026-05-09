@@ -24,14 +24,20 @@
 # 		};
 # 	};
 # }
-{self, ...}: {
-	# flake.modules.home.firefox = {
-	# 	home.packages = with self.packages; [firefox];
-	# };
-	#
-	# perSystem = {pkgs, ...}: {
-	# 	packages.firefox = {
-	# 		modules = with self.modules.firefox; [];
-	# 	};
-	# };
+{ self, ... }:
+{
+    flake.homeModules.firefox =
+        { pkgs, ... }:
+        {
+            home.packages = with pkgs; [ firefox ];
+        };
+    # flake.modules.home.firefox = {
+    # 	home.packages = with self.packages; [firefox];
+    # };
+    #
+    # perSystem = {pkgs, ...}: {
+    # 	packages.firefox = {
+    # 		modules = with self.modules.firefox; [];
+    # 	};
+    # };
 }

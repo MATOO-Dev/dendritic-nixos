@@ -10,7 +10,6 @@
                 compatibility
                 email
                 extraPackages
-                # firefox
                 fonts
                 gaming
                 graphics
@@ -20,7 +19,7 @@
                 localsend
                 login
                 matoo
-				messaging
+                messaging
                 networking
                 niri
                 nix
