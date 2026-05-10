@@ -1,43 +1,18 @@
-# {
-# 	flake.nixosModules.firefox = {
-# 		environment.sessionVariables.MOZ_ENABLE_WAYLAND = 1;
-# 	};
-#
-# 	flake.homeModules.firefox = {
-# 		programs.firefox = {
-# 			enable = true;
-# 			languagePacks = ["en-US"];
-#
-# 			policies = {
-# 				AppAutoUpdate = false;
-# 				BackgroundAppUpdate = false;
-# 				DefaultDownloadDIrectory = "\${home}/Downloads";
-# 				DisableFirefoxStudies = true;
-# 				DisablePasswordReveal = true;
-# 				DisableTelemetry = true;
-# 				DisplayMenuBar = "never";
-# 				DontCheckDefaultBrowser = true;
-# 				HardwareAcceleration = true;
-# 				Homepage.StartPage = "previous-session";
-# 				OfferToSaveLogins = false;
-# 			};
-# 		};
-# 	};
-# }
 { self, ... }:
 {
-    flake.homeModules.firefox =
-        { pkgs, ... }:
-        {
-            home.packages = with pkgs; [ firefox ];
+	flake.modules.firefox.general = {
+		programs.firefox = {
+			enable = true;
+			languagePacks = ["en-US"];
+		};
+	};
+
+    flake.homeModules.firefox = {
+			modules = with self.modules.firefox; [
+				addons
+				general
+				policies
+				profiles
+			];
         };
-    # flake.modules.home.firefox = {
-    # 	home.packages = with self.packages; [firefox];
-    # };
-    #
-    # perSystem = {pkgs, ...}: {
-    # 	packages.firefox = {
-    # 		modules = with self.modules.firefox; [];
-    # 	};
-    # };
 }

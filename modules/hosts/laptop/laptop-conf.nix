@@ -14,7 +14,6 @@
 					email
 					extraPackages
 					# fingerprint
-					# firefox
 					fonts
 					gaming
 					graphics
