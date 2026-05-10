@@ -1,5 +1,5 @@
 {inputs, ...}: {
-	flake.homeModules.theming = { pkgs, ... }: {
+	flake.homeModules.theming = {pkgs, ...}: {
 		imports = [inputs.stylix.homeModules.stylix];
 
 		stylix = {
@@ -10,7 +10,7 @@
 			targets = {
 				rofi.enable = true;
 				gtk.enable = true;
-				qt.enable = true;
+				qt.enable = false;
 				vesktop.enable = true;
 			};
 		};

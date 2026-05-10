@@ -3,8 +3,7 @@
 		settings = {
 			# ask windows to disable client side decorations
 			# also tells them that they are tiled (if supported)
-			# TODO: Figure out syntax
-			# perfer-no-csd = _: {};
+			prefer-no-csd = _: {};
 
 			overview = {
 				zoom = 0.9;
@@ -31,10 +30,10 @@
 				# always-center-single-column = _: {};
 
 				preset-column-widths = [
-					{ proportion = 0.33333; }
-					{ proportion = 0.5; }
-					{ proportion = 0.66667; }
-					{ proportion = 1.0; }
+					{proportion = 0.33333;}
+					{proportion = 0.5;}
+					{proportion = 0.66667;}
+					{proportion = 1.0;}
 				];
 
 				default-column-width = {
@@ -55,7 +54,10 @@
 					on = _: {};
 					spread = 4;
 					softness = 3;
-					offset = _: { props.x = 0; props.y = 5; };
+					offset = _: {
+						props.x = 0;
+						props.y = 5;
+					};
 					color = "#1a1a1aee";
 					draw-behind-window = true;
 				};
