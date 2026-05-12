@@ -1,5 +1,5 @@
 {
-	flake.modules.firefox.addons = {lib, ...}: {
+	flake.homeModules.firefox = {lib, ...}: {
 		programs.firefox = {
 			policies.ExtensionSettings = let
 				# function stolen & adjusted from github user abhinandh-s

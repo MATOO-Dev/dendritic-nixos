@@ -1,18 +1,17 @@
-{ self, ... }:
-{
-	flake.modules.firefox.general = {
+{self, ...}: {
+	flake.homeModules.firefox = {
 		programs.firefox = {
 			enable = true;
 			languagePacks = ["en-US"];
 		};
 	};
 
-    flake.homeModules.firefox = {
-			modules = with self.modules.firefox; [
-				addons
-				general
-				policies
-				profiles
-			];
-        };
+	# flake.homeModules.firefox = {
+	# 	modules = with self.modules.firefox; [
+	# 		addons
+	# 		general
+	# 		policies
+	# 		profiles
+	# 	];
+	# };
 }

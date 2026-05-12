@@ -1,5 +1,5 @@
 {
-	flake.modules.firefox.policies = {
+	flake.homeModules.firefox = {
 		programs.firefox = {
 			policies = {
 				AppAutoUpdate = false;

@@ -1,5 +1,5 @@
 {
-	flake.modules.firefox.profiles = {
+	flake.homeModules.firefox = {
 		programs.firefox.profiles.matoo = {
 			search = {
 				default = "ecosia";
