@@ -3,9 +3,11 @@
 		home.packages = [
 			# requires file input to work
 			# test if syntax is correct like this
-			(pkgs.writeShellScriptBin "find-mime-type" ''
-					${pkgs.file}/bin/file --mime-type -b
-				'')
+			(pkgs.writeShellApplication {
+					name = "find-mime-type";
+					runtimeInputs = with pkgs; [file];
+					text = ''file --mime-type -b "$1"'';
+				})
 		];
 
 		xdg.mime.enable = true;
