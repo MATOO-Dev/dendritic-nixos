@@ -12,8 +12,8 @@
 		xdg.mimeApps = {
 			enable = true;
 			defaultApplications = {
-				"application/pdf" = "evince.desktop";
-				"image/*" = "eog.desktop";
+				"application/pdf" = "org.gnome.Evince.desktop";
+				"image/*" = "org.gnome.eog.desktop";
 				"x-scheme-handler/http" = "firefox.desktop";
 				"x-scheme-handler/https" = "firefox.desktop";
 				"x-scheme-handler/about" = "firefox.desktop";
