@@ -44,7 +44,7 @@
 					# block hidden trackers
 					(get-extension "privacy-badger17" "jid1-MnnxcxisBPnSXQ@jetpack" false "menupanel")
 					# password manager
-					(get-extension "proton-pass" "78272b6fa58f4a1abaac99321d503a20@proton.me" false "navbar")
+					(get-extension "proton-pass" "78272b6fa58f4a1abaac99321d503a20@proton.me" true "navbar")
 					# in-browser vpn integration
 					(get-extension "proton-vpn-firefox-extension" "vpn@proton.ch" false "menupanel")
 					# stop translating reddit pages
