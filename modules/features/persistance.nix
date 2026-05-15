@@ -24,10 +24,17 @@
 					"/var/lib/bluetooth" # paired devices
 					"/etc/NetworkManager/system-connections" # paired networks
 					"/tmp" # temporary files, may otherwise fill tmpfs
+					"/var/lib/fprint"
+					"/var/lib/fwupd"
+					"/var/lib/power-profiles-daemon"
+					"/var/lib/systemd/coredump"
+					"/var/lib/systemd/rfkill"
 				];
 
 				users.matoo = {
-					files = [];
+					files = [
+						".histfile"
+					];
 					directories = [
 						".local/state/wireplumber"
 						"Books" # epubs/pdfs
