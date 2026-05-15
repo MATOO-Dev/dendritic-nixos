@@ -1,4 +1,5 @@
 {inputs, ...}: let
+	# normally, use /dev/disk/by-id/ for this, its fine here since its a vm
 	primary_disk_path = "/dev/vda";
 	mount_options = [
 		"compress=zstd:3" # automatic file compression if possible
@@ -13,13 +14,16 @@ in {
 			inputs.disko.nixosModules.disko
 		];
 
+		# ensure /nix is mounted before booting
+		fileSystem."/nix".neededForBoot = true;
+
 		disko.devices = {
 			nodev = {
 				"/" = {
 					fsType = "tmpfs";
 					mountOptions = [
-						"size=25%"
-						"mode=755"
+						"size=25%" # max amount ram the tmpfs may occupy
+						"mode=755" # root-only write access, r/x for everyone
 					];
 				};
 			};

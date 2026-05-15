@@ -7,28 +7,17 @@
 		inputs.nixpkgs.lib.nixosSystem {
 			modules = with self.nixosModules;
 				[
-					audio
-					bluetooth
 					bootloader
-					compatibility
-					email
 					extraPackages
-					fonts
-					gaming
 					graphics
 					input
 					kernel
 					locale
-					localsend
 					login
 					matoo
-					messaging
 					networking
 					niri
 					nix
-					plasma
-					printing
-					snapshots
 					# virtualization
 					preservation
 				]

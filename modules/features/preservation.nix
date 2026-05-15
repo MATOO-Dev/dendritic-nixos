@@ -1,7 +1,12 @@
-{
+{inputs, ...}:{
 	flake.nixosModules.preservation = {
+		imports = [ inputs.preservation.nixosModules.default ];
 		# see ppreservation docs
 		# systemd.suppressedSystemUnits = ["systemd-machine-id-commit.service"];
+
+		# clean /tmp when booting (since its not in tmpfs)
+		boot.tmp.cleanOnBoot = true;
+
 		preservation = {
 			enable = true;
 			preserveAt."/persistent" = {
@@ -17,7 +22,7 @@
 					"/var/log" # logs
 					"/var/lib/bluetooth" # paired devices
 					"/etc/NetworkManager/system-connections" # paired networks
-					"/tmp" # temporary files
+					"/tmp" # temporary files, may otherwise fill tmpfs
 				];
 
 				users.matoo = {
