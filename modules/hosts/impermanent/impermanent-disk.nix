@@ -15,7 +15,7 @@ in {
 		];
 
 		# ensure /nix is mounted before booting
-		fileSystem."/nix".neededForBoot = true;
+		fileSystems."/nix".neededForBoot = true;
 
 		disko.devices = {
 			nodev = {
