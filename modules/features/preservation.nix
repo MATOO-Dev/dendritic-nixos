@@ -1,8 +1,9 @@
 {inputs, ...}:{
 	flake.nixosModules.preservation = {
 		imports = [ inputs.preservation.nixosModules.default ];
-		# see ppreservation docs
-		# systemd.suppressedSystemUnits = ["systemd-machine-id-commit.service"];
+
+		# see preservation docs
+		systemd.suppressedSystemUnits = ["systemd-machine-id-commit.service"];
 
 		# clean /tmp when booting (since its not in tmpfs)
 		boot.tmp.cleanOnBoot = true;
