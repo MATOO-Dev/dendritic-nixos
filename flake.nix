@@ -6,10 +6,12 @@
 		nixpkgs.url = "github:nixos/nixpkgs/25.11";
 		nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-		# extra features
+		# home manager
 		home-manager.url = "github:nix-community/home-manager/release-25.11";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
-		# impermanence.url = "github:nix-community/impermanence"; # clean build every boot
+
+		# impermanence
+		preservation.url = "github:nix-community/preservation";
 
 		# config architecture
 		flake-parts.url = "github:hercules-ci/flake-parts";
