@@ -34,6 +34,7 @@
 		# hardware config
 		nixpkgs.hostPlatform = "x86_64-linux";
 		boot = {
+			initrd.systemd.enable = true;
 			initrd.availableKernelModules = [
 				"ahci"
 				"xhci_pci"
