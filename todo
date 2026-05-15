@@ -2,30 +2,23 @@
 #### chores ####
 ################
 
-obsidian # set up vaults and plugins using nix
+obsidian # set up vaults and plugins using nix (depends on SOPS)
 syncthing # set up devices and folders using nix
-nvim # currently nixcats alias, consider nvf
-thunderbird # declare plugins and settings
-firefox # declare plugins and settings
-snapper # setup snapshot config
+nvim # currently using nvf, consider nix-wrapper-modules
+thunderbird # declare plugins, settings, and accounts (depends on SOPS)
+firefox # declare plugins and settings (WIP)
+snapper # setup snapshot config (revisit after impermanence)
 
 ######################
 #### cant install ####
 ######################
 
-sticker-convert? # not packaged, but not important
 gpu-screen-recorder-ui # stuck in pr limbo
 
 ###################
 #### long term ####
 ###################
 
+impermanence # requires reformatting
 secure boot # using lanzaboote
-impermanence # not sure whether i'll use this
 sops # secrets management
-
-#####################
-#### porting den ####
-#####################
-
-
