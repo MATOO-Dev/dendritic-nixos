@@ -23,17 +23,19 @@
 					# "/etc/gshadow" # group passwords
 				];
 				directories = [
-					"/var/lib/systemd/timers" # timers
-					"/var/lib/nixos" # nixos user state
-					"/var/log" # logs
-					"/var/lib/bluetooth" # paired devices
 					"/etc/NetworkManager/system-connections" # paired networks
-					# "/tmp" # temporary files, may otherwise fill tmpfs
+					"/var/lib/bluetooth" # paired devices
 					"/var/lib/fprint" # enrolled finger prints
 					"/var/lib/fwupd" # firmware
+					"/var/lib/libvirt"
+					"/var/lib/nixos" # nixos user state
 					"/var/lib/power-profiles-daemon" # power settings
 					"/var/lib/systemd/coredump" # logs?
 					"/var/lib/systemd/rfkill" # ?
+					"/var/lib/systemd/timers" # timers
+					"/var/log" # logs
+					# "/etc/secureboot" # secure boot keys ?
+					# "/tmp" # temporary files, may otherwise fill tmpfs
 				];
 
 				users.matoo = {
@@ -41,8 +43,10 @@
 						".histfile"
 					];
 					directories = [
+						# everything in these for now, sort it out later
 						".local"
-						# everything in .local for now, sort out later
+						".config"
+						".mozilla"
 						# some starting points:
 						# ".local/state/wireplumber" # im guessing audio?
 						# ".local/state/syncthing" # syncthing config
