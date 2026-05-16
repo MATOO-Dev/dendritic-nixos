@@ -10,6 +10,9 @@
 
 		preservation = {
 			enable = true;
+
+			# TODO: complete list through trial and error
+			# TODO: split and move to relevant files
 			preserveAt."/persistent" = {
 				files = [
 					{
@@ -26,11 +29,11 @@
 					"/var/lib/bluetooth" # paired devices
 					"/etc/NetworkManager/system-connections" # paired networks
 					# "/tmp" # temporary files, may otherwise fill tmpfs
-					"/var/lib/fprint"
-					"/var/lib/fwupd"
-					"/var/lib/power-profiles-daemon"
-					"/var/lib/systemd/coredump"
-					"/var/lib/systemd/rfkill"
+					"/var/lib/fprint" # enrolled finger prints
+					"/var/lib/fwupd" # firmware
+					"/var/lib/power-profiles-daemon" # power settings
+					"/var/lib/systemd/coredump" # logs?
+					"/var/lib/systemd/rfkill" # ?
 				];
 
 				users.matoo = {
@@ -38,7 +41,15 @@
 						".histfile"
 					];
 					directories = [
-						".local/state/wireplumber"
+						".local"
+						# everything in .local for now, sort out later
+						# some starting points:
+						# ".local/state/wireplumber" # im guessing audio?
+						# ".local/state/syncthing" # syncthing config
+						# ".local/state/lazygit" # lazygit config
+						# ".local/share/Brotato" # save data
+						# ".local/share/zoxide" # zoxide data
+						# ".local/share/trash" # trashed files for restore
 						"Books" # epubs/pdfs
 						"Documents" # documents
 						"Downloads" # downloads
