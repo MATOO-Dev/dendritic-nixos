@@ -16,8 +16,8 @@
 						file = "/etc/machine-id";
 						inInitrd = true;
 					}
-					"/etc/shadow" # user passwords
-					"/etc/gshadow" # group passwords
+					# "/etc/shadow" # user passwords
+					# "/etc/gshadow" # group passwords
 				];
 				directories = [
 					"/var/lib/systemd/timers" # timers
