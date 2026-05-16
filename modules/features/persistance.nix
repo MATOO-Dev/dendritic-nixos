@@ -23,7 +23,7 @@
 					"/var/log" # logs
 					"/var/lib/bluetooth" # paired devices
 					"/etc/NetworkManager/system-connections" # paired networks
-					"/tmp" # temporary files, may otherwise fill tmpfs
+					# "/tmp" # temporary files, may otherwise fill tmpfs
 					"/var/lib/fprint"
 					"/var/lib/fwupd"
 					"/var/lib/power-profiles-daemon"
