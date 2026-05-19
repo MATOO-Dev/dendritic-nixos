@@ -19,7 +19,7 @@
 					niri
 					nix
 					# virtualization
-					persistance
+					persistence
 				]
 				++ [
 					self.nixosModules.impermanent
