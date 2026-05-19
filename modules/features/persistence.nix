@@ -20,7 +20,7 @@
 			files = [
 				{
 					file = "/etc/machine-id";
-					inInitrd = true;
+					# inInitrd = true;
 				}
 				# "/etc/shadow" # user passwords
 				# "/etc/gshadow" # group passwords
