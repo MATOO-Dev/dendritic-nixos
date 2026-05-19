@@ -2,7 +2,7 @@
 	flake.nixosModules.virtualization = {
 		programs.virt-manager.enable = true;
 
-		virtualization.libvirtd = {
+		virtualisation.libvirtd = {
 			enable = true;
 			qemu = {
 				runAsRoot = true;
