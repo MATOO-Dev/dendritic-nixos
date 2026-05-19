@@ -9,9 +9,10 @@
 		# clean /tmp when booting (since its not in tmpfs)
 		boot.tmp.cleanOnBoot = true;
 
-		environment.persistance."/persistent" = {
+		environment.persistence."/persistent" = {
 			# preservation = {
 			enable = true;
+			hideMounts = true;
 
 			# TODO: complete list through trial and error
 			# TODO: split and move to relevant files
