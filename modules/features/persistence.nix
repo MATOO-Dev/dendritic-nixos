@@ -18,10 +18,11 @@
 			# TODO: split and move to relevant files
 			# preserveAt."/persistent" = {
 			files = [
-				{
-					file = "/etc/machine-id";
+				"/etc/machine-id"
+				# {
+					# file = "/etc/machine-id";
 					# inInitrd = true;
-				}
+				# }
 				# "/etc/shadow" # user passwords
 				# "/etc/gshadow" # group passwords
 			];
