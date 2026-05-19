@@ -11,7 +11,8 @@
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
 		# impermanence
-		preservation.url = "github:nix-community/preservation";
+		# preservation.url = "github:nix-community/preservation";
+		impermanence.url = "github:nix-community/impermanence";
 
 		# config architecture
 		flake-parts.url = "github:hercules-ci/flake-parts";
