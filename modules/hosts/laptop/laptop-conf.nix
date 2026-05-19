@@ -32,7 +32,7 @@
 					# powersave
 					printing
 					snapshots
-					# virtualization
+					virtualization
 					# debug
 					flatpak
 				]

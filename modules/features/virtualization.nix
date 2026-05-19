@@ -1,14 +1,13 @@
-{ }
-# {
-# 	flake.nixosModules.virtualization = {
-# 		programs.virt-manager.enable = true;
-#
-# 		virtualization.libvirtd = {
-# 			enable = true;
-# 			qemu = {
-# 				runAsRoot = true;
-# 				swtpm.enable = true;
-# 			};
-# 		};
-# 	};
-# }
+{
+	flake.nixosModules.virtualization = {
+		programs.virt-manager.enable = true;
+
+		virtualization.libvirtd = {
+			enable = true;
+			qemu = {
+				runAsRoot = true;
+				swtpm.enable = true;
+			};
+		};
+	};
+}
