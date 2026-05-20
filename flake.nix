@@ -39,6 +39,10 @@
 		nix-alien.url = "github:thiagokokada/nix-alien";
 		nix-alien.inputs.nixpkgs.follows = "nixpkgs";
 
+		# discord plugins
+		nixcord.url = "github:FlameFlag/nixcord";
+		nixcord.inputs.nixpkgs.follows = "nixpkgs";
+
 		# # module wrappers
 		wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 	};
