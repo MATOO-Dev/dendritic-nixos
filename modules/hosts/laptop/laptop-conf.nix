@@ -28,7 +28,7 @@
 					networking
 					niri
 					nix
-					# powersave
+					powersave
 					printing
 					snapshots
 					virtualization
