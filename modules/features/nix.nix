@@ -17,7 +17,7 @@
 		# 		config.allowUnfree = true;
 		# 	};
 		# _module.args.pkgs-unstable =
-		# 	import inputs.nixpkgs-unstable.legacyPackages {
+		# 	import inputs.nixpkgs-unstable {
 		# 		inherit system;
 		# 		config.allowUnfree = true;
 		# 	};
