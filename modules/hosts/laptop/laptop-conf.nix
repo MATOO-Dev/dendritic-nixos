@@ -28,7 +28,6 @@
 					networking
 					niri
 					nix
-					plasma
 					# powersave
 					printing
 					snapshots
