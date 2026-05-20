@@ -1,7 +1,7 @@
 {
 	flake.nixosModules.powersave = {
 		services = {
-			power-profiles.daemon.enable = true;
+			power-profiles-daemon.enable = true;
 			tlp = {
 				enable = false;
 				settings = {
