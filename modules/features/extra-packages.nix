@@ -1,4 +1,4 @@
-{extra
+{
 	flake.nixosModules.extraPackages = {pkgs, ...}: {
 		# these are only here so i have them on a fresh install
 		# even before setting up my home-manager environment

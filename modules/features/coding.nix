@@ -8,7 +8,7 @@
 			cargo-deny # cargo denpendency linting / license checking
 			clang # clang compiler
 			clang-tools # additional tools for clang
-			dotnet-sdk # c# sdk
+			dotnet-sdk_9 # c# sdk
 			gdb # c++ / rust compiler
 			godot # game engine
 			renderdoc # graphics programming debugger
