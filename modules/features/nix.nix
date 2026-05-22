@@ -10,19 +10,6 @@
 		"x86_64-linux"
 	];
 
-	perSystem = {system, ...}: {
-		# _module.args.pkgs =
-		# 	import inputs.nixpkgs.legacyPackages {
-		# 		inherit system;
-		# 		config.allowUnfree = true;
-		# 	};
-		# _module.args.pkgs-unstable =
-		# 	import inputs.nixpkgs-unstable {
-		# 		inherit system;
-		# 		config.allowUnfree = true;
-		# 	};
-	};
-
 	flake.nixosModules.nix = {
 		nix = {
 			settings.experimental-features = [
@@ -31,9 +18,22 @@
 			];
 		};
 
-		nixpkgs.config = {
-			allowUnfree = true;
-			system = "x86_64-linux";
+		nixpkgs = {
+			config = {
+				allowUnfree = true;
+				system = "x86_64-linux";
+			};
+			overlays = [
+				(
+					final: _prev: {
+						unstable =
+							import inputs.nixpkgs-unstable {
+								inherit (final) config;
+								inherit (final) system;
+							};
+					}
+				)
+			];
 		};
 
 		# nix helper
