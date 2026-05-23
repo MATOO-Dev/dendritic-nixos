@@ -56,12 +56,12 @@
 
 		# vim-wordmotion is currently not exposed by nvf
 		# vimscript plugin, so use extraPlugins rather than lazy.plugins
-		vim.extraPlugins.vim-wordmotion = {
-			package = pkgs.vimPlugins.vim-wordmotion;
-			setup = ''
-				event = "DeferredUIEnter";
-			'';
-		};
+		# vim.extraPlugins.vim-wordmotion = {
+		# 	package = pkgs.vimPlugins.vim-wordmotion;
+		# 	setup = ''
+		# 		event = "DeferredUIEnter";
+		# 	'';
+		# };
 
 		vim.utility.undotree = {
 			enable = true;
