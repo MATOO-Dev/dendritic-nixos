@@ -11,7 +11,6 @@
                 compatibility
                 email
                 extraPackages
-                # firefox
                 fonts
                 gaming
                 graphics
@@ -25,10 +24,11 @@
                 networking
                 niri
                 nix
-                plasma
                 printing
                 snapshots
-                # virtualization
+				virtualization
+				# debug
+				flatpak
             ]
             ++ [
                 # TODO: name
@@ -40,8 +40,10 @@
     # TODO: name
     flake.nixosModules.desktop = {
         # TODO: name
-        networking.hostname = "traveler";
+        networking.hostname = "desktop";
         system.stateVersion = "25.11";
+
+		nixpkgs.hostPlatform = "x86_64-linux";
 
         # TODO: hardware config
         # hardware config
