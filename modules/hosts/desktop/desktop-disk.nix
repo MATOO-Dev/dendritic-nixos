@@ -1,8 +1,10 @@
 { inputs, ... }:
 let
-    primary_disk_path = "/dev/disk/by-uuid/164b2e71-1360-4ba3-a82f-b0bc37f93ffd";
-    secondary_disk_path = "/dev/disk/by-uuid/497fc15d-d02f-416d-8e9b-d8ea53e7a7cb";
-    tertiary_disk_path = "/dev/disk/by-uuid/0F2F343744FB65A2";
+	# uuid only applies to partitions, but disko creates the partitions
+	# use disk hardware id rather than uuid, and double check before installing
+    primary_disk_path = "/dev/disk/by-id/nvme-WD_BLACK_SN850X_2000GB_22450T801857";
+    secondary_disk_path = "/dev/disk/by-id/nvme-WD_BLACK_SN850X_2000GB_22451U801573";
+    # tertiary_disk_path = "/dev/disk/by-id/ata-Samsung_SSD_860_EVO_1TB_S3Z9NB0K916417Y";
     mount_options = [
         "compress=zstd:3" # automatic file compression if possible
         "discard=async" # stagger discards to improve i/o
@@ -122,35 +124,35 @@ in
                 };
                 # currently used for windows dual boot
                 # havent used that in months though, might switch it over
-                tertiary = {
-                    type = "disk";
-                    device = tertiary_disk_path;
-                    content = {
-                        type = "gpt";
-                        partitions = {
-                            luks = {
-                                size = "100%";
-                                content = {
-                                    type = "luks";
-                                    name = "cryptthird";
-                                    settings = {
-                                        allowDiscards = true;
-                                    };
-                                    content = {
-                                        type = "btrfs";
-                                        extraArgs = [ "-f" ];
-                                        subvolumes = {
-                                            "@backups" = {
-                                                mountpoint = "/home/matoo/Backups";
-                                                mountOptions = mount_options;
-                                            };
-                                        };
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
+                # tertiary = {
+                #     type = "disk";
+                #     device = tertiary_disk_path;
+                #     content = {
+                #         type = "gpt";
+                #         partitions = {
+                #             luks = {
+                #                 size = "100%";
+                #                 content = {
+                #                     type = "luks";
+                #                     name = "cryptthird";
+                #                     settings = {
+                #                         allowDiscards = true;
+                #                     };
+                #                     content = {
+                #                         type = "btrfs";
+                #                         extraArgs = [ "-f" ];
+                #                         subvolumes = {
+                #                             "@backups" = {
+                #                                 mountpoint = "/home/matoo/Backups";
+                #                                 mountOptions = mount_options;
+                #                             };
+                #                         };
+                #                     };
+                #                 };
+                #             };
+                #         };
+                #     };
+                # };
             };
         };
     };
