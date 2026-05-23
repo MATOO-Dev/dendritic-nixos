@@ -33,6 +33,7 @@
 				firefox
 				git
 				hyprland
+				input
 				kitty
 				matoo
 				messaging
