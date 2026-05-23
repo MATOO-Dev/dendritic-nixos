@@ -43,7 +43,7 @@
 	# TODO: name
 	flake.nixosModules.desktop = {
 		# TODO: name
-		networking.hostname = "desktop";
+		networking.hostName = "desktop";
 		system.stateVersion = "25.11";
 
 		# hardware config
