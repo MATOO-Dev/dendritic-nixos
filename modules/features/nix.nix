@@ -23,17 +23,17 @@
 				allowUnfree = true;
 				system = "x86_64-linux";
 			};
-			overlays = [
-				(
-					final: _prev: {
-						unstable =
-							import inputs.nixpkgs-unstable {
-								inherit (final) config;
-								inherit (final) system;
-							};
-					}
-				)
-			];
+			# overlays = [
+			# 	(
+			# 		final: _prev: {
+			# 			unstable =
+			# 				import inputs.nixpkgs-unstable {
+			# 					inherit (final) config;
+			# 					inherit (final) system;
+			# 				};
+			# 		}
+			# 	)
+			# ];
 		};
 
 		# nix helper
