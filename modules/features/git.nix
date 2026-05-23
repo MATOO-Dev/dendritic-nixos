@@ -21,6 +21,11 @@
 			};
 		};
 
+		programs.ssh = {
+			enable = true;
+			addKeysToAgent = "yes";
+		};
+
 		programs.lazygit = {
 			enable = true;
 		};
