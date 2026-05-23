@@ -58,7 +58,7 @@
 				kitty
 				git
 			];
-			stateVersion = "25.11";
+			stateVersion = "26.05";
 		};
 
 		# mut home manager news
