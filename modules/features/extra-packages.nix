@@ -54,7 +54,7 @@
 			pixieditor # image editor
 			proton-authenticator # 2FA code generator
 			# protonplus # proton version manager
-			protonvpn-gui # vpn client
+			proton-vpn # vpn client
 			ripgrep # grep through files
 			scrcpy # mirror android to pc
 			# spotify # music app # also consider spicetify
