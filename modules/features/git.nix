@@ -23,8 +23,14 @@
 
 		programs.ssh = {
 			enable = true;
-			addKeysToAgent = "yes";
+			enableDefaultConfig = false;
+			settings."github.com" = {
+				user = "git";
+				identityFile = "~/.ssh/id_ed25519";
+			};
 		};
+
+		services.ssh-agent.enable = true;
 
 		programs.lazygit = {
 			enable = true;
