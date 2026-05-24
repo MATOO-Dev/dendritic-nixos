@@ -5,6 +5,7 @@
 
 	flake.homeModules.messaging = {pkgs, ...}: {
 		home.packages = with pkgs; [
+			discover-overlay
 			signal-desktop
 			zapzap
 		];
