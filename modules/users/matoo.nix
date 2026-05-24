@@ -32,7 +32,6 @@
 				extraPackages
 				firefox
 				git
-				hyprland
 				input
 				kitty
 				matoo

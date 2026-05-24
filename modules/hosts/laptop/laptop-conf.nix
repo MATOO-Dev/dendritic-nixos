@@ -28,8 +28,10 @@
 					networking
 					niri
 					nix
+					portals
 					powersave
 					printing
+					security
 					snapshots
 					virtualization
 					# debug

@@ -22,13 +22,13 @@
 			};
 	in {
 		settings.spawn-at-startup = [
+			["${niri-tile-to-n}/bin/niri-tile-to-n"]
 			(lib.getExe pkgs.discover-overlay)
 			(lib.getExe pkgs.hypridle)
 			(lib.getExe pkgs.sunsetr)
 			(lib.getExe pkgs.waybar)
 			# (lib.getExe pkgs.kdeconnect-indicator)
 			# (lib.getExe pkgs.gpu-screen-recorder)
-			["${niri-tile-to-n}/bin/niri-tile-to-n"]
 		];
 	};
 }

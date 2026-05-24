@@ -27,7 +27,9 @@
 					networking
 					niri
 					nix
+					portals
 					printing
+					security
 					snapshots
 					usb
 					virtualization

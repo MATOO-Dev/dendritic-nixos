@@ -8,11 +8,10 @@
 			enable = true;
 			package = self.packages.${pkgs.stdenv.hostPlatform.system}.niri;
 		};
-		services.gnome.gnome-keyring.enable = true;
-		security.polkit.enable = true;
 		environment.systemPackages = with pkgs; [
 			mako # notifications
 			sunsetr # blue light filter
+			# kdePackages.polkit-kde-agent-1 # password prompt
 		];
 	};
 
