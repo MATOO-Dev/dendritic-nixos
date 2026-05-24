@@ -29,6 +29,7 @@
 					nix
 					printing
 					snapshots
+					usb
 					virtualization
 					# debug
 					flatpak

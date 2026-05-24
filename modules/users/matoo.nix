@@ -46,6 +46,7 @@
 				snapshots
 				syncthing
 				theming
+				usb
 			];
 		};
 
