@@ -29,8 +29,8 @@
 					nix
 					portals
 					printing
-					security
 					snapshots
+					ssh
 					usb
 					virtualization
 					# debug

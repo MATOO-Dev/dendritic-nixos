@@ -31,8 +31,8 @@
 					portals
 					powersave
 					printing
-					security
 					snapshots
+					ssh
 					virtualization
 					# debug
 					flatpak
