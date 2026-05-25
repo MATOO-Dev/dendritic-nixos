@@ -63,8 +63,6 @@
 			typst # typst compiler
 			unzip # unzipping from cli
 			vlc # video player
-			vscode-fhs # backup code editor
-			vscodium-fhs # backup code editor
 			xournalpp # pdf annotation tool
 			yt-dlg # download videos graphically
 			yt-dlp # download videos from cli

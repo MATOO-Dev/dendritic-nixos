@@ -17,6 +17,19 @@
 			scons # c++ meta build tool
 			unityhub # game engine
 			valgrind # c++ memory profiler
+			omnisharp-roslyn
+			netcoredbg
+			(vscode-with-extensions.override {
+					vscode = vscodium;
+					vscodeExtensions = with vscode-extensions; [
+						catppuccin.catppuccin-vsc # theme
+						# ms-dotnettools.csharp # C# integration
+						# ms-dotnettools.vscode-dotnet-runtime # .net integration
+						usernamehw.errorlens # inline errors
+						visualstudiotoolsforunity.vstuc # unity integration
+						vscodevim.vim # vim bindings
+					];
+				})
 		];
 	};
 }
