@@ -29,6 +29,13 @@
 			(lib.getExe pkgs.waybar)
 			# (lib.getExe pkgs.kdeconnect-indicator)
 			# (lib.getExe pkgs.gpu-screen-recorder)
+			(lib.getExe (
+					pkgs.writeShellApplication {
+						name = "set-wallpaper";
+						runtimeInputs = with pkgs; [swaybg];
+						text = ''swaybg -m fill -i ~/Pictures/Wallpapers/background.jpg'';
+					}
+				))
 		];
 	};
 }
