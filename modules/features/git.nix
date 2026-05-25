@@ -1,5 +1,8 @@
 {
-	flake.homeModules.git = {
+	flake.homeModules.git = {pkgs, ...}: {
+		# home.packages = with pkgs; [libsecret];
+		services.gnome-keyring.enable = true;
+
 		programs.git = {
 			enable = true;
 
@@ -8,7 +11,8 @@
 					name = "MATOO-Dev";
 					email = "matoo-dev@proton.me";
 				};
-				credential.heler = "store";
+				credential.helper = "${pkgs.gitFull}/bin/git-credential-libsecret";
+				core.askPass = "${pkgs.seahorse}/libexec/seahorse/ssh-askpass";
 			};
 
 			lfs.enable = true;
@@ -21,19 +25,13 @@
 			};
 		};
 
-		programs.ssh = {
-			enable = true;
-			enableDefaultConfig = false;
-			settings."github.com" = {
-				user = "git";
-				identityFile = "~/.ssh/id_ed25519";
-			};
-		};
-
-		services.ssh-agent.enable = true;
-
 		programs.lazygit = {
 			enable = true;
 		};
+
+		# programs.ssh.settings."github.com" = {
+		# 	user = "git";
+		# 	identityFile = "~/.ssh/id_ed25519";
+		# };
 	};
 }
