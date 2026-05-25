@@ -19,6 +19,7 @@
 			valgrind # c++ memory profiler
 			omnisharp-roslyn
 			netcoredbg
+			vscode-fhs
 			(vscode-with-extensions.override {
 					vscode = vscodium;
 					vscodeExtensions = with vscode-extensions; [
