@@ -10,6 +10,13 @@
 				# backdrop-color = "#777777";
 			};
 
+			blur = {
+				passes = 3;
+				offset = 3;
+				noise = 0.02;
+				saturation = 1.5;
+			};
+
 			layout = {
 				# in logical pixels
 				# drawn on each side
