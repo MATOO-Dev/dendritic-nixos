@@ -30,8 +30,9 @@
 				cursor_shape = "block";
 				confirm_os_window_close = 1;
 				sync_to_monitor = "yes";
-				background_opacity = 0.9;
-				background_blur = 1;
+				background_opacity = 0.5;
+				# background_blur = 1;
+				dynamic_background_opacity = "no";
 			};
 
 			themeFile = "Catppuccin-Macchiato";
