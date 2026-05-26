@@ -6,11 +6,13 @@
 			enable = true;
 			polarity = "dark";
 			autoEnable = false;
-			base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
+			# base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
+			base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
 			targets = {
-				rofi.enable = true;
+				firefox.enable = true;
 				gtk.enable = true;
-				qt.enable = false;
+				qt.enable = true;
+				rofi.enable = true;
 				vesktop.enable = true;
 			};
 		};
