@@ -7,6 +7,7 @@ let
 		open = "xdg-open";
 		# ls = "ls --color";
 		ls = "eza --icons";
+		cat = "bat";
 		clear = "printf '\\033[2J\\033[3J\\033[1;1H'"; # clears scrollback buffer as well
 		rm = "rmtrash";
 		rmdir = "rmdirtrash";
@@ -86,6 +87,7 @@ in {
 		};
 
 		home.packages = with pkgs; [
+			bat
 			eza
 			rmtrash
 		];
