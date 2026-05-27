@@ -11,7 +11,7 @@
 			targets = {
 				firefox.enable = true;
 				gtk.enable = true;
-				qt.enable = true;
+				qt.enable = false;
 				rofi.enable = true;
 				vesktop.enable = true;
 			};
