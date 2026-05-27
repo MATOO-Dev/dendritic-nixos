@@ -53,7 +53,6 @@
 			pdfpc # pdf presentation presenter
 			pixieditor # image editor
 			proton-authenticator # 2FA code generator
-			# protonplus # proton version manager
 			proton-vpn # vpn client
 			ripgrep # grep through files
 			scrcpy # mirror android to pc

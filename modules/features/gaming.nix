@@ -17,7 +17,7 @@
 						MANGOHUD = "0"; # disable mangohud by default
 						STEAMDECK = "1"; # skips launchers for some games
 						GAMEMODERUN = "1"; # launch with gamemode
-						PROTON_ENABLE_WAYLAND = "0"; # run the game using wayland
+						PROTON_ENABLE_WAYLAND = "1"; # run the game using wayland
 					};
 				};
 		};
@@ -44,6 +44,7 @@
 			beyond-all-reason # FOSS RTS game
 			heroic # game launcher for GOG, etc.
 			prismlauncher # minecraft launcher
+			protonplus # proton version manager
 			r2modman # modding tool
 			vintagestory # survival game
 		];

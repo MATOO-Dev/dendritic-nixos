@@ -32,6 +32,7 @@
 			defaultApplications = {
 				"application/pdf" = "org.gnome.Evince.desktop";
 				"image/*" = "org.gnome.eog.desktop";
+				"image/x-xcf" = "gimp.desktop";
 				"x-scheme-handler/http" = "firefox.desktop";
 				"x-scheme-handler/https" = "firefox.desktop";
 				"x-scheme-handler/about" = "firefox.desktop";

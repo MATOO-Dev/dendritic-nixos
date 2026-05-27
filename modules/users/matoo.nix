@@ -31,6 +31,7 @@
 				email
 				extraPackages
 				firefox
+				gaming
 				git
 				input
 				kitty
