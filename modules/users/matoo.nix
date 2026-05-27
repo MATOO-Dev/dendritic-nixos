@@ -33,6 +33,7 @@
 				firefox
 				gaming
 				git
+				hyprlock
 				input
 				kitty
 				matoo
