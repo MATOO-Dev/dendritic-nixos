@@ -29,6 +29,7 @@
 					nix
 					portals
 					printing
+					recording
 					snapshots
 					ssh
 					usb
