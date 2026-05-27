@@ -7,7 +7,6 @@
 				warp-mouse-to-focus = _: {};
 
 				focus-follows-mouse = _: {
-					# this may need to be props
 					props.max-scroll-amount = "0%";
 				};
 
@@ -18,7 +17,7 @@
 			};
 
 			cursor = {
-				xcursor-size = 24;
+				xcursor-size = 30; # 24
 				# hide-when-typing = _: {};
 				# hide-after-inactive-ms = 0;
 			};
