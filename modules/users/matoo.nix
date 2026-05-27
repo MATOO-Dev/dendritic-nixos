@@ -39,7 +39,6 @@
 				neovim
 				nix
 				prompt
-				recording
 				search
 				shells
 				snapshots
