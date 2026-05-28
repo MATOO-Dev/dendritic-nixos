@@ -28,15 +28,9 @@
 					# dark mode overrides for all pages
 					(get-extension "darkreader" "addon@darkreader.org" true "menupanel")
 					# various additional youtube settings
-					(
-						get-extension "enhancer-for-youtube" "enhancerforyoutube@maximerf.addons.mozilla.org" false
-						"menupanel"
-					)
+					(get-extension "enhancer-for-youtube" "enhancerforyoutube@maximerf.addons.mozilla.org" false "menupanel")
 					# export open tabs as link list
-					(
-						get-extension "export-tabs-urls-and-titles" "{17165bd9-9b71-4323-99a5-3d4ce49f3d75}" false
-						"menupanel"
-					)
+					(get-extension "export-tabs-urls-and-titles" "{17165bd9-9b71-4323-99a5-3d4ce49f3d75}" false "menupanel")
 					# redirect to better wikis
 					(get-extension "indie-wiki-buddy" "{cb31ec5d-c49a-4e5a-b240-16c767444f62}" false "menupanel")
 					# open list of urls
@@ -56,10 +50,7 @@
 					# block ads and other annoying stuff
 					(get-extension "ublock-origin" "uBlock0@raymondhill.net" true "menupanel")
 					# unofficial plugin for shadertoy
-					(
-						get-extension "shadertoy-unofficial-plugin" "{cab6fe0d-6896-4cb6-a40c-1613dd3ed8f9}" false
-						"menupanel"
-					)
+					(get-extension "shadertoy-unofficial-plugin" "{cab6fe0d-6896-4cb6-a40c-1613dd3ed8f9}" false "menupanel")
 					# block youtube sponsors
 					(get-extension "sponsorblock" "sponsorBlocker@ajay.app" false "menupanel")
 					# run custom scripts
@@ -69,10 +60,7 @@
 					# show scholarly articles
 					(get-extension "unpaywall" "{f209234a-76f0-4735-9920-eb62507a54cd}" true "menupanel")
 					# spoof user agent
-					(
-						get-extension "user-agent-string-switcher" "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" false
-						"menupanel"
-					)
+					(get-extension "user-agent-string-switcher" "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" false "menupanel")
 					# vim keybinds in the browser
 					(get-extension "vimium-ff" "{d7742d87-e61d-4b78-b8a1-b469842139fa}" true "navbar")
 					# disable auto-dubbing for youtube
