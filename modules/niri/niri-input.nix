@@ -17,7 +17,7 @@
 			};
 
 			cursor = {
-				xcursor-size = 30; # 24
+				xcursor-size = 24; # default 24
 				# hide-when-typing = _: {};
 				# hide-after-inactive-ms = 0;
 			};

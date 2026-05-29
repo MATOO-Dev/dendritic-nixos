@@ -11,7 +11,6 @@
 		environment.systemPackages = with pkgs; [
 			mako # notifications
 			sunsetr # blue light filter
-			# kdePackages.polkit-kde-agent-1 # password prompt
 		];
 		# fix empty open-with for dolphin
 		environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
