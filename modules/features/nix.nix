@@ -26,6 +26,7 @@
 			];
 		};
 
+		# see https://github.com/hercules-ci/flake-parts/issues/74
 		nixpkgs.config.allowUnfree = true;
 		nixpkgs.overlays = [inputs.self.overlays.unstable];
 
@@ -40,6 +41,7 @@
 
 	flake.homeModules.nix = {
 		imports = [inputs.nix-index-database.homeModules.default];
+		# see https://github.com/hercules-ci/flake-parts/issues/74
 		nixpkgs.config.allowUnfree = true;
 		nixpkgs.overlays = [inputs.self.overlays.unstable];
 	};
