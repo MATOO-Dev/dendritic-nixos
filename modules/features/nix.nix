@@ -14,7 +14,7 @@
 		unstable =
 			import inputs.nixpkgs-unstable {
 				inherit (final.stdenv.hostPlatform) system;
-				inherit (prev) config;
+				inherit (final) config;
 			};
 	};
 
