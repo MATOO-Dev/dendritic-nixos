@@ -18,9 +18,9 @@
 			# RESTORE_PORTAL_SESSION=yes
 		};
 
-		systemd.user.services.gpu-screen-recorder = {
-			wantedBy = ["graphical-session.target"];
-			# maybe execstart = writeshellapplication?
-		};
+		# systemd.user.services.gpu-screen-recorder = {
+		# 	wantedBy = ["graphical-session.target"];
+		# 	# maybe execstart = writeshellapplication?
+		# };
 	};
 }

@@ -33,14 +33,17 @@
 			};
 			"Mod+Pause" = _: {
 				props.hotkey-overlay-title = "Save replay; gpu screen recorder";
-				# this may need getExe gsr replaced with just gsr
-				content.spawn-sh = ''
-					killall -SIGUSR1
-					${lib.getExe pkgs.gpu-screen-recorder}
-					&& sleep 0.5
-					&& notify-send -t 1550 -u low --
-					\"GPU Screen Recorder\" \"Replay saved\"
-				'';
+				content.spawn =
+					lib.getExe (pkgs.writeShellApplication {
+							name = "save-replay";
+							runtimeInputs = with pkgs; [killall libnotify];
+							text = ''
+								if killall -SIGUSR1 gpu-screen-recorder
+								then notify-send -t 2000 "GPU Screen Recorder" "Replay saved"
+								else notify-send -t 2000 "GPU Screen Recorder" "Failed to save replay"
+								fi
+							'';
+						});
 			};
 			"Pause" = _: {
 				props.hotkey-overlay-title = "Discord: toggle mute";

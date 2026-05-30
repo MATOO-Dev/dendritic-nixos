@@ -9,6 +9,7 @@
 			package = self.packages.${pkgs.stdenv.hostPlatform.system}.niri;
 		};
 		environment.systemPackages = with pkgs; [
+			libnotify # notifications
 			mako # notifications
 			sunsetr # blue light filter
 		];

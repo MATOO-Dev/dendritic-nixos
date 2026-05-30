@@ -36,6 +36,18 @@
 						text = ''swaybg -m fill -i ~/Pictures/Wallpapers/background.jpg'';
 					}
 				))
+			(lib.getExe (
+					pkgs.writeShellApplication {
+						name = "start-replay";
+						runtimeInputs = with pkgs; [gpu-screen-recorder];
+						text = ''
+							pidof -q gpu-screen-recorder && exit 0
+							video_path="$HOME/Downloads"
+							mkdir -p "$video_path"
+							gpu-screen-recorder -w screen -f 60 -a default_output -c mkv -bm cbr -q 40000 -r 30 -o "$video_path"
+						'';
+					}
+				))
 		];
 	};
 }
