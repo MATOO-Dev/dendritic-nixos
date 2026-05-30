@@ -21,7 +21,7 @@
 
 	flake.homeModules.input = {pkgs, ...}: {
 		home.packages = with pkgs; [
-			bazecor
+			unstable.bazecor
 		];
 	};
 }

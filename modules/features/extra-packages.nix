@@ -15,7 +15,7 @@
 			anki # flashcards
 			# ark # kde zip tool
 			audacity # audio editor
-			blender # 3d modeling
+			unstable.blender # 3d modeling
 			# chromium # backup browser, main is firefox
 			denaro # personal finance tracker
 			drawio # diagram maker
@@ -41,26 +41,25 @@
 			kdePackages.partitionmanager # disk management tool
 			# libreoffice # office suite
 			masterpdfeditor # pdf editor
-			material-maker # PBR material tool
 			mission-center # task manager
 			mpv # video player
 			nautilus # file browser
 			numbat # scientific calculation lang
-			obsidian # note taking tool
+			unstable.obsidian # note taking tool
 			# onlyoffice-bin # office suite
 			openfortivpn # vpn client
 			pandoc # document converter
 			pdfarranger # reorder and merge pdfs
 			pdfpc # pdf presentation presenter
-			pixieditor # image editor
-			proton-authenticator # 2FA code generator
-			proton-vpn # vpn client
+			unstable.pixieditor # image editor
+			unstable.proton-authenticator # 2FA code generator
+			unstable.proton-vpn # vpn client
 			ripgrep # grep through files
 			scrcpy # mirror android to pc
 			# spotify # music app # also consider spicetify
 			tldr # simplified man pages
 			tree # print file tree
-			typst # typst compiler
+			unstable.typst # typst compiler
 			unzip # unzipping from cli
 			vlc # video player
 			xournalpp # pdf annotation tool

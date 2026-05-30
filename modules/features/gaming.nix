@@ -6,12 +6,12 @@
 			dedicatedServer.openFirewall = false;
 			localNetworkGameTransfers.openFirewall = true;
 			extraCompatPackages = with pkgs; [
-				proton-ge-bin
+				unstable.proton-ge-bin
 			];
 
 			# override the default steam package
 			package =
-				pkgs.steam.override {
+				pkgs.unstable.steam.override {
 					# launch options that apply to all games
 					extraEnv = {
 						MANGOHUD = "0"; # disable mangohud by default
@@ -37,7 +37,7 @@
 
 		programs.lutris = {
 			enable = false;
-			defaultWinePackage = pkgs.proton-ge-bin;
+			defaultWinePackage = pkgs.unstable.proton-ge-bin;
 		};
 
 		home.packages = with pkgs; [
@@ -46,7 +46,7 @@
 			prismlauncher # minecraft launcher
 			protonplus # proton version manager
 			r2modman # modding tool
-			vintagestory # survival game
+			unstable.vintagestory # survival game
 		];
 	};
 }

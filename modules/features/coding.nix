@@ -10,7 +10,8 @@
 			clang-tools # additional tools for clang
 			dotnet-sdk_9 # c# sdk
 			gdb # c++ / rust compiler
-			godot # game engine
+			unstable.godot # game engine
+			unstable.material-maker # PBR material tool
 			renderdoc # graphics programming debugger
 			rustc # rust compiler
 			rustlings # rust beginner exercises

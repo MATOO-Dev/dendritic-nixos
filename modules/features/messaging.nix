@@ -6,8 +6,8 @@
 	flake.homeModules.messaging = {pkgs, ...}: {
 		home.packages = with pkgs; [
 			discover-overlay
-			signal-desktop
-			zapzap
+			unstable.signal-desktop
+			unstable.zapzap
 		];
 
 		imports = [inputs.nixcord.homeModules.nixcord];
