@@ -28,24 +28,11 @@
 			(lib.getExe pkgs.sunsetr)
 			(lib.getExe pkgs.waybar)
 			# (lib.getExe pkgs.kdeconnect-indicator)
-			# (lib.getExe pkgs.gpu-screen-recorder)
 			(lib.getExe (
 					pkgs.writeShellApplication {
 						name = "set-wallpaper";
 						runtimeInputs = with pkgs; [swaybg];
 						text = ''swaybg -m fill -i ~/Pictures/Wallpapers/background.jpg'';
-					}
-				))
-			(lib.getExe (
-					pkgs.writeShellApplication {
-						name = "start-replay";
-						runtimeInputs = with pkgs; [gpu-screen-recorder];
-						text = ''
-							pidof -q gpu-screen-recorder && exit 0
-							video_path="$HOME/Downloads"
-							mkdir -p "$video_path"
-							gpu-screen-recorder -w screen -f 60 -a default_output -c mkv -bm cbr -q 40000 -r 30 -o "$video_path"
-						'';
 					}
 				))
 		];

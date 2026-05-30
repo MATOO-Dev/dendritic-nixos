@@ -39,8 +39,8 @@
 							runtimeInputs = with pkgs; [killall libnotify];
 							text = ''
 								if killall -SIGUSR1 gpu-screen-recorder
-								then notify-send -t 2000 "GPU Screen Recorder" "Replay saved"
-								else notify-send -t 2000 "GPU Screen Recorder" "Failed to save replay"
+								then notify-send -t 2000 "GPU Screen Recorder" "🟢 Replay saved"
+								else notify-send -t 2000 "GPU Screen Recorder" "❌ Failed to save replay"
 								fi
 							'';
 						});
