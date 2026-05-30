@@ -11,6 +11,7 @@
 			(pkgs.writeShellApplication {
 					name = "find-desktop-filtered";
 					runtimeInputs = with pkgs; [findutils ripgrep];
+					# TODO: fix this so it finds all desktop files in all locations
 					text = ''
 						# global packages
 						# find /run/current-system/sw/share/applications | rg -i "$1"
@@ -33,6 +34,7 @@
 				"application/pdf" = "org.gnome.Evince.desktop";
 				"image/*" = "org.gnome.eog.desktop";
 				"image/x-xcf" = "gimp.desktop";
+				"audio/*" = "mpv.desktop";
 				"x-scheme-handler/http" = "firefox.desktop";
 				"x-scheme-handler/https" = "firefox.desktop";
 				"x-scheme-handler/about" = "firefox.desktop";
