@@ -31,13 +31,23 @@
 		xdg.mimeApps = {
 			enable = true;
 			defaultApplications = {
+				"application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
 				"application/pdf" = "org.gnome.Evince.desktop";
-				"image/*" = "org.gnome.eog.desktop";
+				"application/x-pixieditor" = "pixieditor.desktop";
+				"audio/mpeg" = "mpv.desktop";
+				"image/gif" = "org.gnome.eog.desktop";
+				"image/jpeg" = "org.gnome.eog.desktop";
+				"image/png" = "org.gnome.eog.desktop";
 				"image/x-xcf" = "gimp.desktop";
-				"audio/*" = "mpv.desktop";
+				"text/markdown" = "nvim.desktop";
+				"text/plain" = "nvim.desktop";
+				"text/vnd.typst" = "nvim.desktop";
+				"video/mp4" = "mpv.desktop";
+				"video/webm" = "mpv.desktop";
+				"video/x-matroska" = "mpv.desktop";
+				"x-scheme-handler/about" = "firefox.desktop";
 				"x-scheme-handler/http" = "firefox.desktop";
 				"x-scheme-handler/https" = "firefox.desktop";
-				"x-scheme-handler/about" = "firefox.desktop";
 				"x-scheme-handler/unknown" = "firefox.desktop";
 			};
 		};
