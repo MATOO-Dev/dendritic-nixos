@@ -24,6 +24,10 @@
 				"nix-command"
 				"flakes"
 			];
+			optimise = {
+				automatic = true;
+				dates = ["04:00"];
+			};
 		};
 
 		# see https://github.com/hercules-ci/flake-parts/issues/74
