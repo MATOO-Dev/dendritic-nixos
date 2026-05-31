@@ -39,7 +39,7 @@
 					# framerate
 					-f 60 \
 					# replay duration
-					-r 60 \
+					-r 30 \
 					# format
 					-c mp4 \
 					# audio
