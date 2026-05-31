@@ -3,7 +3,7 @@
 		vim.lsp = {
 			enable = true;
 			formatOnSave = true;
-			inlayHints.enable = true; # inline type annotations
+			inlayHints.enable = false; # inline type annotations
 			# lspSignature.enable = true; # incompatible with blink-cmp
 		};
 
