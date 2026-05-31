@@ -1,5 +1,11 @@
 {
 	flake.homeModules.kitty = {
+		# fix dolphin attempting to open terminal apps via konsole
+		xdg.configFile."kdeglobals".text = ''
+			[General]
+			TerminalApplication=kitty
+			TerminalService=kitty.desktop
+		'';
 		programs.kitty = {
 			enable = true;
 
