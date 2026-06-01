@@ -33,6 +33,7 @@
 					printing
 					snapshots
 					ssh
+					usb
 					virtualization
 					# debug
 					flatpak
