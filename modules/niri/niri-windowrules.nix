@@ -33,8 +33,9 @@
 					{title = "LearnOpenGL";}
 					# uni computer graphics projects
 					{title = ".* -  (.* fps)";}
-					# dolphin copy progress bar
+					# dolphin progress bars
 					{title = "Copying.*Dolphin";}
+					{title = "Moving.*Dolphin";}
 				];
 				open-floating = true;
 				open-fullscreen = false;
