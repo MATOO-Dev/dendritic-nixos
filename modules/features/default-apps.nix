@@ -34,6 +34,7 @@
 				"application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
 				"application/pdf" = "org.gnome.Evince.desktop";
 				"application/x-pixieditor" = "pixieditor.desktop";
+				"application/zip" = "org.kde.ark.desktop";
 				"audio/mpeg" = "mpv.desktop";
 				"image/gif" = "org.gnome.eog.desktop";
 				"image/jpeg" = "org.gnome.eog.desktop";

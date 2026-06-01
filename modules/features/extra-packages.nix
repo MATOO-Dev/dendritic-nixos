@@ -13,7 +13,6 @@
 		home.packages = with pkgs; [
 			# amberol # music player
 			anki # flashcards
-			# ark # kde zip tool
 			audacity # audio editor
 			unstable.blender # 3d modeling
 			# chromium # backup browser, main is firefox
@@ -33,6 +32,7 @@
 			# gnuplot # graph plotting
 			handbrake # ffmpeg frontend
 			identity # media comparer
+			kdePackages.ark # kde zip tool
 			kdePackages.dolphin # file browser
 			kdePackages.filelight # disk usage analyzer
 			kdePackages.kdenlive # video editor
