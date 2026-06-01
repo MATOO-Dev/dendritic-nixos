@@ -37,8 +37,6 @@
 				confirm_os_window_close = 1;
 				sync_to_monitor = "yes";
 				background_opacity = 0.5;
-				active_background_opacity = 0.5;
-				inactive_background_opacity = 0.5;
 				dynamic_background_opacity = "yes";
 			};
 
