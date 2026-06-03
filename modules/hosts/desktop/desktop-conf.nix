@@ -23,7 +23,6 @@
 					localsend
 					login
 					matoo
-					messaging
 					networking
 					niri
 					nix

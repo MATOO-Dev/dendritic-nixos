@@ -1,8 +1,4 @@
 {inputs, ...}: {
-	flake.nixosModules.messaging = {
-		# TODO: signal might need some ports opened?
-	};
-
 	flake.homeModules.messaging = {pkgs, ...}: {
 		home.packages = with pkgs; [
 			discover-overlay
@@ -15,6 +11,14 @@
 			enable = true;
 			discord.vencord.enable = true;
 			vesktop.enable = false;
+			config = {
+				autoUpdate = false;
+				autoUpdateNotification = false;
+				frameless = true;
+				notifyAboutUpdates = false;
+				transparent = true;
+				# autoscroll.enable = true;
+			};
 			config.plugins = {
 				ClearURLs.enable = true; # remove tracking parameters
 				gameActivityToggle.enable = true; # button to toggle activity
