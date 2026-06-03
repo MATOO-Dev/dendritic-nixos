@@ -29,13 +29,17 @@
 			"eDP-1" = {
 				mode = "2256x1504";
 				scale = 1.75;
+				position = _: {
+					props.x = 0;
+					props.y = 0;
+				};
 				variable-refresh-rate = _: {};
 				hot-corners = _: {off = _: {};};
 			};
 
 			"DP-4" = {
 				mode = "1920x1080";
-				scale = 1.2;
+				scale = 1;
 				# position uses logical, scaled pixels instead of physical pixels
 				# therefore, offset is resolution / scale
 				position = _: {
