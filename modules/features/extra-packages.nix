@@ -22,7 +22,6 @@
 			element-desktop # matrix client
 			eog # gnome image viewer
 			evince # gnome pdf viewer
-			fastfetch # fetch application
 			ffmpeg # media transcoder
 			ffmpegthumbnailer # create file explorer thumbnails
 			foliate # ebook reader

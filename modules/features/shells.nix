@@ -5,6 +5,7 @@ let
 		# nvim = "nix run github:matoo-dev/nixcats-config";
 		laz = "lazygit";
 		open = "xdg-open";
+		ff = "fastfetch";
 		# ls = "ls --color";
 		ls = "eza --icons";
 		cat = "bat";

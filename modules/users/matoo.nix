@@ -25,28 +25,29 @@
 			# may also be useful for secondary pkgs-unstable
 			pkgs = import inputs.nixpkgs {system = "x86_64-linux";};
 			modules = with self.homeModules; [
-				bar
-				coding
-				defaultApps
-				email
-				extraPackages
-				firefox
-				gaming
-				git
-				hyprlock
-				input
-				kitty
-				matoo
-				messaging
-				neovim
-				nix
-				prompt
-				search
-				shells
-				snapshots
-				syncthing
-				theming
-				usb
+				bar # top bar, currently waybar
+				coding # programs and settings for software development
+				defaultApps # mime type associations
+				email # emails
+				extraPackages # packages without any category or configuration
+				fastfetch # display system information
+				firefox # browser
+				gaming # video games
+				git # version control system
+				hyprlock # lock screen
+				input # input devices
+				kitty # terminal
+				matoo # user settings
+				messaging # messaging apps
+				neovim # text editor
+				nix # nix settings
+				prompt # terminal prompt
+				search # app launcher
+				shells # terminal shells
+				snapshots # btrfs snapshots
+				syncthing # sync data between devices
+				theming # apply themes system-wide
+				usb # external usb devices
 			];
 		};
 
@@ -63,7 +64,7 @@
 			stateVersion = "26.05";
 		};
 
-		# mut home manager news
+		# mute home manager news
 		news.display = "silent";
 	};
 }
