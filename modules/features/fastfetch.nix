@@ -91,7 +91,7 @@
 						}
 						{
 							type = "battery";
-							key = "{$6}├ 󰢟  Battery   ";
+							key = "{$7}├ 󰢟  Battery   ";
 							percent = {
 								"type" = 3; # 3 = number + bar + percentage
 								"green" = 30; # <30% = green
@@ -100,7 +100,7 @@
 						}
 						{
 							type = "memory";
-							key = "{$7}├   Memory    ";
+							key = "{$8}├   Memory    ";
 							percent = {
 								"type" = 3; # 3 = number + bar + percentage
 								"green" = 30; # <30% = green
@@ -109,7 +109,7 @@
 						}
 						{
 							type = "swap";
-							key = "{$8}├ 󰯍  Swap      ";
+							key = "{$9}├ 󰯍  Swap      ";
 							percent = {
 								"type" = 3; # 3 = number + bar + percentage
 								"green" = 30; # <30% = green
@@ -118,7 +118,7 @@
 						}
 						{
 							type = "disk";
-							key = "{$9}├   NixOS     ";
+							key = "{$10}├   NixOS     ";
 							folders = ["/"];
 							percent = {
 								"type" = 3; # 3 = number + bar + percentage
@@ -183,7 +183,7 @@
 						}
 						{
 							type = "font";
-							key = "{$2}├ 󰛖  Font      ";
+							key = "{$1}├ 󰛖  Font      ";
 						}
 						{
 							type = "custom";
@@ -191,18 +191,18 @@
 						}
 						{
 							type = "wifi";
-							key = "{$2}├   WiFi      ";
+							key = "{$1}├   WiFi      ";
 							format = "{4} - {7} - {13} GHz - {10}";
 							showErrors = "never";
 						}
 						{
 							type = "bluetooth";
-							key = "{$1}├ 󰂱  Bluetooth ";
+							key = "{$2}├ 󰂱  Bluetooth ";
 							format = "{1} - {4}";
 						}
 						{
 							type = "localip";
-							key = "{$6}├ 󰩟  Local IP  ";
+							key = "{$3}├ 󰩟  Local IP  ";
 							format = "{1} - {3}";
 							showMac = true;
 						}
@@ -215,14 +215,14 @@
 							key = "{$10}├ 󰥔  Date/Time ";
 						}
 						{
-							key = "{$8}├   OS Age    ";
+							key = "{$9}├   OS Age    ";
 							type = "disk";
 							folders = "/";
 							format = "{create-time:10} ({days} days)";
 						}
 						{
 							type = "uptime";
-							key = "{$6}└   Uptime    ";
+							key = "{$8}└   Uptime    ";
 						}
 					];
 				};
