@@ -9,12 +9,6 @@ thunderbird # declare plugins, settings, and accounts (depends on SOPS)
 firefox # declare plugins and settings (WIP)
 snapper # setup snapshot config (revisit after impermanence)
 
-######################
-#### cant install ####
-######################
-
-gpu-screen-recorder-ui # stuck in pr limbo
-
 ###################
 #### long term ####
 ###################

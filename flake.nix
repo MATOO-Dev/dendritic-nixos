@@ -28,9 +28,7 @@
 		nvf.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
 		# # theming
-		# TODO: enable stable input once stylix release 26.05 is out
-		# stylix.url = "github:nix-community/stylix/release-25.11";
-		stylix.url = "github:nix-community/stylix";
+		stylix.url = "github:nix-community/stylix/release-26.05";
 		stylix.inputs.nixpkgs.follows = "nixpkgs";
 
 		# # search nixpkgs files
