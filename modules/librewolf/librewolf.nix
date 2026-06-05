@@ -1,6 +1,6 @@
 {self, ...}: {
-	flake.homeModules.firefox = {
-		programs.firefox = {
+	flake.homeModules.librewolf = {
+		programs.librewolf = {
 			enable = true;
 			languagePacks = ["en-US"];
 		};

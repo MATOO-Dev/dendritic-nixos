@@ -31,7 +31,7 @@
 				email # emails
 				extraPackages # packages without any category or configuration
 				fastfetch # display system information
-				firefox # browser
+				librewolf # browser
 				gaming # video games
 				git # version control system
 				hyprlock # lock screen

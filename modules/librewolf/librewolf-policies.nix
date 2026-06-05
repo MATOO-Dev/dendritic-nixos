@@ -1,6 +1,6 @@
 {
-	flake.homeModules.firefox = {
-		programs.firefox = {
+	flake.homeModules.librewolf = {
+		programs.librewolf = {
 			policies = {
 				AppAutoUpdate = false;
 				BackgroundAppUpdate = false;

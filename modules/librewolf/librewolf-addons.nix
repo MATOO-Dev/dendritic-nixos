@@ -1,6 +1,6 @@
 {
-	flake.homeModules.firefox = {lib, ...}: {
-		programs.firefox = {
+	flake.homeModules.librewolf = {lib, ...}: {
+		programs.librewolf = {
 			policies.ExtensionSettings = let
 				# function stolen & adjusted from github user abhinandh-s
 				get-extension = slug: uuid: private: area: {

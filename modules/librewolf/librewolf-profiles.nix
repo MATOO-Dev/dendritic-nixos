@@ -1,6 +1,6 @@
 {
-	flake.homeModules.firefox = {
-		programs.firefox.profiles.matoo = {
+	flake.homeModules.librewolf = {
+		programs.librewolf.profiles.matoo = {
 			search = {
 				default = "ecosia";
 				privateDefault = "ecosia";
