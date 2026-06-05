@@ -10,6 +10,18 @@
 					google.metaData.alias = "@g";
 					bing.metaData.hidden = true;
 					duckduckgo.metaData.hidden = true;
+					ecosia = {
+						name = "Ecosia search";
+						icon = "https://ecosia.org/favicon.ico";
+						urls = [{template = "https://ecosia.org/search?q={searchTerms}";}];
+						definesAliases = ["@e"];
+					};
+					qwant = {
+						name = "Qwant search";
+						icon = "https://qwant.com/favicon.ico";
+						urls = [{template = "https://qwant.com/?q={searchTerms}";}];
+						definesAliases = ["@q"];
+					};
 					nix-packages = {
 						name = "Nix package search";
 						urls = [{template = "https://search.nixos.org/packages?query={searchTerms}";}];
