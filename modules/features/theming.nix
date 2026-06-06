@@ -9,7 +9,7 @@
 			# base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
 			base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
 			targets = {
-				# firefox.enable = true;
+				gnome.enable = true;
 				gtk.enable = true;
 				qt.enable = false;
 				rofi.enable = true;
