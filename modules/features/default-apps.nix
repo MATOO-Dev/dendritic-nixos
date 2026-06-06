@@ -40,6 +40,7 @@
 				"image/jpeg" = "org.gnome.eog.desktop";
 				"image/png" = "org.gnome.eog.desktop";
 				"image/x-xcf" = "gimp.desktop";
+				"text/html" = "firefox.desktop";
 				"text/markdown" = "nvim.desktop";
 				"text/plain" = "nvim.desktop";
 				"text/vnd.typst" = "nvim.desktop";

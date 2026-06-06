@@ -13,6 +13,14 @@
 				HardwareAcceleration = true;
 				Homepage.StartPage = "previous-session";
 				OfferToSaveLogins = false;
+				Cookies.Allow = [
+					"https://amazon.de"
+					"https://disneyplus.com"
+					"https://github.com"
+					"https://netflix.com"
+					"https://soundcloud.com"
+					"https://youtube.com"
+				];
 			};
 		};
 	};
