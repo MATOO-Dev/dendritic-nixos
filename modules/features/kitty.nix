@@ -5,6 +5,9 @@
 			[General]
 			TerminalApplication=kitty
 			TerminalService=kitty.desktop
+			# TODO: this should be in theming, figure out a way to split the file definition
+			[UiSettings]
+			ColorScheme=*
 		'';
 		programs.kitty = {
 			enable = true;

@@ -11,7 +11,7 @@
 			targets = {
 				gnome.enable = true;
 				gtk.enable = true;
-				qt.enable = false;
+				qt.enable = true;
 				rofi.enable = true;
 				vesktop.enable = true;
 			};
