@@ -76,7 +76,7 @@
 
 		vim.languages.typst = {
 			enable = true;
-			extensions.typst-concealer.enable = true;
+			extensions.typst-concealer.enable = false;
 			extensions.typst-preview-nvim.enable = true;
 			# on_attach = function(client, bufnr)
 			# 	vim.keymap.set("n", "<leader>tp", function ()
