@@ -19,6 +19,7 @@
 					"https://github.com"
 					"https://netflix.com"
 					"https://soundcloud.com"
+					"https://typst.app"
 					"https://youtube.com"
 				];
 			};
