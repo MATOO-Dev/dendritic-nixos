@@ -9,6 +9,7 @@
 			"sidebar.verticalTabs.dragToPinPromo.dismissed" = true; # disable vertical tab popup
 			"browser.toolbars.bookmarks.visibility" = "never"; # never show bookmarks toolbar
 			"intl.accept_languages" = "en-US, en"; # prefer english pages over localized
+			"browser.tabs.inTitlebar" = 0; # hide min/max/close buttons in title bar
 		};
 	};
 }
