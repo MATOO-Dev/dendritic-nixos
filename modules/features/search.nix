@@ -6,5 +6,12 @@
 				"drun"
 			];
 		};
+
+		programs.vicinae = {
+			enable = true;
+			settings = {
+				telemetry.system_info = false;
+			};
+		};
 	};
 }
