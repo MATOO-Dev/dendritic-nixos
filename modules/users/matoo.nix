@@ -42,6 +42,7 @@
 				messaging # messaging apps
 				neovim # text editor
 				nix # nix settings
+				notifications # notification settings
 				prompt # terminal prompt
 				shells # terminal shells
 				snapshots # btrfs snapshots
