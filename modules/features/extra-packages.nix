@@ -42,7 +42,7 @@
 			masterpdfeditor # pdf editor
 			mission-center # task manager
 			mpv # video player
-			nautilus # file browser
+			# nautilus # file browser
 			numbat # scientific calculation lang
 			unstable.obsidian # note taking tool
 			# onlyoffice-bin # office suite
