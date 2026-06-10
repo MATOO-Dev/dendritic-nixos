@@ -12,8 +12,8 @@
 				gnome.enable = true;
 				gtk.enable = true;
 				qt.enable = true;
-				rofi.enable = true;
 				vesktop.enable = true;
+				vicinae.enable = true;
 			};
 		};
 
