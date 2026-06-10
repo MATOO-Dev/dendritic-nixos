@@ -27,6 +27,11 @@
 			(lib.getExe pkgs.hypridle)
 			(lib.getExe pkgs.sunsetr)
 			(lib.getExe pkgs.waybar)
+			(lib.getExe (pkgs.writeShellApplication {
+						name = "vicinae-server";
+						runtimeInputs = with pkgs; [vicinae];
+						text = ''vicinae server'';
+					}))
 			# (lib.getExe pkgs.kdeconnect-indicator)
 			(lib.getExe (
 					pkgs.writeShellApplication {

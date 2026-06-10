@@ -18,11 +18,10 @@
 				content.spawn = lib.getExe pkgs.kitty;
 			};
 			"Mod+R" = _: {
-				props.hotkey-overlay-title = "Run app launcher: rofi";
+				props.hotkey-overlay-title = "Run app launcher: vicinae";
 				content.spawn = [
-					"${lib.getExe pkgs.rofi}"
-					"-show"
-					"drun"
+					"${lib.getExe pkgs.vicinae}"
+					"toggle"
 				];
 			};
 			"Mod+N" = _: {
