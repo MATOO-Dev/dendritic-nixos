@@ -1,5 +1,5 @@
 {
-	flake.homeModules.search = {lib, ...}: {
+	flake.homeModules.launcher = {lib, ...}: {
 		programs.rofi = {
 			enable = true;
 			modes = [

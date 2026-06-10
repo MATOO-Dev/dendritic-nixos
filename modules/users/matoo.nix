@@ -37,12 +37,12 @@
 				hyprlock # lock screen
 				input # input devices
 				kitty # terminal
+				launcher # app launcher
 				matoo # user settings
 				messaging # messaging apps
 				neovim # text editor
 				nix # nix settings
 				prompt # terminal prompt
-				search # app launcher
 				shells # terminal shells
 				snapshots # btrfs snapshots
 				syncthing # sync data between devices
