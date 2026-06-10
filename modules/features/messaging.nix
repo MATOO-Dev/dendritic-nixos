@@ -20,7 +20,7 @@
 				# autoscroll.enable = true;
 			};
 			config.plugins = {
-				ClearURLs.enable = true; # remove tracking parameters
+				clearUrls.enable = true; # remove tracking parameters
 				gameActivityToggle.enable = true; # button to toggle activity
 				noMiddleClickPaste.enable = true; # disable MB3 paste buffer
 				# NoTrack.enable = true; # disable analytics
