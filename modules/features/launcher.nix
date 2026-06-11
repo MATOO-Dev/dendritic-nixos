@@ -28,7 +28,7 @@
 					browser-extension.entrypoints.shortcut-active-tab.enabled = false;
 					clipboard.preferences = {
 						encryption = true;
-						eraseOnStartup = true;
+						eraseOnStartup = false;
 						ignorePasswords = true;
 						monitoring = true;
 					};
