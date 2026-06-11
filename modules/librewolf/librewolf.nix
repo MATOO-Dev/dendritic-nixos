@@ -27,7 +27,8 @@
 			librewolf-private = {
 				name = "LibreWolf: New private window";
 				exec = "librewolf --private-window %U";
-				inherit categories genericName icon startupNotify terminal type settings;
+				settings = settings // {StartupWMClass = "librewolf-private";};
+				inherit categories genericName icon startupNotify terminal type;
 			};
 		};
 	};
