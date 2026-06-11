@@ -60,6 +60,8 @@
 			initrd.kernelModules = [];
 			kernelModules = ["kvm-amd"];
 			extraModulePackages = [];
+			# debug
+			kernelParams = ["amdgpu.dcdebugmask=0x10"];
 		};
 		hardware.enableRedistributableFirmware = true;
 		hardware.cpu.amd.updateMicrocode = true;
