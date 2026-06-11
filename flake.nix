@@ -1,6 +1,8 @@
 {
 	description = "MATOO's dendritic NixOS config";
 
+	outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
+
 	inputs = {
 		# packages
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
@@ -43,9 +45,11 @@
 		nixcord.url = "github:FlameFlag/nixcord";
 		nixcord.inputs.nixpkgs.follows = "nixpkgs";
 
-		# # module wrappers
+		# module wrappers
 		wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-	};
 
-	outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
+		# secrets management
+		sops-nix.url = "github:Mic92/sops=nix";
+		sops-nix.inputs.nixpkgs.follows = "nixpks";
+	};
 }

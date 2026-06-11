@@ -4,6 +4,7 @@
 		inputs.home-manager.flakeModules.home-manager
 		inputs.wrapper-modules.flakeModules.wrappers
 		inputs.disko.flakeModules.default
+		inputs.sops-nix.nixosModules.sops
 	];
 
 	systems = [
