@@ -16,7 +16,6 @@
 			audacity # audio editor
 			unstable.blender # 3d modeling
 			# chromium # backup browser, main is librewolf
-			denaro # personal finance tracker
 			drawio # diagram maker
 			# easytag # media metadata editor
 			element-desktop # matrix client
@@ -28,6 +27,7 @@
 			gimp # image editor
 			gnome-disk-utility # disk management tool
 			gnome-obfuscate # information censor
+			gnucash # personal finace manager
 			# gnuplot # graph plotting
 			handbrake # ffmpeg frontend
 			identity # media comparer
