@@ -47,9 +47,5 @@
 
 		# module wrappers
 		wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-
-		# secrets management
-		sops-nix.url = "github:Mic92/sops=nix";
-		sops-nix.inputs.nixpkgs.follows = "nixpks";
 	};
 }
