@@ -58,6 +58,7 @@
 			# spotify # music app # also consider spicetify
 			tldr # simplified man pages
 			tree # print file tree
+			unstable.tuxedo # cli todo list manager
 			unstable.typst # typst compiler
 			unzip # unzipping from cli
 			vlc # video player
