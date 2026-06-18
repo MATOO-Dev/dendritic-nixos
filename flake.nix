@@ -47,5 +47,8 @@
 
 		# module wrappers
 		wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
+
+		# music
+		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 	};
 }

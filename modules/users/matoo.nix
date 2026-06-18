@@ -40,6 +40,7 @@
 				launcher # app launcher
 				matoo # user settings
 				messaging # messaging apps
+				music # music players
 				neovim # text editor
 				nix # nix settings
 				notifications # notification settings
