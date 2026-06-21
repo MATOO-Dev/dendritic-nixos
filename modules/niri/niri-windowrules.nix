@@ -16,7 +16,7 @@
 			# general rules for all windows
 			{
 				# rounded corners
-				geometry-corner-radius = 10;
+				geometry-corner-radius = 0; # previously 10
 				# disable / cut off client side shadows etc
 				clip-to-geometry = true;
 				draw-border-with-background = false;
