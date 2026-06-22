@@ -1,5 +1,5 @@
 {
-	flake.homeModules.librewolf = {
+	flake.homeModules.librewolf = {pkgs, ...}: {
 		programs.librewolf = {
 			enable = true;
 			languagePacks = ["en-US"];

@@ -24,10 +24,11 @@
 			ffmpeg # media transcoder
 			ffmpegthumbnailer # create file explorer thumbnails
 			foliate # ebook reader
+			footage # video trimmer
 			gimp # image editor
 			gnome-disk-utility # disk management tool
 			gnome-obfuscate # information censor
-			gnucash # personal finace manager
+			# gnucash # personal finace manager # TODO: re-enable
 			# gnuplot # graph plotting
 			handbrake # ffmpeg frontend
 			identity # media comparer
