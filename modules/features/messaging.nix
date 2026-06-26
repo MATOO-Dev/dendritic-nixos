@@ -3,7 +3,7 @@
 		home.packages = with pkgs; [
 			discover-overlay
 			unstable.signal-desktop
-			unstable.zapzap
+			zapzap
 		];
 
 		imports = [inputs.nixcord.homeModules.nixcord];
