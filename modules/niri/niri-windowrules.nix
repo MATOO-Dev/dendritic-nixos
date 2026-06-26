@@ -25,8 +25,11 @@
 			# float these windows in the center
 			{
 				matches = [
-					# gtodot games launched from editor
-					{title = ".+ (DEBUG)";}
+					# goodot games launched from editor
+					{
+						app-id = "Godot";
+						title = ".*(DEBUG)";
+					}
 					# gpu screen recorder ui
 					{app-id = "gsr-ui";}
 					# learnopengl projects
@@ -56,7 +59,6 @@
 				};
 			}
 
-			# float these windows in the center
 			# change default column width for these windows to 1
 			{
 				matches = [
@@ -72,6 +74,7 @@
 					}
 					# videos
 					{app-id = "vlc";}
+					{app-id = "mpv";}
 					# discord
 					{app-id = "discord";}
 				];
