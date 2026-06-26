@@ -44,7 +44,7 @@
 				"application/pdf" = "org.gnome.Evince.desktop";
 				"application/x-pixieditor" = "pixieditor.desktop";
 				"application/zip" = "org.kde.ark.desktop";
-				"audio/mpeg" = "vlc.desktop";
+				"audio/mpeg" = "umpv.desktop";
 				"image/gif" = "org.gnome.eog.desktop";
 				"image/jpeg" = "org.gnome.eog.desktop";
 				"image/png" = "org.gnome.eog.desktop";
@@ -53,9 +53,9 @@
 				"text/markdown" = "nvim.desktop";
 				"text/plain" = "nvim.desktop";
 				"text/vnd.typst" = "nvim.desktop";
-				"video/mp4" = "vlc.desktop";
-				"video/webm" = "vlc.desktop";
-				"video/x-matroska" = "vlc.desktop";
+				"video/mp4" = "umpv.desktop";
+				"video/webm" = "umpv.desktop";
+				"video/x-matroska" = "umpv.desktop";
 				"x-scheme-handler/about" = "librewolf.desktop";
 				"x-scheme-handler/http" = "librewolf.desktop";
 				"x-scheme-handler/https" = "librewolf.desktop";
