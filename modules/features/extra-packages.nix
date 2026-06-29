@@ -24,7 +24,6 @@
 			ffmpeg # media transcoder
 			ffmpegthumbnailer # create file explorer thumbnails
 			foliate # ebook reader
-			footage # video trimmer
 			gimp # image editor
 			gnome-disk-utility # disk management tool
 			gnome-obfuscate # information censor
@@ -35,14 +34,12 @@
 			kdePackages.ark # kde zip tool
 			kdePackages.dolphin # file browser
 			kdePackages.filelight # disk usage analyzer
-			kdePackages.kdenlive # video editor
 			kdePackages.kolourpaint # paint scribbles
 			kdePackages.kruler # measuring tool
 			kdePackages.partitionmanager # disk management tool
 			# libreoffice # office suite
 			masterpdfeditor # pdf editor
 			mission-center # task manager
-			mpv # video player
 			# nautilus # file browser
 			numbat # scientific calculation lang
 			unstable.obsidian # note taking tool
@@ -62,10 +59,7 @@
 			unstable.tuxedo # cli todo list manager
 			unstable.typst # typst compiler
 			unzip # unzipping from cli
-			vlc # video player
 			xournalpp # pdf annotation tool
-			yt-dlg # download videos graphically
-			yt-dlp # download videos from cli
 			wget2 # cli file downloader
 		];
 	};

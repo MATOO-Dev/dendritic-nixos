@@ -50,6 +50,7 @@
 				syncthing # sync data between devices
 				theming # apply themes system-wide
 				usb # external usb devices
+				video # video players & editors
 			];
 		};
 
