@@ -28,7 +28,7 @@
 			gimp # image editor
 			gnome-disk-utility # disk management tool
 			gnome-obfuscate # information censor
-			# gnucash # personal finace manager # TODO: re-enable
+			gnucash # personal finace manager
 			# gnuplot # graph plotting
 			handbrake # ffmpeg frontend
 			identity # media comparer
