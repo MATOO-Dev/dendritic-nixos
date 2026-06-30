@@ -27,14 +27,14 @@
 				})
 		];
 
-		xdg.portal = {
-			enable = true;
-			extraPortals = with pkgs; [kdePackages.xdg-desktop-portal-kde];
-			config = {
-				common.default = ["kde"];
-				niri."org.freedesktop.impl.portal.FileChooser" = ["kde"];
-			};
-		};
+		# xdg.portal = {
+		# 	enable = true;
+		# 	extraPortals = with pkgs; [kdePackages.xdg-desktop-portal-kde];
+		# 	config = {
+		# 		common.default = ["kde"];
+		# 		niri."org.freedesktop.impl.portal.FileChooser" = ["kde"];
+		# 	};
+		# };
 
 		xdg.mime.enable = true;
 		xdg.mimeApps = {

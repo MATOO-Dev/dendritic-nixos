@@ -12,6 +12,7 @@
 			libnotify # notifications
 			mako # notifications
 			sunsetr # blue light filter
+			xdg-desktop-portal-gnome
 		];
 		# fix empty open-with for dolphin
 		environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
