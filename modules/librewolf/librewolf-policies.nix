@@ -17,6 +17,7 @@
 					"https://amazon.de"
 					"https://disneyplus.com"
 					"https://github.com"
+					"https://kobo.com"
 					"https://netflix.com"
 					"https://soundcloud.com"
 					"https://typst.app"
