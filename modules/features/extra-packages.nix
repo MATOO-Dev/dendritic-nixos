@@ -43,7 +43,7 @@
 			mission-center # task manager
 			# nautilus # file browser
 			numbat # scientific calculation lang
-			unstable.obsidian # note taking tool
+			obsidian # note taking tool
 			# onlyoffice-bin # office suite
 			openfortivpn # vpn client
 			pandoc # document converter
