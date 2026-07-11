@@ -48,6 +48,7 @@
 				"image/gif" = "org.gnome.eog.desktop";
 				"image/jpeg" = "org.gnome.eog.desktop";
 				"image/png" = "org.gnome.eog.desktop";
+				"image/svg+xml" = "org.gnome.eog.desktop";
 				"image/x-xcf" = "gimp.desktop";
 				"text/html" = "librewolf.desktop";
 				"text/markdown" = "nvim.desktop";

@@ -24,7 +24,7 @@
 			evince # gnome pdf viewer
 			ffmpeg # media transcoder
 			ffmpegthumbnailer # create file explorer thumbnails
-			foliate # ebook reader
+			foliate # ebook reader # TODO: consider readest or koreader
 			gimp # image editor
 			gnome-disk-utility # disk management tool
 			gnome-obfuscate # information censor
