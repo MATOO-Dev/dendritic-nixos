@@ -20,6 +20,8 @@
 					"https://kobo.com"
 					"https://netflix.com"
 					"https://soundcloud.com"
+					"https://reddit.com"
+					"https://tv.apple.com"
 					"https://typst.app"
 					"https://youtube.com"
 				];
