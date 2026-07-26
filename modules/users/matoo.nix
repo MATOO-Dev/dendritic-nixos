@@ -26,6 +26,7 @@
 			pkgs = import inputs.nixpkgs {system = "x86_64-linux";};
 			modules = with self.homeModules; [
 				bar # top bar, currently waybar
+				calibre # manage ebooks
 				coding # programs and settings for software development
 				defaultApps # mime type associations
 				email # emails

@@ -15,7 +15,6 @@
 			anki # flashcards
 			audacity # audio editor
 			unstable.blender # 3d modeling
-			calibre # ebook manager
 			# chromium # backup browser, main is librewolf
 			drawio # diagram maker
 			# easytag # media metadata editor
