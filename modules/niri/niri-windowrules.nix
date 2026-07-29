@@ -39,6 +39,8 @@
 					# dolphin progress bars
 					{title = "Copying.*Dolphin";}
 					{title = "Moving.*Dolphin";}
+					# 2FA codes popup
+					{app-id = "proton-authenticator";}
 				];
 				open-floating = true;
 				open-fullscreen = false;
