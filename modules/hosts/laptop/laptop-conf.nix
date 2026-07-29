@@ -27,7 +27,7 @@
 					networking
 					niri
 					nix
-					portals
+					portals # xdg desktop portals
 					powersave
 					printing
 					snapshots

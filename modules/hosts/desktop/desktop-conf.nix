@@ -26,7 +26,7 @@
 					networking
 					niri
 					nix
-					portals
+					portals # xdg desktop portals
 					printing
 					recording
 					snapshots
