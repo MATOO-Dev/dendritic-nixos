@@ -50,5 +50,8 @@
 
 		# music
 		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+		# calibre plugins
+		calibre-plugins.url = "github:nydragon/calibre-plugins";
 	};
 }
