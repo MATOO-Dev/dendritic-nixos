@@ -1,5 +1,9 @@
 {inputs, ...}: {
 	flake.homeModules.calibre = {pkgs, ...}: {
+		home.packages = with pkgs; [
+			koreader
+		];
+
 		programs.calibre = {
 			enable = true;
 			# package =
