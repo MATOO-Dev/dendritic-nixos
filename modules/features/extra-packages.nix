@@ -38,7 +38,7 @@
 			kdePackages.kruler # measuring tool
 			kdePackages.partitionmanager # disk management tool
 			# libreoffice # office suite
-			masterpdfeditor # pdf editor
+			# masterpdfeditor # pdf editor
 			mission-center # task manager
 			nautilus # file browser
 			numbat # scientific calculation lang
