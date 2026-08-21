@@ -17,6 +17,9 @@
 			fold = true;
 			highlight.enable = true;
 			indent.enable = true;
+			textobjects.enable = true;
+			addDefaultGrammars = true;
+			grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [gdscript gdshader godot_resource];
 		};
 
 		vim.languages.clang = {
@@ -46,6 +49,18 @@
 
 		vim.languages.csharp = {
 			enable = true;
+		};
+
+		vim.lsp.lspconfig = {
+			enable = true;
+			sources = {
+				gdscript = ''
+					vim.lsp.enable("gdscript")
+				'';
+				gdshader = ''
+					vim.lsp.enable("gdshader_lsp")
+				'';
+			};
 		};
 
 		# vim.languages.gdscript = {
