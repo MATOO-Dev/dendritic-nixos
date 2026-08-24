@@ -38,13 +38,16 @@
 			};
 
 			"DP-4" = {
-				mode = "1920x1080";
-				scale = 1;
+				# mode = "1920x1080";
+				mode = "3440x1440@100";
+				scale = 1.75;
 				# position uses logical, scaled pixels instead of physical pixels
 				# therefore, offset is resolution / scale
 				position = _: {
-					props.x = 0;
-					props.y = -1080;
+					# props.x = 0;
+					props.x = 1289;
+					props.y = 0;
+					# props.y = -1080;
 				};
 				variable-refresh-rate = _: {};
 				hot-corners = _: {off = _: {};};
