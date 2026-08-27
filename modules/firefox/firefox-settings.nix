@@ -1,6 +1,6 @@
 {
-	flake.homeModules.librewolf = {
-		programs.librewolf.profiles.matoo.settings = {
+	flake.homeModules.firefox = {
+		programs.firefox.profiles.matoo.settings = {
 			"general.autoScroll" = true; # enable scrolling by holding middle mouse button
 			"media.eme.enabled" = true; # watch DRM content
 			"media.gmp-widevinecdm.enabled" = true; # watch DRM content

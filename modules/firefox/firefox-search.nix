@@ -1,9 +1,9 @@
 {
-	flake.homeModules.librewolf = {
-		programs.librewolf.profiles.matoo = {
+	flake.homeModules.firefox = {
+		programs.firefox.profiles.matoo = {
 			search = {
-				default = "ecosia";
-				privateDefault = "ecosia";
+				default = "qwant";
+				privateDefault = "qwant";
 				force = true; # fix firefox search config file being in the way of rebuilds
 
 				engines = {

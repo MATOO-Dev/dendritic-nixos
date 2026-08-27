@@ -1,6 +1,6 @@
 {
-	flake.homeModules.librewolf = {pkgs, ...}: {
-		programs.librewolf = {
+	flake.homeModules.firefox = {pkgs, ...}: {
+		programs.firefox = {
 			enable = true;
 			languagePacks = ["en-US"];
 		};
@@ -9,25 +9,25 @@
 		xdg.desktopEntries = let
 			categories = ["Network" "WebBrowser"];
 			genericName = "Web Browser";
-			icon = "librewolf";
+			icon = "firefox";
 			startupNotify = true;
 			terminal = false;
 			type = "Application";
 			settings = {
-				StartupWMClass = "librewolf";
+				StartupWMClass = "firefox";
 				Version = "1.5";
 				Keywords = "web;browser;internet;firefox";
 			};
 		in {
-			librewolf = {
-				name = "LibreWolf";
-				exec = "librewolf --new window %U";
+			firefox = {
+				name = "Firefox";
+				exec = "firefox --new window %U";
 				inherit categories genericName icon startupNotify terminal type settings;
 			};
-			librewolf-private = {
-				name = "LibreWolf: New private window";
-				exec = "librewolf --private-window %U";
-				settings = settings // {StartupWMClass = "librewolf-private";};
+			firefox-private = {
+				name = "Firefox: New private window";
+				exec = "firefox --private-window %U";
+				settings = settings // {StartupWMClass = "firefox-private";};
 				inherit categories genericName icon startupNotify terminal type;
 			};
 		};
