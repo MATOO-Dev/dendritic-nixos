@@ -23,8 +23,6 @@
 					(get-extension "clearurls" "{74145f27-f039-47ce-a470-a662b129930a}" true "menupanel")
 					# automatically decline cookie popups
 					(get-extension "consent-o-matic" "gdpr@cavi.au.dk" true "menupanel")
-					# remove cookies for the current site
-					(get-extension "cookie-remover" "{3507f56d-2ef5-45c1-b6d7-5297a0ba7642}" false "menupanel")
 					# dark mode overrides for all pages
 					(get-extension "darkreader" "addon@darkreader.org" true "menupanel")
 					# various additional youtube settings
@@ -35,8 +33,6 @@
 					(get-extension "indie-wiki-buddy" "{cb31ec5d-c49a-4e5a-b240-16c767444f62}" false "menupanel")
 					# open list of urls
 					(get-extension "open-multiple-urls" "openmultipleurls@ustat.de" false "menupanel")
-					# block hidden trackers
-					(get-extension "privacy-badger17" "jid1-MnnxcxisBPnSXQ@jetpack" false "menupanel")
 					# password manager
 					(get-extension "proton-pass" "78272b6fa58f4a1abaac99321d503a20@proton.me" true "navbar")
 					# in-browser vpn integration
