@@ -14,6 +14,7 @@
 			# amberol # music player
 			anki # flashcards
 			audacity # audio editor
+			unstable.ausweisapp # id verification
 			unstable.blender # 3d modeling
 			# chromium # backup browser, main is firefox
 			drawio # diagram maker
