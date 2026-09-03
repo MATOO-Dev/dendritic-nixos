@@ -3,7 +3,8 @@
 		settings.outputs = {
 			"DP-2" = {
 				mode = "2560x1440";
-				scale = 1.2;
+				# scale = 1.2;
+				scale = 1.0;
 				position = _: {
 					props.x = 0;
 					props.y = 0;
@@ -15,11 +16,13 @@
 
 			"DP-3" = {
 				mode = "2560x1440";
-				scale = 1.2;
+				# scale = 1.2;
+				scale = 1.0;
 				# position uses logical, scaled pixels instead of physical pixels
 				# therefore, offset is resolution / scale
 				position = _: {
-					props.x = -2133;
+					# props.x = -2133;
+					props.x = -2560;
 					props.y = 0;
 				};
 				variable-refresh-rate = _: {};
