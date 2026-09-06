@@ -15,7 +15,7 @@
 					extraPackages
 					# fingerprint
 					fonts
-					gaming
+					# gaming
 					graphics
 					input
 					# kanata

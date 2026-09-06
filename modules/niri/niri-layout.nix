@@ -20,7 +20,7 @@
 			layout = {
 				# in logical pixels
 				# drawn on each side
-				gaps = 10;
+				gaps = 8;
 
 				# offset on each side
 				# negative values means reverting the gaps
