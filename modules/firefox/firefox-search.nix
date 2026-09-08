@@ -2,14 +2,14 @@
 	flake.homeModules.firefox = {
 		programs.firefox.profiles.matoo = {
 			search = {
-				default = "qwant";
-				privateDefault = "qwant";
+				default = "ecosia";
+				privateDefault = "ecosia";
 				force = true; # fix firefox search config file being in the way of rebuilds
 
 				engines = {
 					google.metaData.alias = "@g";
 					bing.metaData.hidden = true;
-					duckduckgo.metaData.hidden = true;
+					duckduckgo.metaData.hidden = false;
 					ecosia = {
 						name = "Ecosia search";
 						icon = "https://ecosia.org/favicon.ico";
@@ -44,7 +44,13 @@
 						name = "MyNixOS";
 						urls = [{template = "https://mynixos.com/search?q={searchTerms}";}];
 						icon = "https://mynixos.com/favicon.ico";
-						definesAliases = ["@ns"];
+						definesAliases = ["@mn"];
+					};
+					youtube = {
+						name = "YouTube";
+						urls = [{template = "https://youtube.com/results?search_query={searchTerms}";}];
+						icon = "https://youtube.com/favicon.ico";
+						definesAliases = ["@y"];
 					};
 				};
 			};
