@@ -33,23 +33,25 @@
 
 		vim.statusline.lualine = {
 			enable = true;
-			theme = "auto";
-			icons.enable = true;
-			componentSeparator = {
-				left = "|";
-				right = "|";
-			};
-			sectionSeparator = {
-				left = "";
-				right = "";
-			};
-			activeSection = {
-				a = ["{'mode'}"];
-				b = ["{'diagnostics'}"];
-				c = ["{'buffers'}"];
-				x = ["{'filetype'}"];
-				y = ["{'branch'}"];
-				z = ["{'location'}"];
+			setupOpts = {
+				theme = "auto";
+				icons_enabled = true;
+				component_separators = {
+					left = "|";
+					right = "|";
+				};
+				section_separators = {
+					left = "";
+					right = "";
+				};
+				sections = {
+					lualine_a = [{"@1" = "mode";}];
+					lualine_b = [{"@1" = "diagnostics";}];
+					lualine_c = [{"@1" = "buffers";}];
+					lualine_x = [{"@1" = "filetype";}];
+					lualine_y = [{"@1" = "branch";}];
+					lualine_z = [{"@1" = "location";}];
+				};
 			};
 		};
 
