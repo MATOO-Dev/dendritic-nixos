@@ -9,7 +9,8 @@
 		imports = [inputs.nixcord.homeModules.nixcord];
 		programs.nixcord = {
 			enable = true;
-			discord.package = pkgs.unstable.discord;
+			discord.package = pkgs.discord;
+			# discord.package = pkgs.unstable.discord;
 			discord.vencord.enable = true;
 			vesktop.enable = false;
 			config = {
