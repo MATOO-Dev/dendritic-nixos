@@ -10,6 +10,17 @@
 			"browser.toolbars.bookmarks.visibility" = "never"; # never show bookmarks toolbar
 			"intl.accept_languages" = "en-US, en"; # prefer english pages over localized
 			"browser.tabs.inTitlebar" = 0; # hide min/max/close buttons in title bar
+			"browser.aboutConfig.showWarning" = false; # dont show warning when opening about:config
+			"browser.newtabpage.activity-stream.showWeather" = false; # dont show weather popup on new tab
+			"browser.newtabpage.activity-stream.showSponsoredTopSites" = false; # dont show sponsored links on new tabs
+			"browser.ai.control.default" = "blocked"; # block the slop
+			"browser.ai.control.linkPreviewKeyPoints" = "blocked"; # block the slop
+			"browser.ai.control.pdfjsAltText" = "blocked"; # block the slop
+			"browser.ai.control.sidebarChatbot" = "blocked"; # block the slop
+			"browser.ai.control.smartTabGroups" = "blocked"; # block the slop
+			"browser.ai.control.smartWindow" = "blocked"; # block the slop
+			"browser.ai.control.speechRecognition" = "blocked"; # block the slop
+			"browser.ai.control.translations" = "blocked"; # block the slop
 		};
 	};
 }
