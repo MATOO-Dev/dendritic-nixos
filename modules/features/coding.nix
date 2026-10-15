@@ -8,6 +8,7 @@
 			cargo-deny # cargo denpendency linting / license checking
 			clang # clang compiler
 			clang-tools # additional tools for clang
+			unstable.devenv # development shells powered by nix
 			gdb # c++ / rust compiler
 			unstable.godot # game engine
 			unstable.material-maker # PBR material tool
