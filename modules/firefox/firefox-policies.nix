@@ -24,6 +24,7 @@
 					"https://soundcloud.com"
 					"https://tv.apple.com"
 					"https://typst.app"
+					"https://vimjoyer.com"
 					"https://youtube.com"
 				];
 			};
