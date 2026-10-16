@@ -86,8 +86,13 @@
 
 		vim.languages.rust = {
 			enable = true;
+			extensions.rustaceanvim.enable = false;
+			format.enable = true;
+			lsp.enable = true;
+			treesitter.enable = true;
 		};
 		vim.formatter.conform-nvim.setupOpts.formatters_by_ft.rust = ["rustfmt"];
+		vim.lsp.servers.rust-analyzer.settings.rust-analyzer.checkOnSave = false;
 
 		vim.languages.typst = {
 			enable = true;
