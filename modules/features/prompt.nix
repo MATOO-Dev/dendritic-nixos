@@ -36,8 +36,10 @@
 
 				right_format =
 					lib.strings.concatStrings [
-						"$character"
-						"\${env_var.ZVM_MODE}"
+						# "$character"
+						# "\${env_var.ZVM_MODE}"
+						"$cmd_duration"
+						" "
 						"[](fg:theme0d)"
 						"$time"
 						"[](fg:theme0d)"
@@ -86,6 +88,15 @@
 					disabled = false;
 					time_format = "%R";
 					format = "[$time](bg:theme0d fg:theme01)";
+				};
+
+				cmd_duration = {
+					disabled = false;
+					min_time = 30000;
+					format = "[$duration]($style)";
+					show_notifications = true;
+					min_time_to_notify = 60000;
+					# style = "bold yellow";
 				};
 			};
 		};
