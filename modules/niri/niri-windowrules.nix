@@ -95,6 +95,7 @@
 						title = "Picture-in-Picture";
 					}
 					# uni exercise outputs
+					# {title = ".*-Exercise-.*";}
 					{app-id = ".*-Exercise-.*";}
 				];
 				open-floating = true;
