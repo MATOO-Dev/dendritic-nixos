@@ -95,8 +95,8 @@
 						title = "Picture-in-Picture";
 					}
 					# uni exercise outputs
-					# {title = ".*-Exercise-.*";}
 					{app-id = ".*-Exercise-.*";}
+					{app-id = "berg.exe";}
 				];
 				open-floating = true;
 				geometry-corner-radius = 0;
