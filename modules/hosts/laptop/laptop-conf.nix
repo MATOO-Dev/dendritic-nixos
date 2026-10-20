@@ -18,7 +18,7 @@
 					gaming
 					graphics
 					input
-					# kanata
+					kanata
 					kernel
 					locale
 					localsend
