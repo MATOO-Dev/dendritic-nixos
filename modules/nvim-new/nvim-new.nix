@@ -17,20 +17,19 @@
 
 				# from config.settings
 				settings.config_directory = ./.;
+				settings.aliases = ["nv"];
 
-				# # from config.specs.foo
-				# specs.foo = {
-				# 	# after = ["bar"];
-				# 	after = [];
-				# 	# lazy = true;
-				# 	lazy = false;
-				# 	# data = with pkgs.vimPlugins; [];
-				# 	data = null;
-				# 	# runtimePkgs = with pkgs; [];
-				# 	runtimePkgs = null;
-				# };
+				specs.general = with pkgs.vimPlugins; [];
+				specs.lazy = {
+					lazy = true;
+					# load using vim.cmd.packadd('pname')
+					# look into lazy loading with default vim.pack.add
+					data = with pkgs.vimPlugins; [];
+				};
+				info.value = "require 'nix-info'.info.value";
+				runtimePkgs = with pkgs; [];
 
-				imports = with self.modules.neovim; [
+				imports = with self.modules.nvim-new; [
 				];
 			};
 	};

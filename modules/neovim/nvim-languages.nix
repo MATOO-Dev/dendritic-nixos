@@ -46,6 +46,17 @@
 			# },
 			# telemetry = { enabled = false },
 		};
+		vim.lsp.servers.lua-language-server.settings.Lua.diagnostics.globals = ["vim"];
+		vim.formatter.conform-nvim.setupOpts.formatters.stylua.prepend_args = [
+			# "--indent-type"
+			# "Spaces"
+			# "--indent-width"
+			# "4"
+			"--quote-style"
+			"AutoPreferSingle"
+			"--call-parentheses"
+			"None"
+		];
 
 		vim.languages.csharp = {
 			enable = true;

@@ -1,1 +1,5 @@
-print("hello world")
+require 'config.options'
+-- require 'config.keymaps'
+-- require 'config.autocmds'
+-- require 'plugins.lazy'
+-- require 'lsp'
