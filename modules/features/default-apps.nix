@@ -35,7 +35,9 @@
 				"application/pdf" = "org.gnome.Evince.desktop";
 				"application/x-pixieditor" = "pixieditor.desktop";
 				"application/zip" = "org.kde.ark.desktop";
+				"audio/mp3" = "umpv.desktop";
 				"audio/mpeg" = "umpv.desktop";
+				"audio/x-wav" = "umpv.desktop";
 				"image/gif" = "org.gnome.eog.desktop";
 				"image/jpeg" = "org.gnome.eog.desktop";
 				"image/png" = "org.gnome.eog.desktop";
