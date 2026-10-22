@@ -1,5 +1,7 @@
 require 'config.options'
 require 'config.keymaps'
--- require 'config.autocmds'
+require 'config.autocmds'
 -- require 'plugins.lazy'
 -- require 'lsp'
+-- require 'debug'
+-- require 'overseer'

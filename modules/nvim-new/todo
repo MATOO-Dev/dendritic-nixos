@@ -1,8 +1,8 @@
 port options
-============================
 port keymaps
+port autocmds
+============================
 port lsp setup
 port plugins
-port autocmds
 port debugging setup
 port overseer templates
