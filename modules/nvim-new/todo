@@ -1,8 +1,59 @@
-port options
-port keymaps
-port autocmds
 ============================
 port lsp setup
-port plugins
+clang
+csharp
+gdasset
+gdscript
+gdshader
+glsl
+hlsl
+lua
+nix
+rust
+slang
+typst
+============================
+port plugins (and determine which to keep)
+autopair / mini.pairs
+blink.cmp
+colorscheme
+comment
+conform
+darkcolors
+diffview
+flash
+fugitive
+git-conflict
+gitignore
+gitsignts
+godot / godot assets
+hardtime
+indent-blankline
+lualine
+move
+neogit
+noice
+notify
+oil
+overseer
+quicker
+rainbow-delimiters
+surround
+tabout
+tabout
+telescope
+tiny-inline-diagnostic
+tmux-navigator
+treesitter
+trouble
+typst
+undotree
+whichkey
+wordmotion
+============================
 port debugging setup
+dap
+dap-view
+dap-virtual-text
+============================
 port overseer templates
