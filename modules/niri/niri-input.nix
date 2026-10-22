@@ -14,6 +14,8 @@
 
 				touchpad.tap = _: {};
 				touchpad.accel-profile = "flat";
+				# disable while typing
+				touchpad.dwt = _: {};
 			};
 
 			cursor = {
