@@ -3,39 +3,34 @@
 	self,
 	...
 }: {
-	flake.homeModules.neovim = {pkgs, ...}: {
-		home.packages = [
-			self.packages.${pkgs.stdenv.hostPlatform.system}.nvim-full
-		];
+	flake.homeModules.nvim = {pkgs, ...}: {
+		programs.neovim = {
+			enable = true;
+			package = self.packages.${pkgs.stdenv.hostPlatform.system}.nvim;
+		};
 	};
 
 	perSystem = {pkgs, ...}: {
-		packages.nvim-full =
-			(inputs.nvf.lib.neovimConfiguration {
-					inherit pkgs;
-					modules = with self.modules.nvim; [
-						autocomplete
-						binds
-						debugging
-						diagnostics
-						git
-						languages
-						navigation
-						options
-						theme
-						typing
-						visuals
-					];
-				}).neovim;
+		packages.nvim =
+			inputs.wrapper-modules.wrappers.neovim.wrap {
+				inherit pkgs;
 
-		packages.nvim-small =
-			(inputs.nvf.lib.neovimConfiguration {
-					inherit pkgs;
-					modules = with self.modules.nvim; [
-						binds
-						navigation
-						options
-					];
-				}).neovim;
+				# from config.settings
+				settings.config_directory = ./.;
+				settings.aliases = ["nv"];
+
+				specs.general = with pkgs.vimPlugins; [];
+				specs.lazy = {
+					lazy = true;
+					# load using vim.cmd.packadd('pname')
+					# look into lazy loading with default vim.pack.add
+					data = with pkgs.vimPlugins; [];
+				};
+				info.value = "require 'nix-info'.info.value";
+				runtimePkgs = with pkgs; [];
+
+				imports = with self.modules.nvim-new; [
+				];
+			};
 	};
 }
