@@ -19,12 +19,16 @@
 				settings.config_directory = ./.;
 				settings.aliases = ["nv"];
 
-				specs.general = with pkgs.vimPlugins; [];
+				specs.general = with pkgs.vimPlugins; [
+					# non-lazy plugins can be loaded using require 'xyz'
+					oil-nvim
+				];
 				specs.lazy = {
 					lazy = true;
-					# load using vim.cmd.packadd('pname')
-					# look into lazy loading with default vim.pack.add
-					data = with pkgs.vimPlugins; [];
+					# load using vim.cmd.packadd('pname') or vim.pack.add
+					data = with pkgs.vimPlugins; [
+						telescope-nvim
+					];
 				};
 				info.value = "require 'nix-info'.info.value";
 				runtimePkgs = with pkgs; [];

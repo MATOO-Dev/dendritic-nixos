@@ -55,7 +55,8 @@
 			"--quote-style"
 			"AutoPreferSingle"
 			"--call-parentheses"
-			"None"
+			# "None"
+			"Input"
 		];
 
 		vim.languages.csharp = {
