@@ -1,5 +1,5 @@
 ============================
-port lsp setup
+port lsp setup & formatters
 clang
 csharp
 gdasset
@@ -29,11 +29,11 @@ gitsigns
 godot / godot assets
 hardtime
 indent-blankline
-lualine
 move
 neogit
 noice
 notify
+nvim-web-devicons
 oil-git / oil-lsp-diagnostics
 overseer
 quicker
@@ -45,7 +45,6 @@ tmux-navigator
 treesitter
 trouble
 typst
-undotree
 whichkey
 wordmotion
 ============================

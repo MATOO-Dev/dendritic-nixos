@@ -20,18 +20,26 @@
 				settings.aliases = ["nv"];
 
 				specs.general = with pkgs.vimPlugins; [
-					# non-lazy plugins can be loaded using require 'xyz'
 					oil-nvim
 				];
 				specs.lazy = {
 					lazy = true;
-					# load using vim.cmd.packadd('pname')
 					data = with pkgs.vimPlugins; [
+						conform-nvim
+						lualine-nvim
 						telescope-nvim
+						undotree
 					];
 				};
 				info.value = "require 'nix-info'.info.value";
-				runtimePkgs = with pkgs; [];
+				# potentially move this and conform / lspconfig into a seperate spec
+				runtimePkgs = with pkgs; [
+					alejandra # nix formatter
+					clang-tools # clang formatter & lsp
+					gdtoolkit_4 # gdscript formatter
+					rustfmt # rust formatter
+					stylua # lua formatter
+				];
 
 				imports = with self.modules.nvim-new; [
 				];
