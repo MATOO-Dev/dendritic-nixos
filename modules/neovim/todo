@@ -25,7 +25,7 @@ flash
 fugitive
 git-conflict
 gitignore
-gitsignts
+gitsigns
 godot / godot assets
 hardtime
 indent-blankline
@@ -34,14 +34,12 @@ move
 neogit
 noice
 notify
-oil / oil-git / oil-lsp-diagnostics
+oil-git / oil-lsp-diagnostics
 overseer
 quicker
 rainbow-delimiters
 surround
 tabout
-tabout
-telescope
 tiny-inline-diagnostic
 tmux-navigator
 treesitter
