@@ -16,7 +16,6 @@ typst
 port plugins (and determine which to keep)
 autopair / mini.pairs
 blink.cmp
-colorscheme
 comment
 conform
 darkcolors

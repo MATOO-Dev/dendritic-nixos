@@ -20,15 +20,17 @@
 				settings.aliases = ["nv"];
 
 				specs.general = with pkgs.vimPlugins; [
+					catppuccin-nvim
 					oil-nvim
 				];
 				specs.lazy = {
 					lazy = true;
 					data = with pkgs.vimPlugins; [
-						conform-nvim
-						lualine-nvim
-						telescope-nvim
-						undotree
+						conform-nvim # auto formatting
+						lualine-nvim # status bar
+						telescope-nvim # fuzzy finder
+						undotree # tree-like undo
+						nvim-treesitter # treesitter
 					];
 				};
 				info.value = "require 'nix-info'.info.value";
