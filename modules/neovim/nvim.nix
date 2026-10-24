@@ -25,7 +25,7 @@
 				];
 				specs.lazy = {
 					lazy = true;
-					# load using vim.cmd.packadd('pname') or vim.pack.add
+					# load using vim.cmd.packadd('pname')
 					data = with pkgs.vimPlugins; [
 						telescope-nvim
 					];
