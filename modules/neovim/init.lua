@@ -1,6 +1,6 @@
 require 'config.options'
 require 'config.keymaps'
 require 'config.autocmds'
--- require 'lsp'
+require 'lsp'
 -- require 'debug'
 -- require 'overseer'

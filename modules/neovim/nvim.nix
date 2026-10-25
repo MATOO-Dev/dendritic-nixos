@@ -28,9 +28,10 @@
 					data = with pkgs.vimPlugins; [
 						conform-nvim # auto formatting
 						lualine-nvim # status bar
+						nvim-lspconfig # lsp templates
+						nvim-treesitter # treesitter
 						telescope-nvim # fuzzy finder
 						undotree # tree-like undo
-						nvim-treesitter # treesitter
 					];
 				};
 				info.value = "require 'nix-info'.info.value";
@@ -39,6 +40,7 @@
 					alejandra # nix formatter
 					clang-tools # clang formatter & lsp
 					gdtoolkit_4 # gdscript formatter
+					rust-analyzer # rust lsp
 					rustfmt # rust formatter
 					stylua # lua formatter
 				];
