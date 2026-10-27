@@ -37,10 +37,23 @@
 				info.value = "require 'nix-info'.info.value";
 				# potentially move this and conform / lspconfig into a seperate spec
 				runtimePkgs = with pkgs; [
-					alejandra # nix formatter
+					bash-language-server # bash lsp
 					clang-tools # clang formatter & lsp
-					gdtoolkit_4 # gdscript formatter
+					cmake-language-server # cmake lsp
+					csharp-ls # c# lsp
+					# gdscript
+					# gdshader
+					glsl_analyzer # glsl lsp
+					shader-slang # slang lsp
+					lua-language-server # lua lsp
+					marksman # markdown lsp
+					nil # nix lsp
 					rust-analyzer # rust lsp
+					tinymist # typst lsp
+					wgsl-analyzer # wgsl lsp
+					#############################
+					alejandra # nix formatter
+					gdtoolkit_4 # gdscript formatter
 					rustfmt # rust formatter
 					stylua # lua formatter
 				];

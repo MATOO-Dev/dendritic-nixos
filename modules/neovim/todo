@@ -1,5 +1,8 @@
 ============================
-port lsp setup & formatters
+include lsps in packages
+gdshader_lsp (not packaged for nix)
+============================
+port formatters
 clang
 csharp
 gdasset
@@ -7,11 +10,11 @@ gdscript
 gdshader
 glsl
 hlsl
-lua
-nix
-rust
+lua (stylua)
+nix (alejandra or nixfmt)
+rust (rustfmt)
 slang
-typst
+typst (typstyle)
 ============================
 port plugins (and determine which to keep)
 autopair / mini.pairs
