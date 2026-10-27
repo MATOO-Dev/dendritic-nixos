@@ -32,6 +32,7 @@
 						nvim-treesitter # treesitter
 						telescope-nvim # fuzzy finder
 						undotree # tree-like undo
+						vim-wordmotion # better word boundaries
 					];
 				};
 				info.value = "require 'nix-info'.info.value";

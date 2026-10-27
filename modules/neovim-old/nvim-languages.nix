@@ -75,14 +75,6 @@
 			};
 		};
 
-		# vim.languages.gdscript = {
-		# 	enable = true;
-		# };
-
-		# vim.languages.gdshader = {
-		# enable = true;
-		# };
-
 		# glsl_analyzer lsp currently doesnt support error checking
 		vim.languages.glsl = {
 			enable = true;
@@ -128,15 +120,5 @@
 			# 	end, { desc = "[T]inymist [U]npin" })
 			# end,
 		};
-
-		# vim.autocmd.typst = {
-		#
-		# };
-
-		# vim.autocmds.wrap = {
-		# 	event = [ "BufReadPost" ];
-		# 	pattern = [ "*.typ" "*.txt" "*.md" ];
-		# 	callback = "setlocal wrap";
-		# };
 	};
 }

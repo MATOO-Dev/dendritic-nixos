@@ -17,7 +17,7 @@ vim.lsp.enable('cmake')
 vim.lsp.enable('csharp_ls')
 -- gdscript, lsp is localhost connection to godot client, so no lsp package
 vim.lsp.enable('gdscript')
--- gdshader, not packaged for nix
+-- gdshader, unmaintained, consider packaging gdshader-lsp-cpp
 -- vim.lsp.enable('gdshader_lsp')
 -- glsl
 vim.lsp.enable('glsl_analyzer')

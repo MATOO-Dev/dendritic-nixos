@@ -1,6 +1,7 @@
 ============================
 include lsps in packages
 gdshader_lsp (not packaged for nix)
+port special lsp settings
 ============================
 port formatters
 clang
