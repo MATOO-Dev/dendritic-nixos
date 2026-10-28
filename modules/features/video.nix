@@ -38,6 +38,7 @@
 				save-position-on-quit = "no";
 				ytdl-format = "bestvideo+bestaudio";
 				# cache-default = 4000000;
+				drag-and-drop-replace = "replace";
 			};
 		};
 
