@@ -1,4 +1,4 @@
-{
+{self, ...}: {
 	flake.modules.niri.binds = {
 		pkgs,
 		lib,
@@ -17,10 +17,20 @@
 				props.hotkey-overlay-title = "Open Terminal: kitty";
 				content.spawn = lib.getExe pkgs.kitty;
 			};
+			# "Mod+R" = _: {
+			# 	props.hotkey-overlay-title = "Run app launcher: vicinae";
+			# 	content.spawn = [
+			# 		"${lib.getExe pkgs.vicinae}"
+			# 		"toggle"
+			# 	];
+			# };
 			"Mod+R" = _: {
-				props.hotkey-overlay-title = "Run app launcher: vicinae";
+				props.hotkey-overlay-title = "Run app launcher: noctalia";
 				content.spawn = [
-					"${lib.getExe pkgs.vicinae}"
+					"${lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia}"
+					"ipc"
+					"call"
+					"launcher"
 					"toggle"
 				];
 			};
