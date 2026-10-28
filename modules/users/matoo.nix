@@ -44,6 +44,7 @@
 				music # music players
 				neovim # text editor
 				nix # nix settings
+				noctalia # desktop shell
 				notifications # notification settings
 				prompt # terminal prompt
 				shells # terminal shells

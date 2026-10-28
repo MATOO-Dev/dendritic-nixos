@@ -1,4 +1,4 @@
-{
+{self, ...}: {
 	flake.modules.niri.autostart = {
 		pkgs,
 		lib,
@@ -26,7 +26,8 @@
 			(lib.getExe pkgs.discover-overlay)
 			(lib.getExe pkgs.hypridle)
 			(lib.getExe pkgs.sunsetr)
-			(lib.getExe pkgs.waybar)
+			# (lib.getExe pkgs.waybar)
+			(lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia)
 			(lib.getExe (pkgs.writeShellApplication {
 						name = "vicinae-server";
 						runtimeInputs = with pkgs; [vicinae];
