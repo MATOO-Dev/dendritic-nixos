@@ -94,7 +94,7 @@
 					disabled = false;
 					min_time = 30000;
 					format = "[$duration]($style)";
-					show_notifications = true;
+					show_notifications = false;
 					min_time_to_notify = 60000;
 					# style = "bold yellow";
 				};
