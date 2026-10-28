@@ -17,39 +17,39 @@ rust (rustfmt)
 slang
 typst (typstyle)
 ============================
-port plugins (and determine which to keep)
+port plugins
+flash
+gitsigns
+move
+overseer
+surround
+typst
+============================
+decide whether to keep these plugins
 autopair / mini.pairs
 blink.cmp
 comment
-conform
 darkcolors
 diffview
-flash
 fugitive
 git-conflict
 gitignore
-gitsigns
 godot / godot assets
 hardtime
 indent-blankline
-move
 neogit
 noice
 notify
 nvim-web-devicons
 oil-git / oil-lsp-diagnostics
-overseer
 quicker
 rainbow-delimiters
-surround
 tabout
 tiny-inline-diagnostic
 tmux-navigator
 treesitter
 trouble
-typst
 whichkey
-wordmotion
 ============================
 port debugging setup
 dap
