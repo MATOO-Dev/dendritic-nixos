@@ -1,5 +1,6 @@
 local function setup_lualine()
 	vim.cmd.packadd('lualine.nvim')
+	-- nvim-web-devicons
 	require 'lualine'.setup {
 		options = {
 			theme = 'auto',

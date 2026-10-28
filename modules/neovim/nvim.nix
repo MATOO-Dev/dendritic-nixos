@@ -32,6 +32,7 @@
 						nvim-treesitter # treesitter
 						telescope-nvim # fuzzy finder
 						undotree # tree-like undo
+						vim-move # move selected text
 						vim-wordmotion # better word boundaries
 					];
 				};

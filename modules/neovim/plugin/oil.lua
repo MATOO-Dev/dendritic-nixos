@@ -14,5 +14,5 @@ vim.keymap.set('n', '<leader>ol', function()
 	if not package.loaded['oil'] then
 		setup_oil()
 	end
-	vim.cmd 'Oil'
+	require 'oil'.open()
 end, { desc = '[O]i[L]' })
