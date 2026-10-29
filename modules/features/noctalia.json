@@ -122,15 +122,6 @@
             "unreadBadgeColor": "primary"
           },
           {
-            "deviceNativePath": "__default__",
-            "displayMode": "graphic",
-            "hideIfIdle": false,
-            "hideIfNotDetected": true,
-            "id": "Battery",
-            "showNoctaliaPerformance": false,
-            "showPowerProfiles": false
-          },
-          {
             "displayMode": "alwaysShow",
             "iconColor": "none",
             "id": "Bluetooth",
@@ -141,6 +132,15 @@
             "iconColor": "none",
             "id": "Network",
             "textColor": "none"
+          },
+          {
+            "deviceNativePath": "__default__",
+            "displayMode": "graphic",
+            "hideIfIdle": false,
+            "hideIfNotDetected": true,
+            "id": "Battery",
+            "showNoctaliaPerformance": false,
+            "showPowerProfiles": true
           },
           {
             "iconColor": "error",
@@ -688,44 +688,28 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "DP-2": "/home/matoo/Pictures/Wallpapers/background.jpg",
-      "DP-3": "/home/matoo/Pictures/Wallpapers/background.jpg"
+      "eDP-1": "/home/matoo/Pictures/Wallpapers/background.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
-      "DP-2": {
+      "eDP-1": {
+        "name": "eDP-1",
         "connected": true,
-        "height": 1200,
-        "name": "DP-2",
-        "physical_height": 340,
-        "physical_width": 600,
-        "refresh_rate": 165000,
-        "scale": 1.2,
-        "transform": "Normal",
-        "vrr_enabled": true,
-        "vrr_supported": false,
-        "width": 2133,
+        "scale": 1.75,
+        "width": 1289,
+        "height": 859,
         "x": 0,
-        "y": 0
-      },
-      "DP-3": {
-        "connected": true,
-        "height": 1200,
-        "name": "DP-3",
-        "physical_height": 340,
-        "physical_width": 600,
-        "refresh_rate": 74924,
-        "scale": 1.2,
-        "transform": "Normal",
-        "vrr_enabled": true,
-        "vrr_supported": true,
-        "width": 2133,
-        "x": -2133,
-        "y": 0
+        "y": 0,
+        "physical_width": 280,
+        "physical_height": 190,
+        "refresh_rate": 59999,
+        "vrr_supported": false,
+        "vrr_enabled": false,
+        "transform": "Normal"
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1793229901000
+      "lastSeenTs": 1793264470000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
