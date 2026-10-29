@@ -34,6 +34,8 @@
 						undotree # tree-like undo
 						vim-move # move selected text
 						vim-wordmotion # better word boundaries
+						nvim-surround # surrounding delimiter pairs
+						flash-nvim # quick jumping motions
 					];
 				};
 				info.value = "require 'nix-info'.info.value";

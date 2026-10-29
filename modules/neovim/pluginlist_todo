@@ -18,10 +18,8 @@ slang
 typst (typstyle)
 ============================
 port plugins
-flash
 gitsigns
 overseer
-surround
 typst
 ============================
 decide whether to keep these plugins
