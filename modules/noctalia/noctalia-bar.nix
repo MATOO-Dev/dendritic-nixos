@@ -44,13 +44,13 @@
 						middleClickCommand = "pwvucontrol || pavucontrol";
 						textColor = "none";
 					}
-					{
-						displayMode = "alwaysShow";
-						iconColor = "none";
-						id = "Microphone";
-						middleClickCommand = "pwvucontrol || pavucontrol";
-						textColor = "none";
-					}
+					# {
+					# 	displayMode = "alwaysShow";
+					# 	iconColor = "none";
+					# 	id = "Microphone";
+					# 	middleClickCommand = "pwvucontrol || pavucontrol";
+					# 	textColor = "none";
+					# }
 					{
 						applyToAllMonitors = true;
 						displayMode = "alwaysShow";
