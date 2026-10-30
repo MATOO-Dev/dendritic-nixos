@@ -23,3 +23,21 @@ vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
 		end
 	end,
 })
+
+vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+	desc = 'Files without filetpe, so no ftplugin possible',
+	pattern = { '[^.]\\+' },
+	callback = function()
+		vim.opt_local.wrap = true
+	end,
+})
+
+-- vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+-- 	desc = 'Debug Filetype',
+-- 	pattern = { '*' },
+-- 	callback = function()
+-- 		if vim.cmd.expand('%:t') !~ '\.' then
+-- 			print 'file without type'
+-- 		end
+-- 	end
+-- })
