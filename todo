@@ -8,6 +8,7 @@ nvim # currently using nvf, consider nix-wrapper-modules
 thunderbird # declare plugins, settings, and accounts (depends on SOPS)
 firefox # declare plugins and settings (WIP)
 snapper # setup snapshot config (revisit after impermanence)
+kdeconnect # fix installation & setup settings
 
 ###################
 #### long term ####
