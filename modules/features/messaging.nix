@@ -11,7 +11,7 @@
 			enable = true;
 			discord.package = pkgs.discord;
 			# discord.package = pkgs.unstable.discord;
-			discord.vencord.enable = false;
+			discord.vencord.enable = true;
 			vesktop.enable = false;
 			config = {
 				autoUpdate = false;
