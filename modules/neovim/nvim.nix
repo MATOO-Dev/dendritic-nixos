@@ -36,6 +36,8 @@
 						vim-wordmotion # better word boundaries
 						nvim-surround # surrounding delimiter pairs
 						flash-nvim # quick jumping motions
+						typst-preview-nvim # realtime preview for typst
+						tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
 					];
 				};
 				info.value = "require 'nix-info'.info.value";
