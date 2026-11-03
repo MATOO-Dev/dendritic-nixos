@@ -137,7 +137,7 @@
 						textColor = "none";
 					}
 					{
-						displayMode = "onhover";
+						displayMode = "alwaysHide";
 						iconColor = "none";
 						id = "Network";
 						textColor = "none";
@@ -151,10 +151,10 @@
 						showNoctaliaPerformance = false;
 						showPowerProfiles = false;
 					}
-					{
-						iconColor = "error";
-						id = "SessionMenu";
-					}
+					# {
+					# 	iconColor = "error";
+					# 	id = "SessionMenu";
+					# }
 				];
 			};
 		};
