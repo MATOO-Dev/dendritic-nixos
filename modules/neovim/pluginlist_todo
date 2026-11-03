@@ -18,9 +18,7 @@ slang
 typst (typstyle)
 ============================
 port plugins
-gitsigns
 overseer
-typst
 ============================
 decide whether to keep these plugins
 autopair / mini.pairs
@@ -42,7 +40,6 @@ oil-git / oil-lsp-diagnostics
 quicker
 rainbow-delimiters
 tabout
-tiny-inline-diagnostic
 tmux-navigator
 treesitter
 trouble
