@@ -18,9 +18,9 @@ slang
 typst (typstyle)
 ============================
 port plugins
-overseer
 ============================
 decide whether to keep these plugins
+overseer
 autopair / mini.pairs
 blink.cmp
 comment
@@ -32,7 +32,7 @@ gitignore
 godot / godot assets
 hardtime
 indent-blankline
-neogit
+lazygit
 noice
 notify
 nvim-web-devicons

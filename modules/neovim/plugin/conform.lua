@@ -1,6 +1,6 @@
 local function setup_conform()
 	vim.cmd.packadd('conform.nvim')
-	require 'conform'.setup {
+	require('conform').setup({
 		format_on_save = {
 			timeout_ms = 500,
 			-- lsp_format = 'fallback'
@@ -33,10 +33,10 @@ local function setup_conform()
 				},
 			},
 		},
-	}
+	})
 end
 
-vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
+vim.api.nvim_create_autocmd({ 'VimEnter' }, {
 	once = true,
 	callback = setup_conform,
 })
