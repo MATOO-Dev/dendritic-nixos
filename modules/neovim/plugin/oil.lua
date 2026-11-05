@@ -1,18 +1,23 @@
 local function setup_oil()
-	vim.cmd.packadd('oil')
-	require 'oil'.setup {
-		default_file_explorer = true,
-		delete_to_trash = true,
-		view_options = { show_hidden = true },
-		columns = { 'icon' },
-		use_default_keymaps = true,
-		keymaps = { ['<bs>'] = 'actions.parent' },
-	}
+    if not package.loaded['oil'] then
+        vim.cmd.packadd('oil.nvim')
+        require 'oil'.setup {
+            default_file_explorer = true,
+            delete_to_trash = true,
+            view_options = { show_hidden = true },
+            columns = { 'icon' },
+            use_default_keymaps = true,
+            keymaps = { ['<bs>'] = 'actions.parent' },
+        }
+    end
 end
 
+vim.api.nvim_create_autocmd({ 'VimEnter' }, {
+    once = true,
+    callback = setup_oil,
+})
+
 vim.keymap.set('n', '<leader>ol', function()
-	if not package.loaded['oil'] then
-		setup_oil()
-	end
-	require 'oil'.open()
+    setup_oil()
+    require 'oil'.open()
 end, { desc = '[O]i[L]' })
