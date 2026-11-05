@@ -4,27 +4,21 @@ gdshader_lsp (not packaged for nix)
 port special lsp settings
 ============================
 port formatters
-clang
 csharp
-gdasset
-gdscript
-gdshader
 glsl
 hlsl
-lua (stylua)
-nix (alejandra or nixfmt)
-rust (rustfmt)
 slang
 typst (typstyle)
 ============================
 port plugins
-blink.cmp
 blink.pairs / autopair / ultimate-autopair / mini.pairs
 blink.indent / indent-blankline / snacks.indent
 rainbow-delimiters
+overseer
+nvim-web-devicons
+treesitter
 ============================
 decide whether to keep these plugins
-overseer
 comment
 darkcolors
 diffview
@@ -35,12 +29,10 @@ hardtime
 lazygit
 noice
 notify
-nvim-web-devicons
 oil-git / oil-lsp-diagnostics
 quicker
 tabout
 tmux-navigator
-treesitter
 trouble
 ufo
 whichkey

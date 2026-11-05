@@ -79,6 +79,7 @@
 						gdtoolkit_4 # gdscript formatter
 						rustfmt # rust formatter
 						stylua # lua formatter
+						typstyle # typst formatter
 					]
 					++ [
 						self.packages.${pkgs.stdenv.hostPlatform.system}.alejandra # customized nix formatter

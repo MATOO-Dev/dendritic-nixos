@@ -15,7 +15,7 @@ local function setup_conform()
             lua = { 'stylua' },
             nix = { 'alejandra' },
             rust = { 'rustfmt' },
-            -- typst = { '' },
+            typst = { 'typstyle' },
         },
         formatters = {
             ['clang-format'] = {
