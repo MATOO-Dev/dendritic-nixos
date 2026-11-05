@@ -42,7 +42,8 @@
 				matoo # user settings
 				messaging # messaging apps
 				music # music players
-				neovim # text editor
+				# neovim # text editor, old config
+				nvim # text editor, new config
 				nix # nix settings
 				noctalia # desktop shell
 				notifications # notification settings

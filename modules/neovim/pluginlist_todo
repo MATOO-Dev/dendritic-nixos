@@ -18,27 +18,26 @@ slang
 typst (typstyle)
 ============================
 port plugins
+blink.cmp
+blink.pairs / autopair / ultimate-autopair / mini.pairs
+blink.indent / indent-blankline / snacks.indent
+rainbow-delimiters
 ============================
 decide whether to keep these plugins
 overseer
-autopair / mini.pairs
-blink.cmp
 comment
 darkcolors
 diffview
-fugitive
 git-conflict
 gitignore
 godot / godot assets
 hardtime
-indent-blankline
 lazygit
 noice
 notify
 nvim-web-devicons
 oil-git / oil-lsp-diagnostics
 quicker
-rainbow-delimiters
 tabout
 tmux-navigator
 treesitter
