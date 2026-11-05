@@ -53,6 +53,7 @@
 						typst-preview-nvim # realtime preview for typst
 						tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
 						gitsigns-nvim # show git status in files
+						blink-cmp # autocomplete
 					];
 				};
 				info.value = "require 'nix-info'.info.value";
