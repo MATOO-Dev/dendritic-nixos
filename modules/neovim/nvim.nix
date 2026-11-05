@@ -11,6 +11,20 @@
 	};
 
 	perSystem = {pkgs, ...}: {
+		# alejandra is formatted using a config file
+		# create a custom version of alejandra that interpolates the config as cmdline arg
+		# allows settings to apply to all nix files without requiring the config there
+		packages.alejandra =
+			pkgs.writeShellApplication {
+				name = "alejandra";
+				runtimeInputs = with pkgs; [alejandra];
+				text = let
+					alejandraConfig =
+						pkgs.writers.writeTOML "alejandra.toml" {
+							indentation = "Tabs";
+						};
+				in ''alejandra --experimental-config ${alejandraConfig} "$@"'';
+			};
 		packages.nvim =
 			inputs.wrapper-modules.wrappers.neovim.wrap {
 				inherit pkgs;
@@ -43,27 +57,31 @@
 				};
 				info.value = "require 'nix-info'.info.value";
 				# potentially move this and conform / lspconfig into a seperate spec
-				runtimePkgs = with pkgs; [
-					bash-language-server # bash lsp
-					clang-tools # clang formatter & lsp
-					cmake-language-server # cmake lsp
-					csharp-ls # c# lsp
-					# gdscript
-					# gdshader
-					glsl_analyzer # glsl lsp
-					shader-slang # slang lsp
-					lua-language-server # lua lsp
-					marksman # markdown lsp
-					nil # nix lsp
-					rust-analyzer # rust lsp
-					tinymist # typst lsp
-					wgsl-analyzer # wgsl lsp
-					#############################
-					alejandra # nix formatter
-					gdtoolkit_4 # gdscript formatter
-					rustfmt # rust formatter
-					stylua # lua formatter
-				];
+				runtimePkgs = with pkgs;
+					[
+						bash-language-server # bash lsp
+						clang-tools # clang formatter & lsp
+						cmake-language-server # cmake lsp
+						csharp-ls # c# lsp
+						# gdscript
+						# gdshader
+						glsl_analyzer # glsl lsp
+						shader-slang # slang lsp
+						lua-language-server # lua lsp
+						marksman # markdown lsp
+						nil # nix lsp
+						rust-analyzer # rust lsp
+						tinymist # typst lsp
+						wgsl-analyzer # wgsl lsp
+						#############################
+						# alejandra # nix formatter
+						gdtoolkit_4 # gdscript formatter
+						rustfmt # rust formatter
+						stylua # lua formatter
+					]
+					++ [
+						self.packages.${pkgs.stdenv.hostPlatform.system}.alejandra # customized nix formatter
+					];
 
 				imports = with self.modules.nvim-new; [
 				];
