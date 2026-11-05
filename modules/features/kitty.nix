@@ -41,6 +41,7 @@
 				sync_to_monitor = "yes";
 				background_opacity = 0.5;
 				dynamic_background_opacity = "yes";
+				clipboard_control = "read-clipboard write-clipboard read-primary write-primary";
 			};
 
 			themeFile = "Catppuccin-Macchiato";
