@@ -1,5 +1,5 @@
 vim.lsp.config('*', {
-	root_markers = { '.git' },
+    root_markers = { '.git' },
 })
 
 vim.cmd.packadd('nvim-lspconfig')
@@ -25,6 +25,7 @@ vim.lsp.enable('glsl_analyzer')
 vim.lsp.enable('slangd')
 -- lua
 vim.lsp.enable('lua_ls')
+vim.lsp.config('lua_ls', { settings = { Lua = { diagnostics = { globals = { 'vim' } } } } })
 -- markdown
 vim.lsp.enable('marksman')
 -- nix
@@ -38,10 +39,10 @@ vim.lsp.enable('wgsl_analyzer')
 
 -- basic, plugin-less completions
 vim.api.nvim_create_autocmd('LspAttach', {
-	callback = function(ev)
-		local client = vim.lsp.get_client_by_id(ev.data.client_id)
-		if client ~= nil and client:supports_method('textDocument/completion') then
-			vim.lsp.completion.enable(true, client.id, ev.buf, { autoTrigger = true })
-		end
-	end,
+    callback = function(ev)
+        local client = vim.lsp.get_client_by_id(ev.data.client_id)
+        if client ~= nil and client:supports_method('textDocument/completion') then
+            vim.lsp.completion.enable(true, client.id, ev.buf, { autoTrigger = true })
+        end
+    end,
 })
