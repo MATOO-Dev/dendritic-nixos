@@ -3,19 +3,19 @@ local function setup_conform()
 	require('conform').setup({
 		format_on_save = {
 			timeout_ms = 500,
-			-- lsp_format = 'fallback'
+			lsp_format = 'fallback',
 		},
 		formatters_by_ft = {
 			c = { 'clang-format' },
 			cpp = { 'clang-format' },
-			csharp = { '' },
+			-- csharp = { '' },
 			gdscript = { 'gdformat' },
 			gdshader = { 'gdformat' },
-			glsl = { '' },
+			-- glsl = { '' },
 			lua = { 'stylua' },
 			nix = { 'alejandra' },
 			rust = { 'rustfmt' },
-			typst = { '' },
+			-- typst = { '' },
 		},
 		formatters = {
 			['alejandra'] = {
@@ -29,7 +29,14 @@ local function setup_conform()
 			['stylua'] = {
 				command = 'stylua',
 				prepend_args = {
-					'--indent-type Spaces --indent-width 4 --quote-style AutoPreferSingle --call-parentheses Input',
+					'--indent-type',
+					'Spaces',
+					'--indent-width',
+					'4',
+					'--quote-style',
+					'AutoPreferSingle',
+					'--call-parentheses',
+					'Input',
 				},
 			},
 		},
