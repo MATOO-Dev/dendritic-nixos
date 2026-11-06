@@ -16,6 +16,7 @@ indent-blankline
 rainbow-delimiters
 overseer
 nvim-web-devicons (included in nixpkgs oil, but not telescope)
+treesj
 ============================
 decide whether to keep these plugins
 comment
