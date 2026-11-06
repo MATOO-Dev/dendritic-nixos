@@ -2,13 +2,15 @@
 #### chores ####
 ################
 
-obsidian # set up vaults and plugins using nix (depends on SOPS)
-syncthing # set up devices and folders using nix
-nvim # currently using nvf, consider nix-wrapper-modules
-thunderbird # declare plugins, settings, and accounts (depends on SOPS)
+obsidian # set up vaults and plugins using nix (depends on secretspec)
+syncthing # set up devices and folders using nix (depends on secretspec)
+nvim # rewrite using nix-wrapper-modules, in progress
+thunderbird # declare plugins, settings, and accounts (depends on secretspec)
 firefox # declare plugins and settings (WIP)
 snapper # setup snapshot config (revisit after impermanence)
+backups # snapshot solution, might be covered by snapper
 kdeconnect # fix installation & setup settings
+swaync # test out for notifications
 
 ###################
 #### long term ####
@@ -16,4 +18,4 @@ kdeconnect # fix installation & setup settings
 
 impermanence # requires reformatting
 secure boot # using lanzaboote
-sops # secrets management
+secretspec # secrets management
