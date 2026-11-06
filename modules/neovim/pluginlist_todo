@@ -10,7 +10,6 @@ hlsl
 slang
 ============================
 port plugins
-treesitter + treesitter-textobjects
 ultimate-autopair
 indent-blankline
 rainbow-delimiters

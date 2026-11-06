@@ -1,26 +1,17 @@
 local function setup_treesitter()
     if not package.loaded['nvim-treesitter'] then
         vim.cmd.packadd 'nvim-treesitter'
-        -- build = ':TSUpdate'
         require 'nvim-treesitter'.setup {
+            -- grammars are supplied via nixpkgs
             auto_install = false,
-            -- bash
-            -- c
-            -- cpp
-            -- gdscript
-            -- gdshader
-            -- godot_resource
-            -- lua
-            -- luadoc
-            -- markdown
-            -- markdown_inline
-            -- rust
-            -- vim
-            -- vimdoc
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = true,
             },
+        }
+        vim.cmd.packadd 'nvim-treesitter-textobjects'
+        require 'nvim-treesitter-textobjects'.setup {
+            -- textobjects config here
         }
     end
 end
