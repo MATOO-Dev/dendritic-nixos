@@ -25,6 +25,6 @@ local function setup_treesitter()
     end
 end
 
-vim.api.nvim_create_autocmd({ 'VimEnter' }, {
+vim.api.nvim_create_autocmd({ 'FileType' }, {
     callback = setup_treesitter,
 })

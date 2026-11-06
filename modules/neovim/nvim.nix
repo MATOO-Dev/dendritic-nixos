@@ -34,8 +34,8 @@
 				settings.aliases = ["nv"];
 
 				specs.general = with pkgs.vimPlugins; [
-					catppuccin-nvim
-					oil-nvim
+					catppuccin-nvim # color theme
+					oil-nvim # file system navigator
 				];
 				specs.lazy = {
 					lazy = true;
@@ -43,7 +43,6 @@
 						conform-nvim # auto formatting
 						lualine-nvim # status bar
 						nvim-lspconfig # lsp templates
-						nvim-treesitter # treesitter
 						telescope-nvim # fuzzy finder
 						undotree # tree-like undo
 						vim-move # move selected text
@@ -54,9 +53,12 @@
 						tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
 						gitsigns-nvim # show git status in files
 						blink-cmp # autocomplete
+						#############################
+						# nvim-treesitter # treesitter parser configs
+						nvim-treesitter-textobjects # textobject detection
+						nvim-treesitter.withAllGrammars
 					];
 				};
-				info.value = "require 'nix-info'.info.value";
 				# potentially move this and conform / lspconfig into a seperate spec
 				# also, look into specs.<name>.collateGrammars for treesitter
 				runtimePkgs = with pkgs;
@@ -81,6 +83,8 @@
 						rustfmt # rust formatter
 						stylua # lua formatter
 						typstyle # typst formatter
+						#############################
+						tree-sitter # syntax coloring
 					]
 					++ [
 						self.packages.${pkgs.stdenv.hostPlatform.system}.alejandra # customized nix formatter
