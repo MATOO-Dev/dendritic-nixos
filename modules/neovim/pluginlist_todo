@@ -10,6 +10,7 @@ hlsl
 slang
 ============================
 port plugins
+fix blink insertion triggering to fill random unrelated words
 ultimate-autopair
 indent-blankline
 rainbow-delimiters

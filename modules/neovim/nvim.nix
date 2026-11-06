@@ -53,6 +53,8 @@
 						tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
 						gitsigns-nvim # show git status in files
 						blink-cmp # autocomplete
+						indent-blankline-nvim # indentation guides
+						rainbow-delimiters-nvim # rainbow brackets etc
 						#############################
 						# nvim-treesitter # treesitter parser configs
 						nvim-treesitter-textobjects # textobject detection
