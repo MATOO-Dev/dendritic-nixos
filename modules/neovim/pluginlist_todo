@@ -1,6 +1,6 @@
 ============================
 include lsps in packages
-gdshader_lsp (not packaged for nix)
+gdshader-lsp-cpp (not packaged for nix)
 port special lsp settings
 ============================
 port formatters
@@ -8,15 +8,14 @@ csharp
 glsl
 hlsl
 slang
-typst (typstyle)
 ============================
 port plugins
-blink.pairs / autopair / ultimate-autopair / mini.pairs
-blink.indent / indent-blankline / snacks.indent
+treesitter + treesitter-textobjects
+ultimate-autopair
+indent-blankline
 rainbow-delimiters
 overseer
-nvim-web-devicons
-treesitter
+nvim-web-devicons (included in nixpkgs oil, but not telescope)
 ============================
 decide whether to keep these plugins
 comment

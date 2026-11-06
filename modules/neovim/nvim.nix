@@ -58,6 +58,7 @@
 				};
 				info.value = "require 'nix-info'.info.value";
 				# potentially move this and conform / lspconfig into a seperate spec
+				# also, look into specs.<name>.collateGrammars for treesitter
 				runtimePkgs = with pkgs;
 					[
 						bash-language-server # bash lsp
