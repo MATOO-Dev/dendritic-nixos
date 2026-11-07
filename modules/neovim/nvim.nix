@@ -55,9 +55,8 @@
 							gitsigns-nvim # show git status in files
 							blink-cmp # autocomplete
 							blink-indent # indentation guides
-							indent-blankline-nvim # indentation guides
-							rainbow-delimiters-nvim # rainbow brackets etc
 							treesj # toggle block splitting/joining
+							tabout-nvim # tab out of delimiters
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
