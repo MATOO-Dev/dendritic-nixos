@@ -12,11 +12,10 @@ vim.keymap.set({ 'n', 't' }, '<leader>tt', function()
     require 'toggleterm'.toggle()
 end, { desc = '[T]oggle[T]erm' })
 
--- local Terminal  = require('toggleterm.terminal').Terminal
--- local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
---
--- function _lazygit_toggle()
---   lazygit:toggle()
--- end
---
--- vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+-- disallow lazygit shortcut in terminal mode
+-- this mans lazygit needs to be dismissed using q rather than toggled
+-- but it stops it from acting weird. toggle still works in regular toggleterm
+vim.keymap.set('n', '<leader>lg', function()
+    setup_toggleterm()
+    require 'toggleterm.terminal'.Terminal:new({ cmd = 'lazygit', hidden = true }):open()
+end, { desc = '[L]azy[G]it' })
