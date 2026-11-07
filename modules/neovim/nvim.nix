@@ -57,6 +57,7 @@
 							blink-indent # indentation guides
 							indent-blankline-nvim # indentation guides
 							rainbow-delimiters-nvim # rainbow brackets etc
+							treesj # toggle block splitting/joining
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
@@ -95,9 +96,6 @@
 					++ [
 						self.packages.${pkgs.stdenv.hostPlatform.system}.alejandra # customized nix formatter
 					];
-
-				imports = with self.modules.nvim-new; [
-				];
 			};
 	};
 }

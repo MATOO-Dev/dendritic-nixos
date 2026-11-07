@@ -1,7 +1,8 @@
 ============================
-include lsps in packages
-gdshader-lsp-cpp (not packaged for nix)
-port special lsp settings
+port lsp & formatter settings
+clang
+rust-analyzer
+typst
 ============================
 port formatters
 csharp
@@ -11,8 +12,8 @@ slang
 ============================
 port plugins
 overseer
-nvim-web-devicons (included in nixpkgs oil, but not telescope)
-treesj
+godot / godot assets
+tabout
 ============================
 decide whether to keep these plugins
 comment
@@ -20,16 +21,13 @@ darkcolors
 diffview
 git-conflict
 gitignore
-godot / godot assets
 hardtime
 image
-inlay-hint
 lazygit
 noice
 notify
 oil-git / oil-lsp-diagnostics
 quicker
-tabout
 tmux-navigator
 trouble
 ufo
@@ -45,7 +43,4 @@ port overseer templates
 other / chores
 add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
-============================
-test these, and switch back if it doesnt work out
-blink.pairs instead of ultimate-autopair and rainbow-delimiters
-blink.indent over indent-blankline
+gdshader-lsp-cpp (not packaged for nix)
