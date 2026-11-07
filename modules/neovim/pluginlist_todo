@@ -11,22 +11,23 @@ hlsl
 slang
 ============================
 port plugins
+image
+lazygit (or a full terminal)
+nvim-tmux-navigator
+oil-git / oil-lsp-diagnostics
 overseer
+quicker
+nvim-fundo
+toggleterm.nvim
 ============================
-decide whether to keep these plugins
+archive, probably wont be adding back in
 comment
-darkcolors
 diffview
 git-conflict
 gitignore
 hardtime
-image
-lazygit
 noice
 notify
-oil-git / oil-lsp-diagnostics
-quicker
-tmux-navigator
 trouble
 ufo
 whichkey
@@ -37,8 +38,16 @@ dap-view
 dap-virtual-text
 ============================
 port overseer templates
+cmake
+make
+run
+make with debug symbols
+clean build
+combinations
+consider whether devenv shell commands are cleaner than overseer
 ============================
 other / chores
 add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
+figure out a way to display lsp inlay-hints at the end of the line

@@ -57,6 +57,7 @@
 							blink-indent # indentation guides
 							treesj # toggle block splitting/joining
 							tabout-nvim # tab out of delimiters
+							tiny-cmdline-nvim
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
