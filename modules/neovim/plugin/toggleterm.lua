@@ -2,16 +2,21 @@ local function setup_toggleterm()
     if not package.loaded['toggleterm.nvim'] then
         vim.cmd.packadd('toggleterm.nvim')
         require 'toggleterm'.setup {
-            -- toggleterm sets its keybind via setup, rather than vim.keymap.set
-            open_mapping = '<leader>tt',
             direction = 'float',
         }
     end
 end
 
-vim.api.nvim_create_autocmd('VimEnter', {
-    once = true,
-    callback = function()
-        setup_toggleterm()
-    end,
-})
+vim.keymap.set({ 'n', 't' }, '<leader>tt', function()
+    setup_toggleterm()
+    require 'toggleterm'.toggle()
+end, { desc = '[T]oggle[T]erm' })
+
+-- local Terminal  = require('toggleterm.terminal').Terminal
+-- local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+--
+-- function _lazygit_toggle()
+--   lazygit:toggle()
+-- end
+--
+-- vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
