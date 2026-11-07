@@ -57,7 +57,8 @@
 							blink-indent # indentation guides
 							treesj # toggle block splitting/joining
 							tabout-nvim # tab out of delimiters
-							tiny-cmdline-nvim
+							tiny-cmdline-nvim # cmdline in center of window
+							toggleterm-nvim # floating terminal
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
