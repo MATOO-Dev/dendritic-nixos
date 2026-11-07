@@ -10,10 +10,6 @@ hlsl
 slang
 ============================
 port plugins
-fix blink insertion triggering to fill random unrelated words
-ultimate-autopair
-indent-blankline
-rainbow-delimiters
 overseer
 nvim-web-devicons (included in nixpkgs oil, but not telescope)
 treesj
@@ -45,3 +41,11 @@ dap-view
 dap-virtual-text
 ============================
 port overseer templates
+============================
+other / chores
+add additional keybinds for telescope
+edit blink config to insert parentheses & parameters on auto-insert
+============================
+test these, and switch back if it doesnt work out
+blink.pairs instead of ultimate-autopair and rainbow-delimiters
+blink.indent over indent-blankline

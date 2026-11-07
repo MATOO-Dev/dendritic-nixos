@@ -39,27 +39,31 @@
 				];
 				specs.lazy = {
 					lazy = true;
-					data = with pkgs.vimPlugins; [
-						conform-nvim # auto formatting
-						lualine-nvim # status bar
-						nvim-lspconfig # lsp templates
-						telescope-nvim # fuzzy finder
-						undotree # tree-like undo
-						vim-move # move selected text
-						vim-wordmotion # better word boundaries
-						nvim-surround # surrounding delimiter pairs
-						flash-nvim # quick jumping motions
-						typst-preview-nvim # realtime preview for typst
-						tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
-						gitsigns-nvim # show git status in files
-						blink-cmp # autocomplete
-						indent-blankline-nvim # indentation guides
-						rainbow-delimiters-nvim # rainbow brackets etc
-						#############################
-						# nvim-treesitter # treesitter parser configs
-						nvim-treesitter-textobjects # textobject detection
-						nvim-treesitter.withAllGrammars
-					];
+					data = with pkgs.vimPlugins;
+						[
+							conform-nvim # auto formatting
+							lualine-nvim # status bar
+							nvim-lspconfig # lsp templates
+							telescope-nvim # fuzzy finder
+							undotree # tree-like undo
+							vim-move # move selected text
+							vim-wordmotion # better word boundaries
+							nvim-surround # surrounding delimiter pairs
+							flash-nvim # quick jumping motions
+							typst-preview-nvim # realtime preview for typst
+							tiny-inline-diagnostic-nvim # nicer diagnostic virtual text
+							gitsigns-nvim # show git status in files
+							blink-cmp # autocomplete
+							blink-indent # indentation guides
+							indent-blankline-nvim # indentation guides
+							rainbow-delimiters-nvim # rainbow brackets etc
+							#############################
+							nvim-treesitter.withAllGrammars # treesitter parser configs
+							nvim-treesitter-textobjects # textobject detection
+						]
+						++ (with pkgs.unstable.vimPlugins; [
+								blink-pairs # autopairs and rainbow colors
+							]);
 				};
 				# potentially move this and conform / lspconfig into a seperate spec
 				# also, look into specs.<name>.collateGrammars for treesitter

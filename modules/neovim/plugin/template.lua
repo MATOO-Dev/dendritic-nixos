@@ -1,5 +1,5 @@
 -- -- lazy load on event
--- vim.api.nvim_create_autocmd({ 'event' }, {
+-- vim.api.nvim_create_autocmd('event', {
 -- 	once = true,
 -- 	callback = function()
 -- 		vim.cmd.packadd('plugin')
