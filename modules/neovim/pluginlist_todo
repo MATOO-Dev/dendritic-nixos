@@ -12,12 +12,13 @@ slang
 ============================
 port plugins
 image
-lazygit (or a full terminal)
 nvim-tmux-navigator
 oil-git / oil-lsp-diagnostics
 overseer
 quicker
 nvim-fundo
+whichkey
+nvim-hlslens
 ============================
 archive, probably wont be adding back in
 comment
@@ -29,15 +30,12 @@ noice
 notify
 trouble
 ufo
-whichkey
 ============================
 port debugging setup
-dap-view
 dap-virtual-text
 install debuggers
 setup debug adapters
 setup debug configurations
-make breakpoints more visible
 ============================
 port overseer templates
 cmake
@@ -53,3 +51,4 @@ add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
 figure out a way to display lsp inlay-hints at the end of the line
+add code action keybinds for lsp
