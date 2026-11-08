@@ -45,7 +45,7 @@
 							lualine-nvim # status bar
 							nvim-lspconfig # lsp templates
 							telescope-nvim # fuzzy finder
-							undotree # tree-like undo
+							# undotree # tree-like undo, testing native implementation
 							vim-move # move selected text
 							vim-wordmotion # better word boundaries
 							nvim-surround # surrounding delimiter pairs
@@ -59,6 +59,9 @@
 							tabout-nvim # tab out of delimiters
 							tiny-cmdline-nvim # cmdline in center of window
 							toggleterm-nvim # floating terminal
+							nvim-dap # debugger support
+							nvim-dap-view # debugger ui
+							nvim-dap-virtual-text # inline values virtual text
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
@@ -91,6 +94,8 @@
 						rustfmt # rust formatter
 						stylua # lua formatter
 						typstyle # typst formatter
+						#############################
+						lldb # llvm debugger
 						#############################
 						tree-sitter # syntax coloring
 					]

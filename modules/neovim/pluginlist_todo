@@ -32,9 +32,12 @@ ufo
 whichkey
 ============================
 port debugging setup
-dap
 dap-view
 dap-virtual-text
+install debuggers
+setup debug adapters
+setup debug configurations
+make breakpoints more visible
 ============================
 port overseer templates
 cmake
