@@ -4,7 +4,7 @@ vim.lsp.config('*', {
 })
 
 -- show virtual inline signatures
-vim.lsp.inlay_hint.enable(true)
+vim.lsp.inlay_hint.enable(false)
 
 -- load default configs
 vim.cmd.packadd('nvim-lspconfig')

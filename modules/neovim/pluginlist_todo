@@ -51,4 +51,4 @@ add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
 figure out a way to display lsp inlay-hints at the end of the line
-add code action keybinds for lsp
+fix clipboard provider

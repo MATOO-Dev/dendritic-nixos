@@ -11,6 +11,8 @@ snapper # setup snapshot config (revisit after impermanence)
 backups # snapshot solution, might be covered by snapper
 kdeconnect # fix installation & setup settings
 swaync # test out for notifications
+dolphin # open home by default rather than previous directory
+evince # fix pdf being displayed tiny when newly opened
 
 ###################
 #### long term ####

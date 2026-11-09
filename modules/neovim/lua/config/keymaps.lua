@@ -43,6 +43,7 @@ vim.keymap.set('n', '<a-n>', '<cmd>cnext<cr>', { desc = 'Go to next quickfix ite
 
 -- lsp actions
 vim.keymap.set('n', '<f2>', vim.lsp.buf.rename, { desc = 'Rename symbol' })
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = '[C]ode [A]ction' })
 
 -- copy to system clipboard
 vim.keymap.set('v', '<leader>y', '"+y', { desc = 'Copy to clipboard' })
