@@ -28,6 +28,20 @@
 
 		programs.lazygit = {
 			enable = true;
+			settings = {
+				gui = {
+					theme.authorColors.MATOO-Dev = "blue";
+					spinner = {
+						rate = 50;
+						frames = [
+							"|"
+							"/"
+							"-"
+							"\\"
+						];
+					};
+				};
+			};
 		};
 
 		# programs.ssh.settings."github.com" = {
