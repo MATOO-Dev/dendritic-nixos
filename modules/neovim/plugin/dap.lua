@@ -9,7 +9,7 @@ local function setup_dap()
             auto_toggle = true,
             follow_tab = true,
             winbar = { controls = { enabled = true } },
-            windows = { position = 'right' },
+            windows = { size = 0.4, position = 'right' },
         }
 
         vim.cmd.packadd 'nvim-dap-virtual-text'
