@@ -7,7 +7,12 @@ local function setup_toggleterm()
     end
 end
 
-vim.keymap.set({ 'n', 't' }, '<leader>tt', function()
+vim.keymap.set({ 'n' }, '<leader>tt', function()
+    setup_toggleterm()
+    require 'toggleterm'.toggle()
+end, { desc = '[T]oggle[T]erm' })
+
+vim.keymap.set({ 't' }, '<esc><esc>', function()
     setup_toggleterm()
     require 'toggleterm'.toggle()
 end, { desc = '[T]oggle[T]erm' })
