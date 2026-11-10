@@ -13,6 +13,7 @@
 				};
 				credential.helper = "${pkgs.gitFull}/bin/git-credential-libsecret";
 				core.askPass = "${pkgs.seahorse}/libexec/seahorse/ssh-askpass";
+				diff.algorithm = "histogram";
 			};
 
 			lfs.enable = true;
