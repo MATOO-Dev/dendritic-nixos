@@ -1,20 +1,14 @@
 let
 	shell-aliases = {
-		nv = "nvim";
-		# nv = "nix run github:matoo-dev/nixcats-config";
-		# nvim = "nix run github:matoo-dev/nixcats-config";
 		laz = "lazygit";
 		open = "xdg-open";
 		ff = "fastfetch";
-		# ls = "ls --color";
 		ls = "eza --icons";
-		cat = "bat";
 		top = "btop";
 		clear = "printf '\\033[2J\\033[3J\\033[1;1H'"; # clears scrollback buffer as well
 		rm = "rmtrash";
 		rmdir = "rmdirtrash";
 		gitreset = "git reset --hard origin/main";
-		buildHome = "home-manager switch --flake ~/den-config/flake.nix#matoo";
 	};
 in {
 	flake.homeModules.shells = {pkgs, ...}: {
@@ -61,7 +55,7 @@ in {
 				# case-insensitive autocompletion
 				zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 				# enable ls colors for autocompletion
-				 				zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
+				zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
 			'';
 			# env vars
 			# editor = nv
@@ -92,6 +86,7 @@ in {
 			bat
 			btop
 			eza
+			fzf
 			rmtrash
 		];
 	};

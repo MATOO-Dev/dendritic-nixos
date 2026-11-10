@@ -7,7 +7,8 @@
 		users.users.matoo = {
 			isNormalUser = true;
 			description = "MATOO";
-			shell = pkgs.fish;
+			shell = pkgs.zsh;
+			# shell = pkgs.fish;
 			extraGroups = [
 				"networkmanager"
 				"wheel"
@@ -16,6 +17,7 @@
 			# dont forget to set password after installing
 			initialPassword = "12345";
 		};
+		programs.zsh.enable = true;
 		programs.fish.enable = true;
 	};
 
