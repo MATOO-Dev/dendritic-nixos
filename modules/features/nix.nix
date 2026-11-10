@@ -61,5 +61,6 @@
 		# see https://github.com/hercules-ci/flake-parts/issues/74
 		nixpkgs.config.allowUnfree = true;
 		nixpkgs.overlays = [inputs.self.overlays.unstable];
+		programs.man.generateCaches = false;
 	};
 }
