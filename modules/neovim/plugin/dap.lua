@@ -28,6 +28,19 @@ local function setup_dap()
                 name = 'Launch Rust',
                 type = 'lldb',
                 request = 'launch',
+                initCommands = function()
+                    local rustc_sysroot = vim.fn.trim(vim.fn.system 'rustc --print sysroot')
+                    assert(
+                        vim.v.shell_error == 0,
+                        'Failed to get sysroot using `rustc --print sysroot`: ' .. rustc_sysroot
+                    )
+                    local script_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_lookup.py'
+                    local commands_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_commands'
+                    return {
+                        ([[!command script import '%s']]):format(script_file),
+                        ([[!command source '%s']]):format(commands_file),
+                    }
+                end,
                 program = function()
                     -- vim.fn.jobstart('cargo build')
                     -- return vim.fn.getcwd() .. '/target/debug/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
