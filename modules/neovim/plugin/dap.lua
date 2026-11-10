@@ -9,6 +9,7 @@ local function setup_dap()
             auto_toggle = true,
             follow_tab = true,
             winbar = { controls = { enabled = true } },
+            windows = { position = 'right' },
         }
 
         vim.cmd.packadd 'nvim-dap-virtual-text'
@@ -31,6 +32,19 @@ local function setup_dap()
                     -- vim.fn.jobstart('cargo build')
                     -- return vim.fn.getcwd() .. '/target/debug/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
                     return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/target/debug')
+                end,
+                cwd = '${workspaceFolder}',
+                stopOnEntry = false,
+            },
+        }
+
+        dap.configurations.cpp = {
+            {
+                name = 'Launch Cpp',
+                type = 'lldb',
+                request = 'launch',
+                program = function()
+                    return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/', 'file')
                 end,
                 cwd = '${workspaceFolder}',
                 stopOnEntry = false,

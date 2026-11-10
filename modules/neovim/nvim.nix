@@ -74,6 +74,9 @@
 				# also, look into specs.<name>.collateGrammars for treesitter
 				runtimePkgs = with pkgs;
 					[
+						tree-sitter # syntax coloring
+						ripgrep # for telescope live grep
+						#############################
 						bash-language-server # bash lsp
 						clang-tools # clang formatter & lsp
 						cmake-language-server # cmake lsp
@@ -96,8 +99,6 @@
 						typstyle # typst formatter
 						#############################
 						lldb # llvm debugger
-						#############################
-						tree-sitter # syntax coloring
 					]
 					++ [
 						self.packages.${pkgs.stdenv.hostPlatform.system}.alejandra # customized nix formatter
