@@ -14,10 +14,7 @@ port plugins
 image
 nvim-tmux-navigator
 oil-git / oil-lsp-diagnostics
-overseer
 quicker
-nvim-fundo
-whichkey
 nvim-hlslens
 ============================
 archive, probably wont be adding back in
@@ -30,9 +27,11 @@ noice
 notify
 trouble
 ufo
+overseer
+nvim-fundo
+whichkey
 ============================
 port debugging setup
-dap-virtual-text
 install debuggers
 setup debug adapters
 setup debug configurations
@@ -51,4 +50,3 @@ add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
 figure out a way to display lsp inlay-hints at the end of the line
-fix clipboard provider
