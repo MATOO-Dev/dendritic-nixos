@@ -1,4 +1,4 @@
-local function setup_telescope()
+function _G.setup_telescope()
     if not package.loaded['telescope'] then
         vim.cmd.packadd('telescope.nvim')
         require 'telescope'.setup {}

@@ -1,4 +1,5 @@
 local function pick_executable(suffix)
+    setup_telescope()
     return coroutine.create(function(coro)
         local opts = {}
         require 'telescope.pickers'
@@ -29,82 +30,80 @@ local function pick_executable(suffix)
 end
 
 local function setup_dap()
-    if not package.loaded['nvim-dap'] then
-        vim.cmd.packadd 'nvim-dap'
-        vim.fn.sign_define('DapBreakpoint', { text = '', texthl = 'DiagnosticError' })
-        vim.fn.sign_define('DapStopped', { text = '', texthl = 'DiagnosticOk' })
-
-        vim.cmd.packadd 'nvim-dap-view'
-        require 'dap-view'.setup {
-            auto_toggle = true,
-            follow_tab = true,
-            winbar = { controls = { enabled = true } },
-            windows = { size = 0.4, position = 'right' },
-        }
-        vim.opt.winfixbuf = false
-
-        vim.cmd.packadd 'nvim-dap-virtual-text'
-        require 'nvim-dap-virtual-text'.setup {}
-
-        local dap = require 'dap'
-
-        dap.adapters.lldb = {
-            name = 'lldb',
-            type = 'executable',
-            command = vim.fn.exepath('lldb-dap'),
-        }
-
-        dap.configurations.rust = {
-            {
-                name = 'Launch Rust',
-                type = 'lldb',
-                request = 'launch',
-                initCommands = function()
-                    local rustc_sysroot = vim.fn.trim(vim.fn.system 'rustc --print sysroot')
-                    assert(
-                        vim.v.shell_error == 0,
-                        'Failed to get sysroot using `rustc --print sysroot`: ' .. rustc_sysroot
-                    )
-                    local script_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_lookup.py'
-                    local commands_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_commands'
-                    return {
-                        ([[!command script import '%s']]):format(script_file),
-                        ([[!command source '%s']]):format(commands_file),
-                    }
-                end,
-                program = pick_executable('target/debug'),
-                cwd = '${workspaceFolder}',
-                stopOnEntry = false,
-            },
-        }
-
-        dap.configurations.cpp = {
-            {
-                name = 'Launch Cpp',
-                type = 'lldb',
-                request = 'launch',
-                program = pick_executable(),
-                cwd = '${workspaceFolder}',
-                stopOnEntry = false,
-            },
-        }
-
-        dap.adapters.godot = {
-            type = 'server',
-            host = 'localhost',
-            port = 6006,
-        }
-
-        dap.configurations.gdscript = {
-            {
-                type = 'godot',
-                request = 'launch',
-                name = 'Launch godot scene',
-                project = '${workspaceFolder}',
-                launch_scene = true,
-            },
-        }
+    if package.loaded['nvim-dap'] then
+        return
     end
+    vim.cmd.packadd 'nvim-dap'
+    vim.fn.sign_define('DapBreakpoint', { text = '', texthl = 'DiagnosticError' })
+    vim.fn.sign_define('DapStopped', { text = '', texthl = 'DiagnosticOk' })
+
+    vim.cmd.packadd 'nvim-dap-view'
+    require 'dap-view'.setup {
+        auto_toggle = true,
+        follow_tab = true,
+        winbar = { controls = { enabled = true } },
+        windows = { size = 0.4, position = 'right' },
+    }
+    vim.opt.winfixbuf = false
+
+    vim.cmd.packadd 'nvim-dap-virtual-text'
+    require 'nvim-dap-virtual-text'.setup {}
+
+    local dap = require 'dap'
+
+    dap.adapters.lldb = {
+        name = 'lldb',
+        type = 'executable',
+        command = vim.fn.exepath('lldb-dap'),
+    }
+
+    dap.configurations.rust = {
+        {
+            name = 'Launch Rust',
+            type = 'lldb',
+            request = 'launch',
+            initCommands = function()
+                local rustc_sysroot = vim.fn.trim(vim.fn.system 'rustc --print sysroot')
+                assert(vim.v.shell_error == 0, 'Failed to get sysroot using `rustc --print sysroot`: ' .. rustc_sysroot)
+                local script_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_lookup.py'
+                local commands_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_commands'
+                return {
+                    ([[!command script import '%s']]):format(script_file),
+                    ([[!command source '%s']]):format(commands_file),
+                }
+            end,
+            program = pick_executable('target/debug'),
+            cwd = '${workspaceFolder}',
+            stopOnEntry = false,
+        },
+    }
+
+    dap.configurations.cpp = {
+        {
+            name = 'Launch Cpp',
+            type = 'lldb',
+            request = 'launch',
+            program = pick_executable(),
+            cwd = '${workspaceFolder}',
+            stopOnEntry = false,
+        },
+    }
+
+    dap.adapters.godot = {
+        type = 'server',
+        host = 'localhost',
+        port = 6006,
+    }
+
+    dap.configurations.gdscript = {
+        {
+            type = 'godot',
+            request = 'launch',
+            name = 'Launch godot scene',
+            project = '${workspaceFolder}',
+            launch_scene = true,
+        },
+    }
 end
 
 vim.keymap.set('n', '<leader>dc', function()
