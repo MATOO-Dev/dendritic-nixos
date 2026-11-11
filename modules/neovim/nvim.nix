@@ -76,6 +76,7 @@
 					[
 						tree-sitter # syntax coloring
 						ripgrep # for telescope live grep
+						fd # file finder
 						#############################
 						bash-language-server # bash lsp
 						clang-tools # clang formatter & lsp

@@ -1,3 +1,33 @@
+local function pick_executable(suffix)
+    return coroutine.create(function(coro)
+        local opts = {}
+        require 'telescope.pickers'
+            .new(opts, {
+                prompt_title = 'Select executable:',
+                finder = require 'telescope.finders'.new_oneshot_job({
+                    'fd',
+                    '--hidden',
+                    '--no-ignore',
+                    '--type',
+                    'x',
+                    '--max-depth',
+                    '1',
+                    '--search-path',
+                    (suffix or ''),
+                }, {}),
+                sorter = require 'telescope.config'.values.generic_sorter(opts),
+                attach_mappings = function(buffer_number)
+                    require 'telescope.actions'.select_default:replace(function()
+                        require 'telescope.actions'.close(buffer_number)
+                        coroutine.resume(coro, require 'telescope.actions.state'.get_selected_entry()[1])
+                    end)
+                    return true
+                end,
+            })
+            :find()
+    end)
+end
+
 local function setup_dap()
     if not package.loaded['nvim-dap'] then
         vim.cmd.packadd 'nvim-dap'
@@ -11,6 +41,7 @@ local function setup_dap()
             winbar = { controls = { enabled = true } },
             windows = { size = 0.4, position = 'right' },
         }
+        vim.opt.winfixbuf = false
 
         vim.cmd.packadd 'nvim-dap-virtual-text'
         require 'nvim-dap-virtual-text'.setup {}
@@ -38,12 +69,10 @@ local function setup_dap()
                     local commands_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_commands'
                     return {
                         ([[!command script import '%s']]):format(script_file),
-                        -- ([[!command source '%s']]):format(commands_file),
+                        ([[!command source '%s']]):format(commands_file),
                     }
                 end,
-                program = function()
-                    return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/target/debug/')
-                end,
+                program = pick_executable('target/debug'),
                 cwd = '${workspaceFolder}',
                 stopOnEntry = false,
             },
@@ -54,9 +83,7 @@ local function setup_dap()
                 name = 'Launch Cpp',
                 type = 'lldb',
                 request = 'launch',
-                program = function()
-                    return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/', 'file')
-                end,
+                program = pick_executable(),
                 cwd = '${workspaceFolder}',
                 stopOnEntry = false,
             },
