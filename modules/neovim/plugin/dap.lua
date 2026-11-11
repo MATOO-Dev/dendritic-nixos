@@ -38,13 +38,11 @@ local function setup_dap()
                     local commands_file = rustc_sysroot .. '/lib/rustlib/etc/lldb_commands'
                     return {
                         ([[!command script import '%s']]):format(script_file),
-                        ([[!command source '%s']]):format(commands_file),
+                        -- ([[!command source '%s']]):format(commands_file),
                     }
                 end,
                 program = function()
-                    -- vim.fn.jobstart('cargo build')
-                    -- return vim.fn.getcwd() .. '/target/debug/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
-                    return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/target/debug')
+                    return vim.fn.input('Executable: ', vim.fn.getcwd() .. '/target/debug/')
                 end,
                 cwd = '${workspaceFolder}',
                 stopOnEntry = false,

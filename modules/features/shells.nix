@@ -32,7 +32,9 @@ in {
 			history = {
 				size = 10000;
 				# share live between sessions
-				share = true;
+				share = false;
+				# share history after sessions
+				append = true;
 				# ignore duplicates
 				# ignoreDups = true;
 				# delete old, replace with duplicate
