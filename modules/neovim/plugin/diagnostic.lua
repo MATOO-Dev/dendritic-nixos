@@ -1,27 +1,29 @@
 local function setup_diagnostic()
-    if not package.loaded['tiny-inline-diagnostic'] then
-        vim.cmd.packadd('tiny-inline-diagnostic.nvim')
-        require 'tiny-inline-diagnostic'.setup {
-            preset = 'powerline',
-            options = {
-                enable_on_insert = true,
-                enable_on_select = true,
-                show_source = false,
-                multilines = {
-                    enabled = true,
-                    always_show = true,
-                },
-            },
-        }
-        vim.diagnostic.config({
-            update_in_insert = true,
-            severity_sort = true,
-            virtual_lines = false,
-            virtual_text = false,
-            underline = true,
-            signs = false,
-        })
+    if package.loaded['tiny-inline-diagnostic'] then
+        return
     end
+
+    vim.cmd.packadd('tiny-inline-diagnostic.nvim')
+    require 'tiny-inline-diagnostic'.setup {
+        preset = 'powerline',
+        options = {
+            enable_on_insert = true,
+            enable_on_select = true,
+            show_source = false,
+            multilines = {
+                enabled = true,
+                always_show = true,
+            },
+        },
+    }
+    vim.diagnostic.config({
+        update_in_insert = true,
+        severity_sort = true,
+        virtual_lines = false,
+        virtual_text = false,
+        underline = true,
+        signs = false,
+    })
 end
 
 vim.api.nvim_create_autocmd({ 'VimEnter' }, {

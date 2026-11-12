@@ -33,6 +33,7 @@ local function setup_dap()
     if package.loaded['nvim-dap'] then
         return
     end
+
     vim.cmd.packadd 'nvim-dap'
     vim.fn.sign_define('DapBreakpoint', { text = '', texthl = 'DiagnosticError' })
     vim.fn.sign_define('DapStopped', { text = '', texthl = 'DiagnosticOk' })

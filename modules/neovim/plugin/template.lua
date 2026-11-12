@@ -1,23 +1,20 @@
--- -- lazy load on event
+-- local function setup_xyz()
+--     if package.loaded['plugin'] then
+--         return
+--     end
+--
+--     vim.cmd.packadd 'plugin'
+--     require 'plugin'.setup {}
+-- end
+
 -- vim.api.nvim_create_autocmd('event', {
--- 	once = true,
--- 	callback = function()
--- 		vim.cmd.packadd('plugin')
--- 		-- usually not required for vimscript plugins
--- 		require 'plugin'.setup {}
--- 	end,
+--     once = true,
+--     callback = setup_xyz(),
 -- })
 
--- -- lazy load on keybind
 -- vim.keymap.set('n', 'keybind', function()
--- 	if not package.loaded['plugin'] then
--- 		-- block can be pulled out into function
--- 		-- good for multiple lazy-loading keybinds
--- 		vim.cmd.packadd('plugin')
--- 		require 'plugin'.setup {}
--- 	end
--- 	-- plugin-dependent
--- 	require 'plugin'.do_stuff()
--- 	-- alternatively for some vimscript plugins
--- 	vim.cmd.do_stuff()
--- end, { desc = 'my plugin' })
+--     setup_xyz()
+--     require 'plugin'.do_stuff()
+--     -- alternatively for some vimscript plugins
+--     vim.cmd.do_stuff()
+-- end, { desc = 'my plugin keybind' })

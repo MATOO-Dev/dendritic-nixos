@@ -1,10 +1,12 @@
 local function setup_toggleterm()
-    if not package.loaded['toggleterm.nvim'] then
-        vim.cmd.packadd('toggleterm.nvim')
-        require 'toggleterm'.setup {
-            direction = 'float',
-        }
+    if package.loaded['toggleterm.nvim'] then
+        return
     end
+
+    vim.cmd.packadd('toggleterm.nvim')
+    require 'toggleterm'.setup {
+        direction = 'float',
+    }
 end
 
 vim.keymap.set({ 'n' }, '<leader>tt', function()

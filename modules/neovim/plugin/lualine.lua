@@ -1,6 +1,10 @@
 local function setup_lualine()
+    if package.loaded['lualine.nvim'] then
+        return
+    end
+
     vim.cmd.packadd('lualine.nvim')
-    -- nvim-web-devicons
+    -- nvim-web-devicons is already supplied by oil which always loads before
     require 'lualine'.setup {
         options = {
             theme = 'auto',

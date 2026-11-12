@@ -1,4 +1,8 @@
 local function setup_conform()
+    if package.loaded['conform.nvim'] then
+        return
+    end
+
     vim.cmd.packadd('conform.nvim')
     require('conform').setup({
         format_on_save = {

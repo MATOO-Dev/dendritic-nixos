@@ -5,6 +5,7 @@ local function setup_quicker()
     if package.loaded['quicker.nvim'] then
         return
     end
+
     vim.cmd.packadd 'quicker.nvim'
     require 'quicker'.setup {
         keys = {

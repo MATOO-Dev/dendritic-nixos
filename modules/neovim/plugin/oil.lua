@@ -2,6 +2,7 @@ local function setup_oil()
     if package.loaded['oil'] then
         return
     end
+
     vim.cmd.packadd('oil.nvim')
     require 'oil'.setup {
         default_file_explorer = true,
