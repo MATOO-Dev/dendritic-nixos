@@ -11,13 +11,15 @@ hlsl
 slang
 ============================
 port plugins
-image
-nvim-tmux-navigator
-nvim-hlslens
+image or snacks.image (image support)
+diffview (diff viewer & merge tool)
+nvim-tmux-navigator (jump between nvim and tmux)
+nvim-hlslens (show jump binds for search)
+nvim-fundo (preserve undo file if modified outside nvim)
+whichkey (show keybinds)
 ============================
-archive, probably wont be adding back in
+archive, probably wont be adding
 comment
-diffview
 git-conflict
 gitignore
 hardtime
@@ -26,8 +28,12 @@ notify
 trouble
 ufo
 overseer
-nvim-fundo
-whichkey
+snacks.dim
+snacks.input
+snacks.lazygit
+snacks.profiler
+snacks.quickfile
+telescope vs snacks.picker vs fzf-lua
 ============================
 port debugging setup
 install debuggers
@@ -48,3 +54,4 @@ add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
 figure out a way to display lsp inlay-hints at the end of the line
+optimize startup time
