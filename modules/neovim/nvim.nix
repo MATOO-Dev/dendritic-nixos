@@ -65,6 +65,7 @@
 							nvim-dap-virtual-text # inline values virtual text
 							quicker-nvim # edit quickfix list like oil
 							nvim-bqf # better quickfix list visuals
+							which-key-nvim # show keymaps
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection

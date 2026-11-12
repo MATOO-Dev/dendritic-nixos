@@ -11,12 +11,12 @@ hlsl
 slang
 ============================
 port plugins
-image or snacks.image (image support)
+snacks.image (image support)
+snacks.picker (replace telescope)
 diffview (diff viewer & merge tool)
 nvim-tmux-navigator (jump between nvim and tmux)
 nvim-hlslens (show jump binds for search)
 nvim-fundo (preserve undo file if modified outside nvim)
-whichkey (show keybinds)
 ============================
 archive, probably wont be adding
 comment

@@ -9,7 +9,7 @@
 
 -- vim.api.nvim_create_autocmd('event', {
 --     once = true,
---     callback = setup_xyz(),
+--     callback = setup_xyz,
 -- })
 
 -- vim.keymap.set('n', 'keybind', function()
