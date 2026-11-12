@@ -131,7 +131,7 @@ end, { desc = '[D]ebug step [I]nto' })
 
 vim.keymap.set('n', '<leader>du', function()
     setup_dap()
-    require 'dap'.setp_out()
+    require 'dap'.step_out()
 end, { desc = '[D]ebug step o[U]t' })
 
 vim.keymap.set('n', '<leader>dl', function()
