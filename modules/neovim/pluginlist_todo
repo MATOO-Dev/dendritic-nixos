@@ -13,8 +13,6 @@ slang
 port plugins
 image
 nvim-tmux-navigator
-oil-git / oil-lsp-diagnostics
-quicker
 nvim-hlslens
 ============================
 archive, probably wont be adding back in

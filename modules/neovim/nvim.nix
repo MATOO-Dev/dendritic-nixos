@@ -36,6 +36,7 @@
 				specs.general = with pkgs.vimPlugins; [
 					catppuccin-nvim # color theme
 					oil-nvim # file system navigator
+					oil-git-nvim # show git status in oil
 				];
 				specs.lazy = {
 					lazy = true;
@@ -62,6 +63,8 @@
 							nvim-dap # debugger support
 							nvim-dap-view # debugger ui
 							nvim-dap-virtual-text # inline values virtual text
+							quicker-nvim # edit quickfix list like oil
+							nvim-bqf # better quickfix list visuals
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
