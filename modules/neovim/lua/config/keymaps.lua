@@ -22,7 +22,7 @@ vim.keymap.set('n', 'G', 'Gzz', { desc = 'Goto EOF' })
 -- disable highlighting
 vim.keymap.set('n', '<leader>nh', '<cmd>noh<cr>', { desc = 'Disable Search Highlighting' })
 
--- alternative for switchting windows
+-- -- alternative for switchting windows
 -- vim.keymap.set('n', '<leader>w', '<c-w>', { desc = 'Switch Window Init' })
 
 -- quit the current buffer
