@@ -11,7 +11,6 @@ hlsl
 slang
 ============================
 port plugins
-snacks.image (image support)
 snacks.picker (replace telescope)
 diffview (diff viewer & merge tool)
 nvim-tmux-navigator (jump between nvim and tmux)
@@ -33,7 +32,6 @@ snacks.input
 snacks.lazygit
 snacks.profiler
 snacks.quickfile
-telescope vs snacks.picker vs fzf-lua
 ============================
 port debugging setup
 install debuggers

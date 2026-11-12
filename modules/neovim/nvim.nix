@@ -66,6 +66,7 @@
 							quicker-nvim # edit quickfix list like oil
 							nvim-bqf # better quickfix list visuals
 							which-key-nvim # show keymaps
+							snacks-nvim # collection of plugins
 							#############################
 							nvim-treesitter.withAllGrammars # treesitter parser configs
 							nvim-treesitter-textobjects # textobject detection
