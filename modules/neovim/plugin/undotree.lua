@@ -3,10 +3,10 @@ local function setup_undotree()
         return
     end
 
+    -- this is a test using the native undotree
     vim.cmd.packadd('nvim.undotree')
 end
 
--- TODO: test using native undotree rather than plugin
 vim.keymap.set('n', '<leader>ut', function()
     setup_undotree()
     require 'undotree'.open()

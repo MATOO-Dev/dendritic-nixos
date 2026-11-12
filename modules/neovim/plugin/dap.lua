@@ -1,31 +1,28 @@
 local function pick_executable(suffix)
-    setup_telescope()
+    setup_snacks()
     return coroutine.create(function(coro)
-        local opts = {}
-        require 'telescope.pickers'
-            .new(opts, {
-                prompt_title = 'Select executable:',
-                finder = require 'telescope.finders'.new_oneshot_job({
-                    'fd',
-                    '--hidden',
-                    '--no-ignore',
-                    '--type',
-                    'x',
-                    '--max-depth',
-                    '1',
-                    '--search-path',
-                    (suffix or ''),
-                }, {}),
-                sorter = require 'telescope.config'.values.generic_sorter(opts),
-                attach_mappings = function(buffer_number)
-                    require 'telescope.actions'.select_default:replace(function()
-                        require 'telescope.actions'.close(buffer_number)
-                        coroutine.resume(coro, require 'telescope.actions.state'.get_selected_entry()[1])
-                    end)
-                    return true
-                end,
-            })
-            :find()
+        require 'snacks'.picker {
+            title = 'Select executable (async):',
+            finder = 'proc',
+            cmd = 'fd',
+            args = {
+                '--hidden',
+                '--no-ignore',
+                '--type',
+                'x',
+                '--max-depth',
+                '1',
+                '--search-path',
+                (suffix or ''),
+            },
+            transform = function(item)
+                item.file = item.text
+            end,
+            confirm = function(picker, item)
+                picker:close()
+                coroutine.resume(coro, item.file)
+            end,
+        }
     end)
 end
 

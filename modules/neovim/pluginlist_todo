@@ -11,7 +11,6 @@ hlsl
 slang
 ============================
 port plugins
-snacks.picker (replace telescope)
 diffview (diff viewer & merge tool)
 nvim-tmux-navigator (jump between nvim and tmux)
 nvim-hlslens (show jump binds for search)
@@ -48,7 +47,6 @@ combinations
 consider whether devenv shell commands are cleaner than overseer
 ============================
 other / chores
-add additional keybinds for telescope
 edit blink config to insert parentheses & parameters on auto-insert
 gdshader-lsp-cpp (not packaged for nix)
 figure out a way to display lsp inlay-hints at the end of the line

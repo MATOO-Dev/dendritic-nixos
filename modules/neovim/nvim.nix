@@ -45,8 +45,6 @@
 							conform-nvim # auto formatting
 							lualine-nvim # status bar
 							nvim-lspconfig # lsp templates
-							telescope-nvim # fuzzy finder
-							# undotree # tree-like undo, testing native implementation
 							vim-move # move selected text
 							vim-wordmotion # better word boundaries
 							nvim-surround # surrounding delimiter pairs
@@ -80,7 +78,7 @@
 				runtimePkgs = with pkgs;
 					[
 						tree-sitter # syntax coloring
-						ripgrep # for telescope live grep
+						ripgrep # for snacks.picker.grep
 						fd # file finder
 						#############################
 						bash-language-server # bash lsp
