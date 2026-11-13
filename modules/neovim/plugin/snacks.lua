@@ -6,6 +6,7 @@ function _G.setup_snacks()
     vim.cmd.packadd 'snacks.nvim'
     require 'snacks'.setup {
         image = { enabled = true },
+        input = { enabled = true },
         picker = {
             enabled = true,
             matcher = { frecency = true, history_bonus = true },
