@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
     end,
 })
 
-vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+vim.api.nvim_create_autocmd('BufEnter', {
     desc = 'Files without filetpe, so no ftplugin possible',
     pattern = { '[^.]\\+' },
     callback = function()
