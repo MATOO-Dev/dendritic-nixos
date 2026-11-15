@@ -19,11 +19,12 @@
 			# chromium # backup browser, main is firefox
 			drawio # diagram maker
 			# easytag # media metadata editor
-			element-desktop # matrix client
+			unstable.element-desktop # matrix client
 			eog # gnome image viewer
 			evince # gnome pdf viewer
 			ffmpeg # media transcoder
 			ffmpegthumbnailer # create file explorer thumbnails
+			unstable.fluffychat # matrix client
 			foliate # ebook reader # TODO: consider readest or koreader
 			gimp # image editor
 			gnome-disk-utility # disk management tool
