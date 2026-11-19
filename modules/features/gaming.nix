@@ -47,7 +47,6 @@
 			protonplus # proton version manager
 			r2modman # modding tool
 			unstable.vintagestory # survival game
-			unityhub # unity game engine installer, temporary
 		];
 	};
 }
