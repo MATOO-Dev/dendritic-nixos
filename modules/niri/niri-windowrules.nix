@@ -41,6 +41,15 @@
 					{title = "Moving.*Dolphin";}
 					# 2FA codes popup
 					{app-id = "proton-authenticator";}
+					# firefox picture in picture
+					{
+						app-id = "firefox";
+						title = "Picture-in-Picture";
+					}
+					# uni exercise outputs
+					{app-id = ".*-Exercise-.*";}
+					{title = ".*-Exercise-.*";}
+					{app-id = "berg.exe";}
 				];
 				open-floating = true;
 				open-fullscreen = false;
@@ -89,14 +98,6 @@
 				matches = [
 					# kruler
 					{app-id = "org.kde.kruler";}
-					# firefox picture in picture
-					{
-						app-id = "firefox";
-						title = "Picture-in-Picture";
-					}
-					# uni exercise outputs
-					{app-id = ".*-Exercise-.*";}
-					{app-id = "berg.exe";}
 				];
 				open-floating = true;
 				geometry-corner-radius = 0;
