@@ -38,14 +38,23 @@ local function setup_dap()
     vim.cmd.packadd 'nvim-dap-view'
     require 'dap-view'.setup {
         auto_toggle = true,
-        follow_tab = true,
-        winbar = { controls = { enabled = true } },
+        follow_tab = true, -- unsure
+        winbar = {
+            default_section = 'scopes',
+            controls = { enabled = true },
+        },
         windows = { size = 0.4, position = 'right' },
     }
     vim.opt.winfixbuf = false
 
     vim.cmd.packadd 'nvim-dap-virtual-text'
-    require 'nvim-dap-virtual-text'.setup {}
+    require 'nvim-dap-virtual-text'.setup {
+        commented = true,
+        highlight_changed_variables = true,
+        highlight_new_as_changed = true,
+        virt_text_win_col = 83, -- 80 free + column + space, start on 83
+        virt_text_pos = 'inline',
+    }
 
     local dap = require 'dap'
 

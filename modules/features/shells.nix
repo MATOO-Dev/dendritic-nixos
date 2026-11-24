@@ -3,7 +3,7 @@ let
 		laz = "lazygit";
 		open = "xdg-open";
 		ff = "fastfetch";
-		ls = "eza --icons";
+		ls = "eza --icons auto";
 		top = "btop";
 		clear = "printf '\\033[2J\\033[3J\\033[1;1H'"; # clears scrollback buffer as well
 		rm = "rmtrash";
