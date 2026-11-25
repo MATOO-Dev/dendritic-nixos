@@ -27,7 +27,7 @@
 				matches = [
 					# goodot games launched from editor
 					{
-						app-id = "Godot";
+						# app-id = "Godot";
 						title = ".*(DEBUG)";
 					}
 					# gpu screen recorder ui
