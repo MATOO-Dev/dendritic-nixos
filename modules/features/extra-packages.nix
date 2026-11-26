@@ -15,11 +15,15 @@
 			anki # flashcards
 			audacity # audio editor
 			unstable.ausweisapp # id verification
+			bitwarden-desktop # password manager
+			bitwarden-cli # password manager
 			unstable.blender # 3d modeling
 			# chromium # backup browser, main is firefox
 			drawio # diagram maker
 			# easytag # media metadata editor
 			unstable.element-desktop # matrix client
+			ente-auth # 2FA code generator
+			unstable.ente-desktop # photo backups
 			eog # gnome image viewer
 			evince # gnome pdf viewer
 			ffmpeg # media transcoder
@@ -50,7 +54,7 @@
 			pandoc # document converter
 			pdfarranger # reorder and merge pdfs
 			pdfpc # pdf presentation presenter
-			unstable.pixieditor # image editor
+			pixieditor # image editor
 			unstable.proton-authenticator # 2FA code generator
 			unstable.proton-vpn # vpn client
 			ripgrep # grep through files
@@ -58,11 +62,14 @@
 			# spotify # music app # also consider spicetify
 			tldr # simplified man pages
 			tree # print file tree
+			# tutabridge # not packaged
+			unstable.tutanota-desktop # mail / calendar client
 			unstable.tuxedo # cli todo list manager
 			unstable.typst # typst compiler
 			unzip # unzipping from cli
 			xournalpp # pdf annotation tool
 			wget2 # cli file downloader
+			# unstable.windscripte # vpn client, not packaged yet
 		];
 	};
 }
