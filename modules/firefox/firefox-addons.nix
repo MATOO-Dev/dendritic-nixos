@@ -19,6 +19,8 @@
 				lib.listToAttrs [
 					# increase volume up to 600 %
 					(get-extension "600-sound-volume" "{c4b582ec-4343-438c-bda2-2f691c16c262}" false "navbar")
+					# password manager
+					(get-extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}" true "navbar")
 					# remove tracking parameters from urls
 					(get-extension "clearurls" "{74145f27-f039-47ce-a470-a662b129930a}" true "menupanel")
 					# automatically decline cookie popups
@@ -59,6 +61,8 @@
 					(get-extension "user-agent-string-switcher" "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" false "menupanel")
 					# vim keybinds in the browser
 					(get-extension "vimium-ff" "{d7742d87-e61d-4b78-b8a1-b469842139fa}" true "navbar")
+					# in-browser vpn integration
+					(get-extension "windscribe" "@windscribeff" true "menupanel")
 					# disable auto-dubbing for youtube
 					(get-extension "youtube-no-translation" "{9a3104a2-02c2-464c-b069-82344e5ed4ec}" false "menupanel")
 					# play youtube shorts as regular videos

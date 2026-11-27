@@ -50,6 +50,11 @@
 					{app-id = ".*-Exercise-.*";}
 					{title = ".*-Exercise-.*";}
 					{app-id = "berg.exe";}
+					# password manager popup
+					{
+						app-id = "firefox";
+						title = "Extension: (Bitwarden Password Manager) - Bitwarden — Mozilla Firefox";
+					}
 				];
 				open-floating = true;
 				open-fullscreen = false;
