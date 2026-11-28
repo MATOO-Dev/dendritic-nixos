@@ -8,9 +8,15 @@
 			ly.enableGnomeKeyring = true;
 		};
 
+		# for keys stored locally with only the passphrase in bitwarden
 		programs.ssh.extraConfig = ''
-			Host github.com
-			IdentityAgent ~/.bitwarden-ssh-agent.sock
+			AddKeysToAgent yes
 		'';
+
+		# for ssh keys stored in bitwarden
+		# programs.ssh.extraConfig = ''
+		# 	Host github.com
+		# 	IdentityAgent ~/.bitwarden-ssh-agent.sock
+		# '';
 	};
 }
