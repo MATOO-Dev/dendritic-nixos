@@ -9,7 +9,7 @@
 			settings = {
 				user = {
 					name = "MATOO-Dev";
-					email = "matoo-dev@proton.me";
+					email = "matoo-dev@tuta.com";
 				};
 				credential.helper = "${pkgs.gitFull}/bin/git-credential-libsecret";
 				core.askPass = "${pkgs.seahorse}/libexec/seahorse/ssh-askpass";
