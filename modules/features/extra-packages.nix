@@ -56,6 +56,7 @@
 			pdfpc # pdf presentation presenter
 			pixieditor # image editor
 			unstable.proton-authenticator # 2FA code generator
+			unstable.proton-pass # password-manager
 			unstable.proton-vpn # vpn client
 			ripgrep # grep through files
 			scrcpy # mirror android to pc
