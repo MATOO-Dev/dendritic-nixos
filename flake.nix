@@ -53,5 +53,8 @@
 
 		# calibre plugins
 		calibre-plugins.url = "github:nydragon/calibre-plugins";
+
+		# plymouth boot splash screens
+		plymouth-spin.url = "github:DanielTallon/nix-packages";
 	};
 }
