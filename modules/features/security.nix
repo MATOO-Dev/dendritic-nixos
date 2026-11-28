@@ -9,7 +9,8 @@
 		};
 
 		programs.ssh.extraConfig = ''
-			AddKeysToAgent yes
+			Host github.com
+			IdentityAgent ~/.bitwarden-ssh-agent.sock
 		'';
 	};
 }
